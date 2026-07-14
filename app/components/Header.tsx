@@ -1,54 +1,121 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
 import { FiSearch, FiUser, FiShoppingBag } from "react-icons/fi";
+import "./header.css";
 
 export default function Header() {
   return (
-    <header>
-      {/* Top Bar */}
+    <header className="header">
+
+      {/* ================= Top Announcement Bar ================= */}
+
       <div className="top-bar">
-  <span className="star">✦</span>
 
-  <span>
-    Your Ginger Profile Not set{" "}
-    <a href="#" className="find-link">
-      Find yours →
-    </a>
-  </span>
+        <div className="top-bar-content">
 
-  <span className="close">×</span>
-</div>
+          <span className="top-star">✦</span>
 
-      {/* Navbar */}
-      <nav className="navbar">
-        {/* Logo */}
-        <Image
-          src="/Image/ginger-logo.png.png"
-          alt="GingerNoxx Logo"
-          width={220}
-          height={60}
-        />
+          <span className="top-text">
+            Your Ginger Profile Not set{" "}
+            <a href="#" className="top-link">
+              Find yours →
+            </a>
+          </span>
 
-        {/* Navigation */}
-        <ul className="nav-links">
-          <li>Shop ▼</li>
-          <li>Why Ginger</li>
-          <li>Innovation</li>
-          <li>Our Story</li>
-          <li>Where to Buy</li>
-        </ul>
+        </div>
 
-        {/* Wholesale Button */}
-        <button className="portal-btn">
-          Wholesale Portal
+        <button className="top-close">
+          ✕
         </button>
 
-        {/* Icons */}
-        <div className="icons">
-          <FiSearch />
-          <FiUser />
-          <FiShoppingBag />
+      </div>
+
+      {/* ================= Main Navigation ================= */}
+
+      <nav className="navbar">
+
+        {/* Logo */}
+
+        <Link href="/" className="logo">
+          <Image
+            src="/Image/ginger-logo.png"
+            alt="GingerNoxx"
+            width={175}
+            height={42}
+            priority
+          />
+        </Link>
+
+        {/* Navigation */}
+
+        <ul className="nav-links">
+
+          <li>
+            <Link href="#">
+              Shop ▾
+            </Link>
+          </li>
+
+          <li>
+            <Link href="#">
+              Why Ginger
+            </Link>
+          </li>
+
+          <li>
+            <Link href="#">
+              Innovation
+            </Link>
+          </li>
+                    <li>
+            <Link href="#">
+              Our Story
+            </Link>
+          </li>
+
+          <li>
+            <Link href="#">
+              Where to Buy
+            </Link>
+          </li>
+
+        </ul>
+
+        {/* Right Side */}
+
+        <div className="navbar-right">
+
+          <button className="portal-btn">
+            Wholesale Portal
+          </button>
+
+          <div className="nav-icons">
+
+            <button className="icon-btn" aria-label="Search">
+              <FiSearch />
+            </button>
+
+            <button className="icon-btn" aria-label="Account">
+              <FiUser />
+            </button>
+
+            <button className="icon-btn cart-btn" aria-label="Cart">
+              <FiShoppingBag />
+
+              <span className="cart-count">
+                0
+              </span>
+
+            </button>
+
+          </div>
+
         </div>
+
       </nav>
+
     </header>
   );
 }

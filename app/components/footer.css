@@ -1,0 +1,213 @@
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer {
+  width: 100%;
+  background: #1E1208;
+  color: #fff;
+  margin-top: none;
+}
+
+.footer-container {
+  max-width: 1152px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 360px repeat(4, 1fr);
+  gap: 55px;
+  padding: 60px 0 48px;
+}
+
+.footer-logo {
+  width: 180px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.footer-description {
+  font-size: 13px;
+  line-height: 22.1px;
+  color: #FFFFFF80;
+  margin-bottom: 18px;
+}
+
+.footer-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.footer-badges span {
+  height: 26px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #FFFFFF14;
+
+  border: 1px solid #FFFFFF24;
+
+  border-radius: 6px;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  line-height: 16px;
+  color: #FFFFFF80;
+}
+
+.footer-social {
+  display: flex;
+  gap: 18px;
+}
+
+.footer-social a {
+  width: 34px;
+  height: 34px;
+
+  border-radius: 17px;
+  background-color: #474522;
+  border: 1px solid #FFFFFF4F;
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: .3s;
+}
+
+.footer-social a:hover {
+  background: #B84A06;
+  border-color: #B84A06;
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+
+  color: #FFFFFF66;
+
+  font-size: 10px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1.6px;
+  line-height: 16px;
+
+  font-weight: 700;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 12px;
+}
+
+.footer-column a {
+  text-decoration: none;
+
+  color: #FFFFFF8C;
+
+  line-height: 20.8px;
+  font-size: 13px;
+
+  font-weight: 500;
+
+  transition: .3s;
+}
+
+.footer-column a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  max-width: 1152px;
+  margin: auto;
+
+  border-top: 1px solid #FFFFFF1A;
+
+  padding: 16px 0;
+
+  text-align: center;
+
+  color: #FFFFFF94;
+
+  font-size: 12px;
+  line-height: 19.2px;
+
+  font-weight: 500;
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width:992px) {
+
+.footer-container{
+
+grid-template-columns:repeat(2,1fr);
+
+padding:50px 24px;
+
+gap:40px;
+
+}
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+.footer{
+
+margin-top:80px;
+
+}
+
+.footer-container{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+padding:50px 24px;
+
+}
+
+.footer-logo{
+
+margin:auto auto 24px;
+
+}
+
+.footer-badges{
+
+justify-content:center;
+
+}
+
+.footer-social{
+
+justify-content:center;
+
+}
+
+.footer-bottom{
+
+padding:18px 20px;
+
+font-size:11px;
+
+}
+
+}

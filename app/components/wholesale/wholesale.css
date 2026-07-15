@@ -776,3 +776,444 @@ line-height:22px;
 }
 
 }
+/* WHOLESALE CERTIFICATIONS */
+
+.wholesale-certifications{
+    background:#FDF6EE;
+    padding:90px 0;
+}
+
+.certifications-container{
+    max-width:1152px;
+    margin:auto;
+}
+
+.certifications-container h2{
+    text-align:center;
+    font-size:36px;
+    font-weight:600;
+    color:#2B1208;
+    line-height:45.2px;
+    margin-bottom:50px;
+}
+
+.certifications-container h2 span{
+    color:#D4621A;
+}
+
+.certification-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.certification-card{
+    background:#fff;
+    border:1px solid #F5E9D9;
+    border-radius:16px;
+    padding:30px 24px 30px;
+    text-align:center;
+    transition:.3s;
+}
+
+.certification-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.certification-icon{
+    width:60px;
+    height:60px;
+    background:#D4621A;
+    border-radius:32px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 15px;
+}
+
+.certification-card h3{
+    font-size:15.5px;
+    font-weight:700;
+    line-height: 24.83px;
+    color:#2B1208;
+    margin-bottom:10px;
+}
+
+.certification-card p{
+    white-space:pre-line;
+    font-size:13.1px;
+    line-height:20.99px;
+    color:#7A5040;
+    
+}
+
+/* Tablet */
+
+@media(max-width:1024px){
+
+.certification-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.wholesale-certifications{
+padding:70px 20px;
+}
+
+.certifications-container h2{
+font-size:34px;
+margin-bottom:40px;
+}
+
+.certification-grid{
+grid-template-columns:1fr;
+}
+
+}
+/* WHOLESALE CTA */
+
+.wholesale-cta {
+  width: 100%;
+  background: #D4621A;
+  padding: 60px 0;
+}
+
+.wholesale-cta-container {
+  width: 1200px;
+  max-width: 90%;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wholesale-cta-left h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 51.2px;
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.wholesale-cta-left p {
+  width: 470px;
+  font-size: 15.2px;
+  line-height: 25.08px;
+  font-weight: 400;
+  color: #FFFFFFB2;
+}
+
+.wholesale-cta-right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cta-primary {
+  width: 281px;
+  height: 48px;
+
+  border: none;
+  border-radius: 999px;
+
+  background: #fff;
+
+  color: #D4621A;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: .3s;
+}
+
+.cta-primary:hover {
+  transform: translateY(-2px);
+}
+
+.cta-secondary {
+  width: 281px;
+  height: 48px;
+
+  background: transparent;
+
+  border: 1px solid #FFFFFF66;
+
+  border-radius: 999px;
+
+  color: #fff;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: .3s;
+}
+
+.cta-secondary:hover {
+  background: rgba(255,255,255,.1);
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width:992px){
+
+.wholesale-cta-container{
+flex-direction:column;
+text-align:center;
+gap:40px;
+}
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+.wholesale-cta{
+padding:50px 20px;
+}
+
+.wholesale-cta-left h2{
+font-size:28px;
+}
+
+.wholesale-cta-left p{
+font-size:15px;
+}
+
+.wholesale-cta-right{
+width:100%;
+}
+
+.cta-primary,
+.cta-secondary{
+width:100%;
+}
+
+}
+/* WHOLESALE FAQ */
+
+.wholesale-faq{
+    background:#fff;
+    padding:100px 0;
+}
+
+.faq-container{
+    max-width:760px;
+    margin:auto;
+}
+
+.faq-container h2{  
+  font-size:36px;
+    font-weight:600;
+    line-height:45.2px;
+    text-align:center;
+    color:#2B1208;
+}
+
+.faq-line{
+    width:48px;
+    height:2px;
+    background:#D4621A;
+    margin:10px auto 30px;
+}
+
+.faq-item{
+    border-bottom:1px solid #F5E9D9;
+}
+
+.faq-question{
+    width:100%;
+    background:none;
+    border:none;
+    padding:15px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    text-align:left;
+}
+
+.faq-question span:first-child{
+    font-size:16px;
+    font-weight:600;
+    color:#2B1208;
+}
+
+.faq-icon{
+    color:#D4621A;
+    font-size:19.2px;
+    font-weight:600;
+    width:13.29px;
+    text-align:center;
+}
+
+.faq-answer{
+    padding:0 0 22px;
+}
+
+.faq-answer p{
+    font-size:16px;
+    line-height:28px;
+    color:#7A5040;
+}
+
+@media(max-width:768px){
+
+.wholesale-faq{
+    padding:70px 20px;
+}
+
+.faq-container h2{
+    font-size:30px;
+    line-height:38px;
+}
+
+.faq-question span:first-child{
+    font-size:15px;
+    padding-right:20px;
+}
+
+.faq-answer p{
+    font-size:14px;
+    line-height:24px;
+}
+
+}
+/* WHOLESALE FINAL CTA */
+
+.wholesale-final-cta{
+    position:relative;
+    background:#D4621A;
+    overflow:hidden;
+    padding:80px 20px 80px;
+}
+
+.wholesale-final-overlay{
+    position:absolute;
+    inset:0;
+    background:radial-gradient(circle at 50% 80%,
+    rgba(255,255,255,.10) 0%,
+    rgba(255,255,255,0) 60%);
+}
+
+.wholesale-final-content{
+    position:relative;
+    z-index:2;
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+}
+
+.wholesale-final-tag{
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:3.2px;
+    line-height: 16px;
+    margin-bottom:15px;
+}
+
+.wholesale-final-content h2{
+    color:#fff;
+    font-size:36px;
+    font-weight:600;
+    line-height:47.84px;
+    margin-bottom:15px;
+}
+
+.wholesale-final-description{
+    color:#FFFFFF73;
+    font-size:15.5px;
+    line-height:26.38px;
+    max-width:599.62px;
+    margin:0 auto 36px;
+}
+
+.wholesale-final-buttons{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.primary-btn{
+    width:278.58px;
+    height:51px;
+    border:none;
+    border-radius:999px;
+    background:#fff;
+    color:#D4621A;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.primary-btn:hover{
+    transform:translateY(-2px);
+}
+
+.secondary-btn{
+    width:186.92px;
+    height:51px;
+    border:2px solid #FFFFFF40;
+    border-radius:999px;
+    background:transparent;
+    color:#fff;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.secondary-btn:hover{
+    background:rgba(255,255,255,.08);
+}
+
+@media(max-width:768px){
+
+.wholesale-final-cta{
+    padding:60px 20px;
+}
+
+.wholesale-final-tag{
+    font-size:13px;
+    letter-spacing:2px;
+}
+
+.wholesale-final-content h2{
+    font-size:30px;
+    line-height:40px;
+}
+
+.wholesale-final-description{
+    font-size:15px;
+    line-height:26px;
+}
+
+.wholesale-final-buttons{
+    flex-direction:column;
+    align-items:center;
+}
+
+.primary-btn,
+.secondary-btn{
+    width:100%;
+    max-width:320px;
+}
+
+}

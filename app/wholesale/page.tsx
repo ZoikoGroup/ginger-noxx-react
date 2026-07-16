@@ -7,7 +7,10 @@ import WholesaleHero from "../components/wholesale/WholesaleHero";
 import WholesaleCategory from "../components/wholesale/WholesaleCategory";
 import WholesaleProductCategories from "../components/wholesale/WholesaleProductCategories";
 import WholesaleGlobalReach from "../components/wholesale/WholesaleGlobalReach";
-
+import WholesaleCertifications from "../components/wholesale/WholesaleCertifications";
+import WholesaleCTA from "../components/wholesale/WholesaleCTA";
+import WholesaleFAQ from "../components/wholesale/WholesaleFAQ";
+import WholesaleFinalCTA from "../components/wholesale/WholesaleFinalCTA";
 
 export default function BestSellersPage() {
   return (
@@ -18,6 +21,10 @@ export default function BestSellersPage() {
       <WholesaleCategory />
       <WholesaleProductCategories />
       <WholesaleGlobalReach />
+      <WholesaleCertifications />
+      <WholesaleCTA />
+      <WholesaleFAQ />
+      <WholesaleFinalCTA />
       
     <Footer />  
     </>

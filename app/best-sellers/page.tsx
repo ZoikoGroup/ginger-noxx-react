@@ -1,15 +1,15 @@
-import "../components/bestsellers/bestsellers.css";
+import "@/components/best-sellers/bestsellers.css";
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
-import BestSellersHero from "../components/bestsellers/BestSellersHero";
-import BestSellersFeatures from "../components/bestsellers/BestSellersFeatures";
-import BestSellersProduct from "../components/bestsellers/BestSellersProducts";
-import BestWhyLead from "../components/bestsellers/BestWhyLead";
-import BestSellersBundles from "../components/bestsellers/BestSellersBundles";
-import BestSellersTestimonials from "../components/bestsellers/BestSellersTestimonials";
-import BestSellersFAQ from "../components/bestsellers/BestSellersFAQ";
+import BestSellersHero from "@/components/best-sellers/BestSellersHero";
+import BestSellersFeatures from "@/components/best-sellers/BestSellersFeatures";
+import BestSellersProduct from "@/components/best-sellers/BestSellersProducts";
+import BestWhyLead from "@/components/best-sellers/BestWhyLead";
+import BestSellersBundles from "@/components/best-sellers/BestSellersBundles";
+import BestSellersTestimonials from "@/components/best-sellers/BestSellersTestimonials";
+import BestSellersFAQ from "@/components/best-sellers/BestSellersFAQ";
 
 
 export default function BestSellersPage() {

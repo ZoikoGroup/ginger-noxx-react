@@ -1,0 +1,2123 @@
+/* INNOVATION HERO */
+
+.innovation-hero{
+    position:relative;
+    overflow:hidden;
+    background:#421A07;
+    min-height:440px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:60px 40px;
+}
+
+.innovation-hero-content{
+    position:relative;
+    z-index:5;
+    text-align:center;
+}
+
+/* Background Blur Circles */
+
+.innovation-circle{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(80px);
+}
+
+.circle-one{
+    width:600px;
+    height:600px;
+    right:-180px;
+    top:-100px;
+    background:#D4621A24;
+}
+
+.circle-two{
+    width:380px;
+    height:380px;
+    left:-80px;
+    top:40px;
+    background:#D4621A24;
+}
+
+.circle-three{
+    width:260px;
+    height:80px;
+    left:50%;
+    transform:translateX(-50%);
+    top:170px;
+    background:rgba(39,103,73,.10);
+}
+
+/* Heading */
+
+.innovation-hero h1{
+    color:#fff;
+    font-size:40px;
+    font-weight:600;
+    line-height:57px;
+    margin-bottom:20px;
+}
+
+.innovation-hero h1 span{
+    color:#D4621A;
+}
+
+/* Paragraph */
+
+.innovation-hero p{
+    max-width:756px;
+    margin:0 auto;
+    color:#FFFFFFE0;
+    font-size:19.2px;
+    line-height:33.6px;
+}
+
+/* Buttons */
+
+.innovation-buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
+    margin-top:40px;
+}
+
+.innovation-btn-primary{
+    width:356.96px;
+    height:55px;
+    background:#D4621A;
+    border-radius:999px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.innovation-btn-primary:hover{
+    background:#bf5717;
+}
+
+.innovation-btn-secondary{
+
+    width:245px;
+    height:55px;
+
+    border:2px solid #fff;
+    border-radius:999px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+
+    color:#fff;
+    font-size:14px;
+    font-weight:600;
+    line-height:22.4px;
+
+    transition:.3s;
+}
+
+.innovation-btn-secondary:hover{
+    background:#fff;
+    color:#421A07;
+}
+
+
+/*========================================
+ Responsive
+========================================*/
+
+@media(max-width:992px){
+
+.innovation-buttons{
+    flex-direction:column;
+}
+
+.innovation-btn-primary,
+.innovation-btn-secondary{
+    width:100%;
+    max-width:380px;
+}
+
+}
+
+@media(max-width:768px){
+
+.innovation-hero{
+    min-height:auto;
+    padding:70px 20px;
+}
+
+.innovation-hero h1{
+    font-size:32px;
+    line-height:46px;
+}
+
+.innovation-hero p{
+    font-size:16px;
+    line-height:28px;
+}
+
+.innovation-scroll{
+    margin-top:60px;
+}
+
+.circle-one{
+    width:420px;
+    height:420px;
+}
+
+.circle-two{
+    width:260px;
+    height:260px;
+}
+
+}
+/* Innovation Wrong Things */
+
+.innovation-wrong-things {
+  position: relative;
+  overflow: hidden;
+  background: #fdf6ee;
+  padding: 60px 40px;
+}
+
+.background-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 100% 50%,
+    rgba(212, 98, 26, 0.05) 0%,
+    rgba(212, 98, 26, 0) 65%);
+
+  pointer-events: none;
+}
+
+.innovation-wrong-container {
+  position: relative;
+  z-index: 2;
+
+  /* Figma width */
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  /* only layout change */
+  gap: 48px;
+}
+
+.innovation-content {
+  width: 420px;
+  flex: 0 0 420px;
+}
+
+.innovation-title {
+  margin-top: 40px;
+  color: #292929;
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 52.8px;
+}
+
+.highlight {
+  color: #d4621a;
+}
+
+.innovation-description {
+  margin-top: 30px;
+  width: 413px;
+
+  color: #464646;
+  font-family: "Poppins", sans-serif;
+  font-size: 15.5px;
+  font-weight: 400;
+  line-height: 27.94px;
+}
+
+.innovation-cards {
+  width: 564px;
+  flex: 0 0 564px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.innovation-card {
+  background: #FFFFFF87;
+  border: 1px solid #FFFFFF0F;
+  border-left: 2px solid #D4621A66;
+  border-radius: 8px;
+  padding: 21px 24px;
+}
+
+.card-label {
+  margin: 0;
+
+  color: #D4621AB2;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card-title {
+  margin: 8px 0 8px;
+
+  color: #212121BF;
+  font-family: "Poppins", sans-serif;
+  font-size: 15.2px;
+  font-weight: 600;
+  line-height: 24.32px;
+}
+
+.card-description {
+  margin: 0;
+
+  color: #393939;
+  font-family: "Poppins", sans-serif;
+  font-size: 13.6px;
+  font-weight: 400;
+  line-height: 21.76px;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 1024px) {
+
+  .innovation-container {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .innovation-content,
+  .innovation-cards,
+  .innovation-description {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .innovation-wrong-things {
+    padding: 64px 20px;
+  }
+
+  .innovation-title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .innovation-description {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .innovation-card {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 15px;
+  }
+
+  .card-description {
+    font-size: 13px;
+    line-height: 22px;
+  }
+}
+/* Innovation Systems */
+
+.innovation-systems{
+    background:#421A07;
+}
+
+.innovation-systems-container{
+    width:1440px;
+    max-width:100%;
+    margin:auto;
+    padding:0 0px;
+}
+
+.innovation-systems-box{
+
+    min-height:384px;
+
+    background:linear-gradient(
+        64deg,
+        #D4621A1F,
+        #D4621A0A
+    );
+
+    border:1px solid #D4621A33;
+
+    border-radius:24px;
+
+    padding:50px 70px;
+
+    overflow:hidden;
+}
+
+/* Heading */
+
+.innovation-systems-title{
+    margin:0;
+    text-align:center;
+    color:#FFFFFF;
+    font-family:"Poppins",sans-serif;
+    font-size:35px;
+    font-weight:600;
+    line-height:50.18px;
+}
+
+.innovation-systems-title span{
+    color:#D4621A;
+
+}
+
+/* Description */
+
+.innovation-systems-description{
+    width:1010px;
+    max-width:100%;
+    margin:20px auto 40px;
+    text-align:center;
+    color:#FFFFFFD1;
+    font-family:"Poppins",sans-serif;
+    font-size:16px;
+    font-weight:400;
+    line-height:28px;
+
+}
+
+/* Bottom */
+
+.innovation-systems-cards{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+
+}
+
+/* Cards */
+
+.system-card{
+
+    width:241.25px;
+    height:135.44px;
+    border-radius:8px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+
+/* Old */
+
+.old-card{
+    background:#FFFFFF0A;
+    border:1px solid #FFFFFFD1;
+
+}
+
+/* New */
+
+.new-card{
+    background:#D4621A1F;
+    border:1px solid #D4621A;
+
+}
+
+/* Labels */
+
+.system-label{
+    margin:0 0 4px;
+    font-family:"Poppins",sans-serif;
+    font-size:10px;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+
+}
+
+.old-card .system-label{
+    color:#FFFFFFB5;
+
+}
+
+.new-card .system-label{
+    color:#D4621A99;
+
+}
+
+/* Titles */
+
+.system-title{
+    margin:0;
+    text-align:center;
+    font-family:"Poppins",sans-serif;
+    font-size:19.2px;
+    font-weight:700;
+    line-height:30.72px;
+
+}
+
+.old-card .system-title{
+    color:#FFFFFFB5;
+
+}
+
+.new-card .system-title{
+    color:#FFFFFF;
+
+}
+
+/* Arrow */
+
+.system-arrow{
+    color:#D4621A;
+    font-size:40px;
+    line-height:64px;
+    font-family:"Poppins",sans-serif;
+
+}
+
+/* ===============================
+   Responsive
+=============================== */
+
+@media(max-width:992px){
+
+.innovation-systems-container{
+
+    padding:0 20px;
+
+}
+
+.innovation-systems-box{
+
+    padding:40px 25px;
+
+}
+
+.innovation-systems-title{
+
+    font-size:32px;
+    line-height:42px;
+
+}
+
+.innovation-systems-description{
+
+    margin-bottom:40px;
+
+}
+
+.innovation-systems-cards{
+
+    flex-direction:column;
+    gap:25px;
+
+}
+
+.system-arrow{
+
+    transform:rotate(90deg);
+
+}
+
+.system-card{
+
+    width:100%;
+    max-width:320px;
+
+}
+
+}
+/* Innovation Ginger Fusion */
+
+.innovation-ginger-fusion{
+    background:#FDF6EE;
+    padding:60px 0 70px;
+}
+
+.innovation-ginger-fusion .innovation-container{
+    width:1200px;
+    max-width:calc(100% - 80px);
+    margin:0 auto;
+
+    display:flex;
+    flex-direction:column;
+}
+
+/* Heading */
+
+.innovation-gf-heading{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:0px;
+}
+
+.innovation-gf-title{
+    margin:0;
+    text-align:center;
+    color:#2B1208;
+    font-family:"Poppins",sans-serif;
+    font-size:35px;
+    font-weight:600;
+    line-height:50.18px;
+}
+
+.innovation-gf-title span{
+    color:#D4621A;
+}
+
+/* Two Columns */
+
+.innovation-gf-wrapper{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:10px;
+}
+
+/* Left */
+
+.innovation-gf-content{
+    flex:1;
+    max-width:566.47px;
+}
+
+.innovation-gf-text{
+    margin:30px 0 14px;
+    color:#7A5040;
+    font-family:"Poppins",sans-serif;
+    font-size:15.5px;
+    font-weight:400;
+    line-height:27.94px;
+}
+
+.innovation-gf-text strong{
+    color:#2B1208;
+    font-weight:600;
+}
+
+.innovation-gf-buttons{
+    display:flex;
+    gap:18px;
+    margin-top:20px;
+}
+
+.innovation-gf-btn-primary{
+    width:199.3px;
+    height:55.19px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#D4621A;
+    border-radius:999px;
+    color:#fff;
+    text-decoration:none;
+    font-family:"Poppins";
+    font-size:14px;
+    font-weight:600;
+    line-height:25.2px;
+    transition:.3s;
+}
+
+.innovation-gf-btn-primary:hover{
+    background:#B54E10;
+}
+
+.innovation-gf-btn-secondary{
+    width:199.53px;
+    height:55.19px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:2px solid #D4621A;
+    border-radius:999px;
+    color:#D4621A;
+    text-decoration:none;
+    font-family:"Poppins";
+    font-size:14px;
+    font-weight:600;
+    line-height:25.2px;
+    transition:.3s;
+}
+
+.innovation-gf-btn-secondary:hover{
+    background:#D4621A;
+    color:#fff;
+}
+
+/* Right Card */
+
+.innovation-gf-card{
+    width:568px;
+    flex-shrink:0;
+    background:#FFFFFF;
+    border:2px solid #D4621A;
+    border-radius:24px;
+    padding:46px;
+    box-sizing:border-box;
+    margin-top: 20px;
+   
+}
+
+.innovation-gf-label{
+    display:block;
+    color:#D4621A;
+    font-family:"Poppins";
+    font-size:10px;
+    font-weight:600;
+    line-height:16px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+
+.innovation-gf-card h3{
+    margin:10px 0 4px;
+    color:#2B1208;
+    font-family:"Poppins";
+    font-size:25.6px;
+    font-weight:900;
+    line-height:40.96px;
+}
+
+.innovation-gf-pronounce{
+    margin:0;
+    color:#A8835C;
+    font-family:"Poppins";
+    font-size:12px;
+    line-height:19.2px;
+}
+
+.innovation-gf-divider{
+    width:100%;
+    height:1px;
+    background:#F5E9D9;
+    margin:16px 0 16px;
+}
+
+.innovation-gf-small{
+    display:block;
+    margin-bottom:6px;
+    color:#A8835C;
+    font-family:"Poppins";
+    font-size:11px;
+    line-height:17.6px;
+}
+
+.innovation-gf-definition{
+    margin:0;
+    color:#7A5040;
+    font-family:"Poppins";
+    font-size:15.2px;
+    line-height:26.6px;
+}
+
+.innovation-gf-definition span{
+    color:#D4621A;
+}
+
+.innovation-gf-tags{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:14px;
+}
+
+.innovation-gf-tags span{
+    padding:3px 14px;
+    background:#FFF3E8;
+    border:1px solid #E8D0B8;
+    border-radius:999px;
+    color:#B54E10;
+    font-family:"Poppins";
+    font-size:10px;
+    font-weight:600;
+    line-height:16px;
+    letter-spacing:.5px;
+}
+
+/* Responsive */
+
+@media (max-width:1024px){
+
+    .innovation-gf-heading{
+        margin-bottom:40px;
+    }
+
+    .innovation-gf-wrapper{
+        flex-direction:column;
+        gap:50px;
+    }
+
+    .innovation-gf-content,
+    .innovation-gf-card{
+        width:100%;
+        max-width:100%;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .innovation-ginger-fusion{
+        padding:70px 20px;
+    }
+
+    .innovation-ginger-fusion .innovation-container{
+        max-width:100%;
+    }
+
+    .innovation-gf-title{
+        font-size:32px;
+        line-height:42px;
+    }
+
+    .innovation-gf-buttons{
+        flex-direction:column;
+    }
+
+    .innovation-gf-btn-primary,
+    .innovation-gf-btn-secondary{
+        width:100%;
+    }
+
+    .innovation-gf-card{
+        padding:28px;
+    }
+
+    .innovation-gf-card h3{
+        font-size:28px;
+    }
+
+}
+/* Innovation Fusion Platform */
+
+.innovation-fusion-platform{
+    background:#FFFFFF;
+    padding:50px 0 60px;
+}
+
+.innovation-fusion-platform .innovation-container{
+    width:1120px;
+    max-width:calc(100% - 40px);
+    margin:0 auto;
+    display: block;
+}
+
+/* Heading */
+
+.innovation-fusion-heading{
+    text-align:center;
+    margin-bottom:56px;
+}
+
+.innovation-fusion-title{
+    margin:0;
+    color:#2B1208;
+    font-family:"Poppins",sans-serif;
+    font-size:35px;
+    font-weight:600;
+    line-height:50.18px;
+}
+
+.innovation-fusion-subtitle{
+    margin:12px auto 0;
+    max-width:550.3px;
+    color:#7A5040;
+    font-family:"Poppins",sans-serif;
+    font-size:15.5px;
+    font-weight:400;
+    line-height:24.83px;
+}
+
+/* Timeline */
+
+.innovation-fusion-timeline{
+    width:860px;
+    margin:0 auto;
+}
+
+/* Layer */
+
+.innovation-fusion-layer{
+    display:flex;
+    overflow:hidden;
+}
+
+.innovation-fusion-layer-top{
+    border-radius:16px 16px 0 0;
+}
+
+/* Left */
+
+.innovation-fusion-left{
+    width:200px;
+    min-height:179.32px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.innovation-fusion-left-dark{
+    background:#1C0C04;
+}
+
+/* Icon */
+
+.innovation-fusion-icon{
+    width:35.2px;
+    height:49px;
+    object-fit:contain;
+}
+
+/* Right */
+
+.innovation-fusion-right{
+    flex:1;
+    padding:28px 32px;
+}
+
+.innovation-fusion-right-dark{
+    background:#2B1208;
+}
+
+/* Text */
+
+.innovation-fusion-label{
+    display:block;
+    margin-bottom:8px;
+    color:#fff;
+    font-family:"Poppins",sans-serif;
+    font-size:10px;
+    font-weight:600;
+    letter-spacing:2.5px;
+    text-transform:uppercase;
+    opacity: 70%;
+}
+
+.innovation-fusion-card-title{
+    margin:0 0 8px;
+    color:#FFFFFF;
+    font-family:"Poppins",sans-serif;
+    font-size:17.6px;
+    font-weight:700;
+    line-height:28.16px;
+}
+
+.innovation-fusion-description{
+    margin:0;
+    color:#fff;
+    font-family:"Poppins",sans-serif;
+    font-size:14px;
+    font-weight:400;
+    line-height:22.4px;
+    opacity: 80%;
+}
+
+/* Connector */
+
+.innovation-fusion-connector{
+    position:relative;
+    height:28px;
+    background:#F5E9D9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.innovation-fusion-line{
+    position:absolute;
+    left:200px;
+    top:0;
+    bottom:0;
+    width:1px;
+    background:#D4621A33;
+}
+
+.innovation-fusion-connector span{
+    color:#D4621A80;
+    font-family:"Poppins",sans-serif;
+    font-size:10px;
+    font-weight:400;
+line-height: 16px;
+    letter-spacing:2px;
+}
+/* Layer 02 */
+
+.innovation-fusion-left-brown{
+    background:#4A1E0D;
+}
+
+.innovation-fusion-right-brown{
+    background:#5C2E12;
+}
+/* Layer 03 */
+
+.innovation-fusion-left-orange{
+    background:#B54E10;
+}
+
+.innovation-fusion-right-orange{
+    background:#D4621A;
+}
+
+/* Green connector text */
+
+.innovation-fusion-connector-green{
+    color:#27674999 !important;
+}
+/* Layer 04 */
+
+.innovation-fusion-layer-bottom{
+    border-radius:0 0 16px 16px;
+}
+
+.innovation-fusion-left-green{
+    background:#276749;
+}
+
+.innovation-fusion-right-green{
+    background:#2C7A4E;
+}
+
+/* Tags */
+
+.innovation-fusion-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:28px;
+}
+
+.innovation-fusion-tag{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:7px 8px;
+    background:#FFFFFF26;
+    border:1px solid #FFFFFF33;
+    border-radius:999px;
+    color:#FFFFFF;
+
+    font-family:"Poppins",sans-serif;
+    font-size:11px;
+    font-weight:600;
+    line-height:17.6px;
+    letter-spacing:0.44px;
+}
+
+/* If you use small images inside tags */
+
+.innovation-fusion-tag img{
+    width:16px;
+    height:16px;
+    object-fit:contain;
+}
+
+/* Footer */
+
+.innovation-fusion-footer{
+    max-width:691px;
+    margin:40px auto 0;
+    text-align:center;
+    color:#7A5040;
+    font-family:"Poppins",sans-serif;
+    font-size:14.4px;
+    font-style: italic;
+    font-weight:400;
+    line-height:23.04px;
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media (max-width:992px){
+
+.innovation-fusion-timeline{
+    width:100%;
+}
+
+.innovation-fusion-layer{
+    flex-direction:column;
+}
+
+.innovation-fusion-left{
+    width:100%;
+    height:140px;
+}
+
+.innovation-fusion-line{
+    display:none;
+}
+
+}
+
+@media (max-width:768px){
+
+.innovation-fusion-platform{
+    padding:70px 20px;
+}
+
+.innovation-fusion-title{
+    font-size:32px;
+    line-height:42px;
+}
+
+.innovation-fusion-subtitle{
+    font-size:15px;
+}
+
+.innovation-fusion-right{
+    padding:24px;
+}
+
+.innovation-fusion-tags{
+    gap:10px;
+}
+
+.innovation-fusion-tag{
+    font-size:11px;
+}
+
+}
+/* Innovation Concept Shelf */
+
+.innovation-concept-shelf{
+    background:#FDF6EE;
+    padding:50px 40px 30px;
+}
+
+.innovation-concept-shelf .innovation-container{
+    width:1200px;
+    max-width:calc(100% - 40px);
+    margin:0 auto;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/* Heading */
+
+.innovation-concept-title{
+    width:100%;
+    max-width:806px;
+    margin:0;
+    text-align:center;
+    color:#2B1208;
+    font-family:"Poppins",sans-serif;
+    font-size:35px;
+    font-weight:600;
+    line-height:50.18px;
+}
+
+/* Gradient Line */
+
+.innovation-concept-line{
+    width:960px;
+    max-width:100%;
+    height:2px;
+    margin:90px 0 50px;
+    background:linear-gradient(
+        90deg,
+        #D4621A 0%,
+        #F28A45 55%,
+        #4CAF50 100%
+    );
+}
+
+/* Cards */
+
+.innovation-concept-grid{
+    width:100%;
+
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:24px;
+}
+
+.innovation-concept-card{
+    text-align:center;
+}
+
+/* Circle */
+
+.innovation-concept-icon{
+    width:96px;
+    height:96px;
+    margin:-100 auto 24px;
+    position:relative;
+    background:#FFFFFF;
+    border:2px solid #D4621A;
+    border-radius:48px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.innovation-concept-number{
+    position:absolute;
+    top:18px;
+    left:50%;
+    transform:translateX(-50%);
+    color:#D4621A;
+    font-family:"Poppins",sans-serif;
+    font-size:10px;
+    font-weight:600;
+    line-height:10px;
+    letter-spacing:2px;
+}
+
+.innovation-concept-icon img{
+    width:25.6px;
+    height:36px;
+    object-fit:contain;
+    margin-top:4px;
+}
+
+/* Card Title */
+
+.innovation-concept-card h3{
+    margin:0 0 10px;
+    color:#2B1208;
+    font-family:"Poppins",sans-serif;
+    font-size:15.2px;
+    font-weight:700;
+    line-height:24.32px;
+}
+
+/* Description */
+
+.innovation-concept-card p{
+    margin:0;
+    color:#7A5040;
+    font-family:"Poppins",sans-serif;
+    font-size:12.8px;
+    font-weight:400;
+    line-height:19.84px;
+}
+
+/* Footer */
+
+.innovation-concept-footer{
+    width:100%;
+    max-width:642px;
+    margin:40px 0;
+    text-align:center;
+    color:#7A5040;
+    font-family:"Poppins",sans-serif;
+    font-size:14.4px;
+    font-weight:400;
+    line-height:23.04px;
+    font-style: italic;
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media (max-width:1200px){
+
+.innovation-concept-grid{
+    grid-template-columns:repeat(3,1fr);
+    gap:40px 24px;
+}
+
+}
+
+@media (max-width:768px){
+
+.innovation-concept-shelf{
+    padding:70px 20px;
+}
+
+.innovation-concept-title{
+    font-size:32px;
+    line-height:42px;
+}
+
+.innovation-concept-line{
+    margin:45px 0;
+}
+
+.innovation-concept-grid{
+    grid-template-columns:1fr;
+    gap:45px;
+}
+
+.innovation-concept-footer{
+    margin-top:45px;
+}
+
+}
+/* ==========================================
+   Innovation Built Scale
+========================================== */
+
+.innovation-built-scale{
+    position:relative;
+    overflow:hidden;
+
+    background:#421A07;
+    padding:52px 40px 80px;
+}
+
+.innovation-built-scale::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:radial-gradient(
+        circle at 20% 50%,
+        rgba(212,98,26,.10) 0%,
+        rgba(212,98,26,0) 65%
+    );
+
+    pointer-events:none;
+}
+
+.innovation-built-scale .innovation-container{
+    position:relative;
+    z-index:2;
+
+    width:1228px;
+    max-width:calc(100% - 40px);
+    margin:0 auto;
+}
+
+/* ==========================
+   Heading
+========================== */
+
+.innovation-built-title{
+    margin:0 0 58px;
+
+    text-align:center;
+
+    color:#FFFFFF;
+
+    font-family:"Poppins",sans-serif;
+    font-size:40px;
+    font-weight:600;
+    line-height:50.18px;
+}
+/* Innovation Built Scale */
+
+.innovation-built-scale{
+    position:relative;
+    overflow:hidden;
+    background:#421A07;
+    padding:50px 40px 80px;
+}
+
+.innovation-built-scale::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:radial-gradient(circle at 20% 50%,rgba(212,98,26,.10) 0%,transparent 65%);
+    pointer-events:none;
+}
+
+.innovation-built-scale .innovation-container{
+    position:relative;
+    z-index:2;
+    width:1120px;
+    max-width:calc(100% - 40px);
+    margin:0 auto;
+}
+
+/* Heading */
+
+.innovation-built-title{
+    margin:0 0 30px;
+    text-align:center;
+
+    color:#FFFFFF;
+    font-family:"Poppins",sans-serif;
+    font-size:35px;
+    font-weight:600;
+    line-height:50.18px;
+}
+
+/* Layout */
+
+.innovation-built-wrapper{
+    display:grid;
+    grid-template-columns:568px 472px;
+    justify-content:space-between;
+    align-items:start;
+    column-gap:50px;
+}
+
+/* Left */
+
+.innovation-built-left{
+    width:568px;
+}
+
+.innovation-built-intro{
+    margin:0 0 40px;
+    color:#FFFFFFCC;
+    font-family:"Poppins",sans-serif;
+    font-size:15.7px;
+    font-weight:400;
+    line-height:27.94px;
+}
+
+.innovation-built-features{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.innovation-built-feature{
+    display:flex;
+    align-items:flex-start;
+    gap:2px;
+    padding:18px;
+    background:#FFFFFF0A;
+    border:1px solid #FFFFFF0F;
+    border-radius:8px;
+}
+
+.innovation-built-icon{
+    width:22.4px;
+    height:35.84px;
+    object-fit:contain;
+    flex-shrink:0;
+}
+
+.innovation-built-feature h3{
+    margin:0;
+    color:#FFFFFFCC;
+    font-family:"Poppins",sans-serif;
+    font-size:14.9px;
+    font-weight:600;
+    line-height:23.81px;
+}
+
+.innovation-built-feature p{
+    margin:0;
+    color:#FFFFFFCC;
+    font-family:"Poppins",sans-serif;
+    font-size:13.3px;
+    font-weight:400;
+    line-height:20.58px;
+}
+
+/* Right */
+
+.innovation-built-right{
+    width:472px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.innovation-built-card{
+    padding:30px;
+    background:#FFFFFF0D;
+    border:1px solid #FFFFFF14;
+    border-radius:24px;
+}
+
+.innovation-built-card-icon{
+    width:28.8px;
+    height:40px;
+    object-fit:contain;
+    margin-bottom:10px;
+}
+
+.innovation-built-card h3{
+    margin:0 0 10px;
+    color:#FFFFFF;
+    font-family:"Poppins",sans-serif;
+    font-size:17.6px;
+    font-weight:700;
+    line-height:28.16px;
+}
+
+.innovation-built-card p{
+    margin:0 0 20px;
+    color:#FFFFFFCC;
+    font-family:"Poppins",sans-serif;
+    font-size:14px;
+    font-weight:400;
+    line-height:22.4px;
+}
+
+/* Buttons */
+
+.innovation-built-btn{
+    width:306.52px;
+    height:50.39px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:999px;
+    text-decoration:none;
+    font-family:"Poppins",sans-serif;
+    font-size:14px;
+    font-weight:600;
+    line-height: 22.4px;
+    transition:.3s ease;
+}
+
+.innovation-built-btn-primary{
+    background:#D4621A;
+    color:#FFFFFF;
+}
+
+.innovation-built-btn-primary:hover{
+    background:#b85414;
+}
+
+.innovation-built-btn-outline{
+    background:transparent;
+    border:2px solid #FFFFFFBA;
+    color:#FFFFFF;
+}
+
+.innovation-built-btn-outline:hover{
+    background:#FFFFFF;
+    color:#421A07;
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media (max-width:1024px){
+
+.innovation-built-wrapper{
+    display:flex;
+    flex-direction:column;
+    gap:50px;
+}
+
+.innovation-built-left,
+.innovation-built-right{
+    width:100%;
+}
+
+.innovation-built-btn{
+    width:100%;
+}
+
+}
+
+@media (max-width:768px){
+
+.innovation-built-scale{
+    padding:70px 20px;
+}
+
+.innovation-built-title{
+    font-size:32px;
+    line-height:42px;
+    margin-bottom:45px;
+}
+
+.innovation-built-intro{
+    font-size:15px;
+    line-height:26px;
+}
+
+.innovation-built-card{
+    padding:28px;
+}
+
+}
+/* Innovation Difference */
+
+.innovation-difference{
+    background:#FDF6EE;
+    padding:40px 0 60px;
+}
+
+.innovation-difference-container{
+    width:900px;
+    max-width:calc(100% - 40px);
+    margin:0 auto;
+}
+
+/* Heading */
+
+.innovation-difference-title{
+    margin:0;
+    color:#2B1208;
+    text-align:center;
+    font-family:"Poppins",sans-serif;
+    font-size:35px;
+    font-weight:600;
+    line-height:50.18px;
+}
+
+.innovation-difference-subtitle{
+    max-width:481.59px;
+    margin:10px auto 30px;
+    color:#7A5040;
+    text-align:center;
+    font-family:"Poppins",sans-serif;
+    font-size:15.5px;
+    font-weight:400;
+    line-height:24.83px;
+}
+
+/* Table */
+
+.innovation-difference-table{
+    overflow:hidden;
+    border:1px solid #F5E9D9;
+    border-radius:24px;
+    background:#FFFFFF01;
+    box-shadow:0 2px 16px #2B120812;
+}
+
+/* Header */
+
+.innovation-difference-header{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+
+.innovation-difference-head{
+    padding:22px 28px;
+    background:#F5E9D9;
+    color:#A8835C;
+    font-family:"Poppins",sans-serif;
+    font-size:16px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:2.2px;
+    line-height:17.6px;
+}
+
+/* Rows */
+
+.innovation-difference-row{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    border-top:1px solid #F5E9D9;
+}
+
+/* Left */
+
+.innovation-difference-label{
+    padding:22px 28px;
+    background:#FFFFFF;
+    color:#7A5040;
+    display:flex;
+    align-items:center;
+    font-family:"Poppins",sans-serif;
+    font-size:15px;
+    font-weight:600;
+    line-height:23.55px;
+}
+
+/* Middle */
+
+.innovation-difference-traditional{
+    width: 299.33px;
+    padding:22px 28px;
+    background:#C04413;
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    color:#FFFFFF;
+    font-family:"Poppins",sans-serif;
+    font-size:14px;
+    line-height:23.55px;
+}
+
+.innovation-difference-light{
+    color:#FFFFFF4D;
+    font-weight:400;
+}
+
+.innovation-difference-dark{
+    color:#FFFFFF;
+    font-weight:400;
+}
+
+/* Right */
+
+.innovation-difference-ginger{
+    padding:22px 28px;
+    background:#269C65;
+    display:flex;
+    align-items:center;
+    color:#FFFFFF;
+    font-family:"Poppins",sans-serif;
+    font-size:14px;
+    font-weight:600;
+    line-height:23.55px;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width:991px){
+
+.innovation-difference-container{
+    max-width:100%;
+}
+
+.innovation-difference-header,
+.innovation-difference-row{
+    grid-template-columns:220px 1fr 1fr;
+}
+
+}
+
+@media (max-width:768px){
+
+.innovation-difference{
+    padding:60px 20px;
+}
+
+.innovation-difference-title{
+    font-size:32px;
+    line-height:42px;
+}
+
+.innovation-difference-subtitle{
+    font-size:15px;
+    line-height:24px;
+    margin-bottom:35px;
+}
+
+.innovation-difference-table{
+    overflow-x:auto;
+}
+
+.innovation-difference-header,
+.innovation-difference-row{
+    min-width:900px;
+}
+
+}
+/* Innovation Already in Motion */
+
+.innovation-motion-section{
+    background:#FFFFFF;
+    padding:40px 40px 60px;
+}
+
+.innovation-motion-container{
+    width:1200px;
+    max-width:calc(100% - 40px);
+    margin:0 auto;
+}
+
+/* Heading */
+
+.innovation-motion-heading{
+    margin:0;
+    text-align:center;
+    color:#2B1208;
+    font-family:"Poppins",sans-serif;
+    font-size:35px;
+    font-weight:600;
+    line-height:50.18px;
+}
+
+.innovation-motion-subheading{
+    max-width:704px;
+    margin:10px auto 40px;
+    text-align:center;
+    color:#7A5040;
+    font-family:"Poppins",sans-serif;
+    font-size:15.5px;
+    font-weight:400;
+    line-height:24.83px;
+}
+
+/* Cards */
+
+.innovation-motion-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.innovation-motion-card{
+    background:#FDF6EE;
+    border:1px solid #F5E9D9;
+    border-radius:16px;
+    overflow:hidden;
+}
+
+.innovation-motion-image{
+    position:relative;
+    height:140px;
+    background:#868686;
+}
+
+.innovation-motion-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.innovation-motion-layer{
+    position:absolute;
+    top:10px;
+    right:12px;
+    background:#D4621A;
+    color:#FFFFFF;
+    padding:4px 10px;
+    border-radius:999px;
+    font-family:"Poppins",sans-serif;
+    font-size:9px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.9px;
+    line-height: 14.4px;
+}
+
+.innovation-motion-content{
+    padding:15px;
+}
+
+.innovation-motion-category{
+    display:block;
+    margin-bottom:4px;
+    color:#D4621A;
+    font-family:"Poppins",sans-serif;
+    font-size:10px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    line-height:16px;
+}
+
+.innovation-motion-content h3{
+    margin:0 0 6px;
+    color:#2B1208;
+    font-family:"Poppins",sans-serif;
+    font-size:15.5px;
+    font-weight:700;
+    line-height:24.83px;
+}
+
+.innovation-motion-content p{
+    min-height:64px;
+    margin:0 0 8px;
+    color:#7A5040;
+    font-family:"Poppins",sans-serif;
+    font-size:11px;
+    font-weight:400;
+    line-height:16.5px;
+}
+
+/* Badge */
+
+.innovation-motion-badge{
+    display:inline-flex;
+    align-items:center;
+    padding:6px 12px;
+    border-radius:999px;
+    border:1px solid #F5E9D9;
+    background:#FFFFFF;
+    font-family:"Poppins",sans-serif;
+    font-size:10px;
+    font-weight:600;
+    letter-spacing:.5px;
+    line-height: 16px;
+}
+
+.innovation-motion-applied{
+    color:#276749;
+}
+
+.innovation-motion-ready{
+    color:#7A5040;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width:1200px){
+
+.innovation-motion-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media (max-width:768px){
+
+.innovation-motion-section{
+    padding:60px 20px;
+}
+
+.innovation-motion-heading{
+    font-size:32px;
+    line-height:42px;
+}
+
+.innovation-motion-subheading{
+    font-size:15px;
+    margin-bottom:40px;
+}
+
+.innovation-motion-grid{
+    grid-template-columns:1fr;
+    gap:24px;
+}
+
+.innovation-motion-content p{
+    min-height:auto;
+}
+
+}
+/* Innovation Platform Real */
+
+.innovation-platform-real{
+    position:relative;
+    overflow:hidden;
+    background:#421B07;
+    padding:50px 40px 60px;
+}
+
+.innovation-platform-real::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:radial-gradient(circle at 50% 100%,rgba(212,98,26,.20),transparent 60%);
+    pointer-events:none;
+}
+
+.innovation-platform-real-container{
+    position:relative;
+    z-index:2;
+    width:1120px;
+    max-width:calc(100% - 40px);
+    margin:0 auto;
+    text-align:center;
+}
+
+/* Tag */
+
+.innovation-platform-real-tag{
+    display:block;
+    margin-bottom:20px;
+    color:#FFFFFF;
+    font-family:"Poppins",sans-serif;
+    font-size:10px;
+    font-weight:600;
+    line-height:16px;
+    letter-spacing:3.2px;
+    text-transform:uppercase;
+}
+
+/* Heading */
+
+.innovation-platform-real-title{
+    margin:0;
+    color:#FFFFFF;
+    font-family:"Poppins",sans-serif;
+    font-size:35px;
+    font-weight:600;
+    line-height:42px;
+}
+
+.innovation-platform-real-title span{
+    color:#D4621A;
+}
+
+/* Description */
+
+.innovation-platform-real-description{
+    width:703px;
+    max-width:100%;
+    margin:10px auto 30px;
+    color:#FFFFFF73;
+    font-family:"Poppins",sans-serif;
+    font-size:16.8px;
+    font-weight:400;
+    line-height:29.4px;
+}
+
+/* Buttons */
+
+.innovation-platform-real-buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-bottom:48px;
+}
+
+.innovation-platform-real-btn{
+    height:52.39px;
+    padding:10px 30px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:999px;
+    text-decoration:none;
+    font-family:"Poppins",sans-serif;
+    font-size:14px;
+    line-height: 22.4px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.innovation-platform-real-btn-primary{
+    background:#D4621A;
+    color:#FFFFFF;
+}
+
+.innovation-platform-real-btn-primary:hover{
+    background:#bc5313;
+}
+
+.innovation-platform-real-btn-outline{
+    border:2px solid #FFFFFF40;
+    color:#FFFFFF;
+    background:transparent;
+}
+
+.innovation-platform-real-btn-outline:hover{
+    background:#FFFFFF;
+    color:#421A07;
+}
+
+/* Stats */
+
+.innovation-platform-real-stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    width:860px;
+    max-width:100%;
+    margin:0 auto;   
+    overflow:hidden;
+    border:1px solid #D4621A;
+    border-radius:16px;
+    background:#FFFFFF0F;
+}
+
+.innovation-platform-real-stat{
+    padding:28px 20px;
+    background:#FFFFFF08;
+    border-right:1px solid rgba(255,255,255,.08);
+}
+
+.innovation-platform-real-stat:last-child{
+    border-right:none;
+}
+
+.innovation-platform-real-stat h3{
+    margin:0 0 8px;
+    color:#D4621A;
+    font-family:"Poppins",sans-serif;
+    font-size:30.4px;
+    font-weight:900;
+    line-height:30.4px;
+}
+
+.innovation-platform-real-stat p{
+    margin:0;
+    color:#FFFFFF4D;
+    font-family:"Poppins",sans-serif;
+    font-size:11px;
+    font-weight:400;
+    line-height:17.6px;
+}
+
+/* Responsive */
+
+@media (max-width:1024px){
+
+.innovation-platform-real-stats{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.innovation-platform-real-stat:nth-child(2){
+    border-right:none;
+}
+
+.innovation-platform-real-stat:nth-child(-n+2){
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+}
+
+@media (max-width:768px){
+
+.innovation-platform-real{
+    padding:70px 20px;
+}
+
+.innovation-platform-real-title{
+    font-size:32px;
+    line-height:42px;
+}
+
+.innovation-platform-real-description{
+    margin:24px auto 40px;
+    font-size:15px;
+    line-height:26px;
+}
+
+.innovation-platform-real-buttons{
+    flex-direction:column;
+}
+
+.innovation-platform-real-btn{
+    width:100%;
+}
+
+.innovation-platform-real-stats{
+    grid-template-columns:1fr;
+}
+
+.innovation-platform-real-stat{
+    border-right:none;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.innovation-platform-real-stat:last-child{
+    border-bottom:none;
+}
+
+}

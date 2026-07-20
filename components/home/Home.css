@@ -133,11 +133,10 @@
   letter-spacing: -1.44px;
   line-height: 52.8px;
   margin-top: 12px;
-  
-  .sellers-text {
+}
+.best-sellers h2 .sellers-text {
   font-weight: 300;
   color: #B84A06;
-}
 }
 .section-heading {
   text-align: center;

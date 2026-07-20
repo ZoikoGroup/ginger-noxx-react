@@ -24,7 +24,7 @@ export default function BestSellers() {
         <div className="products">
 
           <ProductCard
-            image="/Image/product1.png.png"
+            image="/Image/product1.png"
             category="BEVERAGES"
             title="Original Sparkling"
             price="$12.99"
@@ -32,7 +32,7 @@ export default function BestSellers() {
           />
 
           <ProductCard
-            image="/Image/product2.png.png"
+            image="/Image/product2.png"
             category="CONDIMENTS"
             title="Ginger Fire Sauce"
             price="$9.99"
@@ -40,7 +40,7 @@ export default function BestSellers() {
           />
 
           <ProductCard
-            image="/Image/product3.png.png"
+            image="/Image/product3.png"
             category="SNACKS"
             title="Ginger Energy Chews"
             price="$14.99"
@@ -48,7 +48,7 @@ export default function BestSellers() {
           />
 
           <ProductCard
-            image="/Image/product4.png.png"
+            image="/Image/product4.png"
             category="SPICES"
             title="Master Chef Blend"
             price="$16.99"

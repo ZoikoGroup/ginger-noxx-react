@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="w-full flex justify-center bg-white z-50 relative h-24">
-      <div style={{ width: '1440px', height: '96px' }} className="absolute overflow-hidden">
+    <div className="w-full flex justify-center bg-white z-50 relative h-[104px]">
+      <div style={{ width: '1440px', height: '104px' }} className="absolute overflow-hidden">
         {/* Top Announcement Bar */}
         <div className="w-full h-10 absolute left-0 top-0 bg-amber-700 border-b border-amber-700/20 flex items-center justify-center gap-1.5">
           <span className="text-white text-lg font-normal font-['Poppins'] leading-5 tracking-tight">✦</span>
@@ -33,7 +33,7 @@ export default function Header() {
             <Link href="#" style={{ left: '131px', top: '1px' }} className="absolute w-24 h-9 rounded-lg hover:bg-black/5 transition-colors">
               <div style={{ left: '12px', top: '7px' }} className="absolute text-stone-700 text-xs font-semibold font-['Poppins'] leading-5">Why Ginger</div>
             </Link>
-            <Link href="#" style={{ left: '248px', top: '1px' }} className="absolute w-24 h-9 rounded-lg hover:bg-black/5 transition-colors">
+            <Link href="/innovation" style={{ left: '248px', top: '1px' }} className="absolute w-24 h-9 rounded-lg hover:bg-black/5 transition-colors">
               <div style={{ left: '10px', top: '7px' }} className="absolute text-stone-700 text-xs font-semibold font-['Poppins'] leading-5">Innovation</div>
             </Link>
             <Link href="#" style={{ left: '345px', top: '1px' }} className="absolute w-20 h-9 rounded-lg hover:bg-black/5 transition-colors">

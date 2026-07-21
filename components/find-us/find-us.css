@@ -1,0 +1,2469 @@
+/* FIND US HERO */
+
+.findus-hero {
+  width: 100%;
+  background: #421A07;
+  overflow: hidden;
+  padding: 70px 0 60px;
+}
+
+.findus-hero-container {
+  width: 1120px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.findus-title {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60.48px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.findus-title span {
+  color: #D4621A;
+}
+
+.findus-description {
+  width: 462px;
+  max-width: 100%;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF80;
+}
+
+/* BUTTONS */
+
+.findus-hero-btns {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 42px;
+}
+
+.findus-primary-btn,
+.findus-secondary-btn {
+  width: 345px;
+  height: 63px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20.8px;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.findus-primary-btn {
+  background: #D4621A;
+  border: 2px solid #D4621A;
+  color: #FFFFFF;
+}
+
+.findus-primary-btn:hover {
+  transform: translateY(-2px);
+}
+
+.findus-secondary-btn {
+  background: #FFFFFF12;
+  border: 2px solid #FFFFFF9C;
+  color: #FFFFFF;
+}
+
+.findus-secondary-btn:hover {
+  background: rgba(255,255,255,.1);
+}
+
+/* TRUST ITEMS */
+
+.findus-trust-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 70px;
+}
+
+.findus-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 17.6px;
+  color: #FFFFFFAB;
+}
+
+.findus-trust-dot {
+  width: 4px;
+  height: 4px;
+  background: #D4621A;
+  border-radius: 2px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 992px) {
+
+  .findus-title {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .findus-description {
+    width: 100%;
+  }
+
+  .findus-hero-btns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .findus-primary-btn,
+  .findus-secondary-btn {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .findus-trust-wrapper {
+    gap: 20px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .findus-hero {
+    padding: 70px 0 60px;
+  }
+
+  .findus-title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .findus-description {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .findus-hero-btns {
+    margin-top: 50px;
+    gap: 18px;
+  }
+
+  .findus-primary-btn,
+  .findus-secondary-btn {
+    height: 56px;
+    font-size: 15px;
+  }
+
+  .findus-trust-wrapper {
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 50px;
+  }
+
+  .findus-trust-item {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .findus-title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .findus-description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .findus-primary-btn,
+  .findus-secondary-btn {
+    width: 100%;
+  }
+
+}
+
+/* FIND US STATUS GUIDE */
+
+.findus-status-section {
+  width: 100%;
+  background: #FFFFFF;
+  padding: 60px 0 40px;
+}
+
+.findus-status-container {
+  width: 1120px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+/* Heading */
+
+.findus-status-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.findus-status-heading h2 {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 43.39px;
+  color: #2B1208;
+}
+
+.findus-status-heading h2 span {
+  color: #D4621A;
+}
+
+.findus-status-heading p {
+  margin-top: 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14.4px;
+  font-weight: 400;
+  line-height: 23.04px;
+  color: #7A5040;
+}
+
+/* Grid */
+
+.findus-status-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+/* Card */
+
+.findus-status-card {
+  background: #FFFFFF;
+  border: 1px solid #F5E9D9;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 273.16px;
+  transition: all 0.3s ease;
+}
+
+.findus-status-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(43, 18, 8, 0.08);
+}
+
+.findus-status-icon {
+  width: 22.4px;
+  height: 35.84px;
+  margin-bottom: 10px;
+}
+
+.findus-status-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Badge */
+
+.findus-status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 6px 12px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.findus-status-badge.green {
+  background: #EEF7F2;
+  color: #276749;
+}
+
+.findus-status-badge.yellow {
+  background: #FFF8E8;
+  color: #B26B00;
+}
+
+.findus-status-badge.gray {
+  background: #F2F3F5;
+  color: #5A6070;
+}
+
+.findus-status-badge.blue {
+  background: #EEF3FB;
+  color: #1B5299;
+}
+
+/* Text */
+
+.findus-status-card h3 {
+  margin: 0 0 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15.2px;
+  font-weight: 700;
+  line-height: 24.32px;
+  color: #2B1208;
+}
+
+.findus-status-description {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 13.1px;
+  font-weight: 400;
+  line-height: 20.99px;
+  color: #7A5040;
+}
+
+.findus-status-note {
+  margin-top: auto;
+  padding-top: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+  font-style: italic;
+  color: #A8835C;
+}
+
+/* Footer Text */
+
+.findus-status-footer {
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 17.6px;
+  font-style: italic;
+  color: #A8835C;
+}
+
+/* =====================================================
+   Responsive
+===================================================== */
+
+@media (max-width: 1200px) {
+
+  .findus-status-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .findus-status-section {
+    padding: 60px 0;
+  }
+
+  .findus-status-heading h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .findus-status-heading p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .findus-status-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .findus-status-card {
+    min-height: auto;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .findus-status-container {
+    max-width: calc(100% - 24px);
+  }
+
+  .findus-status-heading h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .findus-status-heading p br,
+  .findus-status-description br,
+  .findus-status-note br {
+    display: none;
+  }
+
+  .findus-status-description {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .findus-status-note {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .findus-status-footer {
+    font-size: 11px;
+    line-height: 18px;
+  }
+
+}
+
+/* FIND US LOCATOR */
+
+.findus-locator-section {
+  width: 100%;
+  background: #FDF6EE;
+  padding: 80px 0 70px;
+}
+
+.findus-locator-container {
+  width: 1120px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+/* Heading */
+
+.findus-locator-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.findus-locator-heading h2 {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 43.39px;
+  color: #2B1208;
+}
+
+.findus-locator-heading h2 span {
+  color: #D4621A;
+}
+
+/* Search */
+
+.findus-search-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  margin-bottom: 30px;
+}
+
+.findus-search-box {
+  flex: 1;
+  display: flex;
+  height: 47px;
+}
+
+.findus-search-box input {
+  flex: 1;
+  border: 1px solid #F5E9D9;
+  border-right: none;
+  border-radius: 999px 0 0 999px;
+  padding: 0 20px;
+  background: #FFFFFF;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #2B1208;
+}
+
+.findus-search-box input::placeholder {
+  color: #757575;
+}
+
+.findus-search-btn {
+  width: 94px;
+  border: none;
+  border-radius: 0 999px 999px 0;
+  background: #D4621A;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.findus-search-btn:hover {
+  background: #b84a06;
+}
+
+.findus-location-btn {
+  height: 44px;
+  padding: 0 24px;
+  border: 1px solid #D4621A;
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #D4621A;
+  transition: .3s;
+}
+
+.findus-location-btn:hover {
+  background: #D4621A;
+  color: #FFFFFF;
+}
+
+/* Filters */
+
+.findus-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.findus-filter {
+  height: 48px;
+  padding: 0 24px;
+  border-radius: 999px;
+  border: 1px solid #F5E9D9;
+  background: #FFFFFF;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #7A5040;
+  transition: .3s;
+}
+
+.findus-filter:hover {
+  border-color: #D4621A;
+  color: #D4621A;
+}
+
+.findus-filter.active {
+  background: #D4621A;
+  color: #FFFFFF;
+  border-color: #D4621A;
+}
+
+/* Results */
+
+.findus-results {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+/* MAP */
+
+.findus-map {
+  flex: 1;
+  min-height: 845.73px;
+  background: #989898;
+  border: 1px solid #F5E9D9;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.findus-map-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 79px;
+  line-height: 22.53px;
+  font-weight: 600;
+  color: #2B1208;
+}
+
+/* STORE LIST */
+
+.findus-store-list {
+  width: 380px;
+  background: #FFFFFF;
+  border: 1px solid #F5E9D9;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.findus-store-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #F5E9D9;
+}
+
+.findus-store-header span {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 19.2px;
+  color: #7A5040;
+}
+
+.findus-store-header button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 19.2px;
+  color: #D4621A;
+}
+
+/* STORE CARD */
+
+.findus-store-card {
+  padding: 18px;
+  border-bottom: 1px solid #F5E9D9;
+  transition: .3s;
+}
+
+.findus-store-card.active {
+  background: #D4621A0D;
+  outline: 1px solid #D4621A;
+}
+
+.findus-store-card:last-child {
+  border-bottom: none;
+}
+
+.findus-store-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.findus-store-top h3 {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 14.1px;
+  font-weight: 700;
+  line-height: 22.53px;
+  color: #2B1208;
+}
+
+.findus-store-address {
+  margin-top: 6px;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  line-height: 17.6px;
+  color: #7A5040;
+}
+
+.findus-store-distance {
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 17.6px;
+  color: #D4621A;
+  white-space: nowrap;
+}
+
+/* META */
+
+.findus-store-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.findus-store-badge {
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.findus-store-badge.green {
+  background: #EEF7F2;
+  color: #276749;
+}
+
+.findus-store-badge.yellow {
+  background: #FFF8E8;
+  color: #B26B00;
+}
+
+.findus-store-badge.gray {
+  background: #F2F3F5;
+  color: #5A6070;
+}
+
+.findus-store-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  line-height: 16px;
+  color: #A8835C;
+}
+
+/* CATEGORIES */
+
+.findus-store-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.findus-store-category {
+  padding: 4px 10px;
+  border: 1px solid #F5E9D9;
+  border-radius: 999px;
+  background: #FDF6EE;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  line-height: 16px;
+  color: #7A5040;
+}
+
+/* ACTIONS */
+
+.findus-store-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.findus-store-link,
+.findus-store-call {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: Arial, sans-serif;
+}
+
+.findus-store-link {
+  color: #D4621A;
+}
+
+.findus-store-call {
+  color: #7A5040;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 991px) {
+
+  .findus-search-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .findus-location-btn {
+    width: 100%;
+  }
+
+  .findus-results {
+    flex-direction: column;
+  }
+
+  .findus-map {
+    min-height: 450px;
+  }
+
+  .findus-store-list {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .findus-locator-section {
+    padding: 70px 0;
+  }
+
+  .findus-locator-heading h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .findus-filter-row {
+    justify-content: center;
+  }
+
+  .findus-filter {
+    font-size: 14px;
+    padding: 0 18px;
+  }
+
+  .findus-map {
+    min-height: 320px;
+  }
+
+  .findus-map-placeholder {
+    font-size: 40px;
+  }
+
+  .findus-store-top {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .findus-store-actions {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+/* BUY ONLINE SECTION */
+
+.buy-online-section {
+  width: 100%;
+  background: #FFFFFF;
+  padding: 60px 0 80px;
+}
+
+.buy-online-container {
+  width: 1120px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+/* Heading */
+
+.buy-online-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.buy-online-heading h2 {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 43.39px;
+  color: #2B1208;
+}
+
+.buy-online-heading h2 span {
+  color: #D4621A;
+}
+
+.buy-online-heading p {
+  margin-top: 14px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14.4px;
+  font-weight: 400;
+  line-height: 23.04px;
+  color: #7A5040;
+}
+
+/* Cards */
+
+.buy-online-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.buy-online-card {
+  background: #FFFFFF;
+  border: 1px solid #F5E9D9;
+  border-radius: 16px;
+  padding: 32px 28px;
+  min-height: 307.17px;
+  display: flex;
+  flex-direction: column;
+  transition: all .3s ease;
+}
+
+.buy-online-card.featured {
+  background: #D4621A;
+  border: 2px solid #D4621A;
+}
+
+.buy-online-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,.08);
+}
+
+/* Icon */
+
+.buy-online-icon {
+  width: 32px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 18px;
+}
+
+/* Title */
+
+.buy-online-card h3 {
+  margin: 0 0 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25.6px;
+  color: #2B1208;
+}
+
+.buy-online-card.featured h3 {
+  color: #FFFFFF;
+}
+
+/* Description */
+
+.buy-online-description {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 13.4px;
+  font-weight: 400;
+  line-height: 21.5px;
+  color: #7A5040;
+}
+
+.buy-online-card.featured .buy-online-description {
+  color: #FFFFFFBF;
+}
+
+/* Highlight */
+
+.buy-online-highlight {
+  margin-top: auto;
+  margin-bottom: 10px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 17.6px;
+  color: #D4621A;
+}
+
+.buy-online-highlight.featured {
+  color: #FFFFFFCC;
+}
+
+/* Button */
+
+.buy-online-btn {
+  align-self: flex-start;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20.8px;
+  color: #D4621A;
+  transition: .3s ease;
+}
+
+.buy-online-btn:hover {
+  opacity: .8;
+}
+
+.buy-online-btn.featured {
+  color: #FFFFFF;
+}
+
+.buy-online-btn.featured:hover {
+  opacity: .85;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 1200px) {
+
+  .buy-online-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .buy-online-card:last-child {
+    grid-column: span 2;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .buy-online-section {
+    padding: 60px 0;
+  }
+
+  .buy-online-container {
+    max-width: calc(100% - 32px);
+  }
+
+  .buy-online-heading h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .buy-online-heading p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .buy-online-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .buy-online-card:last-child {
+    grid-column: auto;
+  }
+
+  .buy-online-card {
+    min-height: auto;
+    padding: 28px 24px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .buy-online-section {
+    padding: 50px 0;
+  }
+
+  .buy-online-container {
+    max-width: calc(100% - 24px);
+  }
+
+  .buy-online-heading h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .buy-online-heading p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .buy-online-card {
+    padding: 24px 20px;
+    border-radius: 14px;
+  }
+
+  .buy-online-icon {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 22px;
+  }
+
+  .buy-online-card h3 {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .buy-online-description {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .buy-online-highlight {
+    font-size: 11px;
+    line-height: 16px;
+    margin-bottom: 20px;
+  }
+
+  .buy-online-btn {
+    font-size: 12px;
+  }
+
+}
+
+/* FINDUS AVAILABILITY */
+
+.findus-availability-section {
+  width: 100%;
+  background: #FDF6EE;
+  padding: 70px 0 60px;
+}
+
+.findus-availability-container {
+  width: 1120px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+/* Heading */
+
+.findus-availability-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.findus-availability-heading h2 {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 43.39px;
+  color: #2B1208;
+}
+
+.findus-availability-heading h2 span {
+  color: #D4621A;
+}
+
+/* Country Section */
+
+.findus-country-section {
+  margin-bottom: 50px;
+}
+
+.findus-country-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.findus-country-title img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.findus-country-title h3 {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 17.6px;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  color: #7A5040;
+}
+
+/* Store Grid */
+
+.findus-store-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+/* Store Card */
+
+.findus-store-item {
+  position: relative;
+  min-width: 120px;
+  height: 48px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  border: 1px solid #F5E9D9;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.findus-store-item:hover {
+  transform: translateY(-4px);
+  border-color: #D4621A;
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+}
+
+.findus-store-item p {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 13.1px;
+  font-weight: 700;
+  line-height: 20.99px;
+  letter-spacing: 0.66px;
+  text-transform: uppercase;
+  color: #7A5040;
+}
+
+/* Tooltip */
+
+.findus-tooltip {
+  position: absolute;
+  top: -38px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 12px;
+  background: #1C0C04;
+  color: #FFFFFF;
+  border-radius: 999px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+  opacity: 0;
+  visibility: hidden;
+  transition: .25s ease;
+}
+
+.findus-store-item:hover .findus-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* STOCKIST CTA */
+
+.findus-stockist-box {
+  margin-top: 50px;
+  padding: 28px 20px;
+  background: #FDF6EE;
+  border-top: 2px solid #F5E9D9;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.findus-stockist-box p {
+  margin: 0 0 18px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14.4px;
+  font-weight: 400;
+  line-height: 23.04px;
+  text-align: center;
+  color: #7A5040;
+}
+
+.findus-stockist-box button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 32px;
+  background: #D4621A;
+  color: #FFFFFF;
+  border-radius: 999px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22.4px;
+  transition: all .3s ease;
+}
+
+.findus-stockist-box button:hover {
+  background: #bf5616;
+  transform: translateY(-2px);
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1200px) {
+
+  .findus-availability-container {
+    max-width: calc(100% - 40px);
+  }
+
+  .findus-store-grid {
+    gap: 16px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .findus-availability-section {
+    padding: 70px 0;
+  }
+
+  .findus-availability-heading {
+    margin-bottom: 50px;
+  }
+
+  .findus-availability-heading h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .findus-country-section {
+    margin-bottom: 48px;
+  }
+
+  .findus-country-title {
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+
+  .findus-country-title img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .findus-country-title h3 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 28px;
+  }
+
+  .findus-store-grid {
+    gap: 14px;
+  }
+
+  .findus-store-item {
+    min-width: 140px;
+    padding: 0 18px;
+  }
+
+  .findus-store-item p {
+    font-size: 13px;
+  }
+
+  .findus-tooltip {
+    font-size: 9px;
+    padding: 5px 10px;
+  }
+
+  .findus-stockist-box {
+    margin-top: 50px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .findus-availability-section {
+    padding: 60px 0;
+  }
+
+  .findus-availability-container {
+    max-width: calc(100% - 24px);
+  }
+
+  .findus-availability-heading h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .findus-country-title {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .findus-country-title img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .findus-country-title h3 {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .findus-store-grid {
+    gap: 12px;
+  }
+
+  .findus-store-item {
+    width: 100%;
+    min-width: auto;
+    height: 52px;
+  }
+
+  .findus-store-item p {
+    font-size: 12px;
+  }
+
+  .findus-tooltip {
+    display: none;
+  }
+
+  .findus-stockist-box {
+    margin-top: 40px;
+    padding: 24px 18px;
+  }
+
+  .findus-stockist-box p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .findus-stockist-box button {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 14px;
+  }
+
+}
+
+/* BRING MARKET */
+
+.bring-market-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 50px 20px 100px;
+}
+
+.bring-market-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.bring-market-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.bring-market-heading h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height:43.39px;
+  color: #2b1208;
+}
+
+.bring-market-heading span {
+  color: #d4621a;
+}
+
+.bring-market-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+/* LEFT */
+
+.bring-market-left {
+  width: 383px;
+  flex-shrink: 0;
+}
+
+.bring-market-image {
+  width: 100%;
+  height: 211px;
+  background: #d9d9d9;
+  border-radius: 0;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.bring-market-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bring-market-left p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14.4px;
+  line-height: 25.92px;
+  color: #7a5040;
+  margin-bottom: 20px;
+}
+
+.bring-market-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bring-market-benefits li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13.6px;
+  line-height: 21.76px;
+  color: #7a5040;
+}
+
+.bring-market-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background: #d4621a;
+  margin-top: 8px;
+  flex-shrink: 0;
+}
+
+/* FORM CARD */
+
+.bring-market-form {
+  flex: 1;
+  background: #fffbf7;
+  border: 1px solid #f5e9d9;
+  border-radius: 24px;
+  padding: 34px;
+  box-shadow: 0 2px 16px #2B120812;
+}
+
+.bring-market-form h3 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 15.5px;
+  line-height: 24.83px;
+  font-weight: 700;
+  color: #2b1208;
+  margin-bottom: 8px;
+}
+
+.bring-market-subtitle {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 13.1px;
+  line-height: 20.99px;
+  color: #7a5040;
+  margin-bottom: 30px;
+}
+
+.wholesale-form {
+  width: 100%;
+}
+
+.wholesale-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* FORM FIELDS */
+
+.wholesale-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.wholesale-full {
+  grid-column: 1 / -1;
+}
+
+.wholesale-form-group label {
+  margin-bottom: 6px;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 17.6px;
+  letter-spacing: 0.33px;
+  color: #7a5040;
+}
+
+.wholesale-form-group input,
+.wholesale-form-group select,
+.wholesale-form-group textarea {
+  width: 100%;
+  height: 43px;
+  padding: 13px 16px;
+  background: #ffffff;
+  border: 1px solid #f5e9d9;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14.1px;
+  color: #757575;
+  outline: none;
+  transition: 0.25s ease;
+}
+
+.wholesale-form-group textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.wholesale-form-group input::placeholder,
+.wholesale-form-group textarea::placeholder {
+  color: #adadad;
+}
+
+.wholesale-form-group input:focus,
+.wholesale-form-group select:focus,
+.wholesale-form-group textarea:focus {
+  border-color: #d4621a;
+}
+
+.wholesale-form-note {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  line-height: 17.6px;
+  font-style: italic;
+  color: #a8835c;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.wholesale-form-buttons {
+  display: flex;
+  gap: 18px;
+}
+
+.wholesale-primary-btn,
+.wholesale-secondary-btn {
+  flex: 1;
+  height: 52px;
+
+  border-radius: 999px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.wholesale-primary-btn {
+  border: none;
+  background: #d4621a;
+  color: #ffffff;
+}
+
+.wholesale-primary-btn:hover {
+  background: #b85015;
+}
+
+.wholesale-secondary-btn {
+  background: transparent;
+  border: 2px solid #d4621a;
+  color: #d4621a;
+}
+
+.wholesale-secondary-btn:hover {
+  background: #d4621a;
+  color: #ffffff;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+
+  .bring-market-content {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .bring-market-left,
+  .bring-market-form {
+    width: 100%;
+  }
+
+  .wholesale-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wholesale-full {
+    grid-column: auto;
+  }
+
+  .wholesale-form-buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .bring-market-section {
+    padding: 60px 20px;
+  }
+
+  .bring-market-heading h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .bring-market-form {
+    padding: 24px;
+    border-radius: 20px;
+  }
+
+  .bring-market-image {
+    height: 220px;
+  }
+
+  .wholesale-primary-btn,
+  .wholesale-secondary-btn {
+    width: 100%;
+  }
+}
+
+/* Distribution At A Glance */
+
+.distribution-section {
+  width: 100%;
+  background: #fdf6ee;
+  padding: 70px 20px;
+}
+
+.distribution-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.distribution-heading {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 40px;
+}
+
+.distribution-heading h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 43.39px;
+  color: #2b1208;
+  margin-bottom: 10px;
+}
+
+.distribution-heading h2 span {
+  color: #d4621a;
+}
+
+.distribution-heading p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14.4px;
+  line-height: 23.04px;
+  color: #7a5040;
+}
+
+.distribution-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.distribution-card {
+  background: #ffffff;
+  border: 1px solid #f5e9d9;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 16px #2B120812;
+  display: flex;
+  flex-direction: column;
+}
+
+.distribution-card h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 17.6px;
+  text-transform: uppercase;
+  letter-spacing: 1.65px;
+  color: #7a5040;
+  margin-bottom: 16px;
+}
+
+/* Coverage Card */
+
+.coverage-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.coverage-row span {
+  width: 70px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19.2px;
+  color: #2b1208;
+}
+
+.coverage-bar {
+  flex: 1;
+  height: 8px;
+  background: #f5e9d9;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.coverage-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #d4621a 0%, #e8844a 100%);
+}
+
+.coverage-row strong {
+  width: 40px;
+  text-align: right;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  line-height: 17.6px;
+  font-weight: 700;
+  color: #d4621a;
+}
+
+.distribution-card small {
+  margin-top: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  color: #a8835c;
+  font-style: italic;
+  line-height: 16px;
+}
+/* Category Availability */
+
+.category-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.category-image {
+  width: 23px;
+  height: 24px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.category-bar {
+  width: 143.42px;
+  height: 6px;
+  background: #f5e9d9;
+  border-radius: 999px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.category-fill {
+  height: 100%;
+  border-radius: 999px;
+}
+
+.category-fill.green {
+  background: #276749;
+}
+
+.category-fill.yellow {
+  background: #b26b00;
+}
+
+.category-fill.orange {
+  background: #e8844a;
+}
+
+.category-row span {
+  flex: 1;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  line-height: 17.6px;
+  color: #7a5040;
+}
+
+/* Expansion Pipeline */
+
+.pipeline-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 18px 0;
+  border-bottom: 1px solid #f5e9d9;
+  gap: 18px;
+  margin-bottom: -10px;
+}
+
+.pipeline-row:last-child {
+  border-bottom: none;
+}
+
+.pipeline-row h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 13.1px;
+  font-weight: 600;
+  line-height: 20.99px;
+  color: #2b1208;
+  margin-bottom: 0;
+}
+
+.pipeline-row p {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 19.2px;
+  color: #7a5040;
+}
+
+.pipeline-badge {
+  padding: 6px 14px;
+  border-radius: 999px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.pipeline-badge.coming {
+  background: #eef3fb;
+  color: #1b5299;
+}
+
+.pipeline-badge.planned {
+  background: #f2f3f5;
+  color: #5a6070;
+}
+
+/* Hover Effects */
+
+.distribution-card {
+  transition: all .3s ease;
+}
+
+.distribution-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(43, 18, 8, 0.12);
+}
+
+.coverage-fill,
+.category-fill {
+  transition: width .4s ease;
+}
+
+.pipeline-badge {
+  transition: .25s ease;
+}
+
+.pipeline-badge:hover {
+  transform: scale(1.05);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 1024px) {
+  .distribution-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .distribution-card {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .distribution-section {
+    padding: 60px 20px;
+  }
+
+  .distribution-heading h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .distribution-heading p {
+    font-size: 14px;
+  }
+
+  .coverage-row {
+    gap: 10px;
+  }
+
+  .coverage-row span {
+    width: 60px;
+  }
+
+  .category-row {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .category-bar {
+    width: 100%;
+    order: 3;
+  }
+
+  .pipeline-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pipeline-badge {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .distribution-heading h2 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .distribution-card {
+    padding: 20px;
+  }
+
+  .coverage-row strong {
+    width: auto;
+  }
+}
+
+/* Notify Availability */
+
+.notify-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 80px 20px 80px;
+}
+
+.notify-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.notify-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.notify-heading h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 43.39px;
+  color: #2b1208;
+}
+
+.notify-heading h2 span {
+  color: #d4621a;
+}
+
+.notify-card {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #f5e9d9;
+  border-radius: 24px;
+  box-shadow: 0 2px 16px #2B120812;
+  padding: 52px 48px;
+  text-align: center;
+}
+
+.notify-image {
+  width: 35.2px;
+  height: 39px;
+  margin: 0 auto 22px;
+  position: relative;
+}
+
+.notify-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.notify-card h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 19.2px;
+  font-weight: 700;
+  line-height: 30.72px;
+  color: #2b1208;
+  margin-bottom: 4px;
+}
+
+.notify-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 14.4px;
+  line-height: 23.76px;
+  color: #7a5040;
+  margin-bottom: 30px;
+}
+
+.notify-form {
+  text-align: left;
+}
+
+.notify-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-bottom: 22px;
+}
+
+.notify-full {
+  margin-bottom: 22px;
+}
+
+.notify-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.notify-field label {
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 17.6px;
+  color: #7a5040;
+  margin-bottom: 8px;
+}
+.notify-field input,
+.notify-field select {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #f5e9d9;
+  border-radius: 8px;
+  padding: 0 16px;
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 14.1px;
+  color: #000000;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.notify-field input::placeholder {
+  color: #757575;
+}
+
+.notify-field input:focus,
+.notify-field select:focus {
+  border-color: #d4621a;
+  box-shadow: 0 0 0 3px rgba(212, 98, 26, 0.12);
+}
+
+.notify-field select {
+  appearance: none;
+  cursor: pointer;
+}
+
+.notify-btn {
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-radius: 999px;
+  background: #d4621a;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: all 0.3s ease;
+}
+
+.notify-btn:hover {
+  background: #b84f0f;
+  transform: translateY(-2px);
+}
+
+.notify-note {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  color: #A8835C;
+  text-align: center;
+}
+
+.notify-policy {
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  color: #A8835C;
+  text-align: center;
+}
+
+.notify-policy a {
+  color: #d4621a;
+  text-decoration: underline;
+}
+
+.notify-policy a:hover {
+  opacity: 0.8;
+}
+
+.notify-card {
+  transition: all 0.35s ease;
+}
+
+.notify-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(43, 18, 8, 0.12);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 768px) {
+  .notify-section {
+    padding: 70px 20px;
+  }
+
+  .notify-heading h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .notify-card {
+    padding: 36px 24px;
+  }
+
+  .notify-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .notify-subtitle br,
+  .notify-policy br {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .notify-heading h2 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .notify-card {
+    padding: 28px 18px;
+    border-radius: 20px;
+  }
+
+  .notify-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .notify-card h3 {
+    font-size: 18px;
+  }
+
+  .notify-subtitle,
+  .notify-note,
+  .notify-policy {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .notify-btn {
+    font-size: 13px;
+  }
+}
+/* Find Us CTA */
+
+.findus-cta-section {
+  position: relative;
+  width: 100%;
+  background: #421a07;
+  overflow: hidden;
+  padding: 60px 20px;
+}
+
+.findus-cta-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 80%,
+    rgba(212, 98, 26, 0.1) 0%,
+    rgba(212, 98, 26, 0) 60%
+  );
+}
+
+.findus-cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.findus-cta-label {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.findus-cta-title {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 47.84px;
+  margin-bottom: 14px;
+}
+
+.findus-cta-title span {
+  color: #d4621a;
+}
+
+.findus-cta-description {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: #FFFFFF73;
+  font-family: "Poppins", sans-serif;
+  font-size: 15.5px;
+  font-weight: 400;
+  line-height: 26.38px;
+}
+
+.findus-cta-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.findus-btn-primary,
+.findus-btn-secondary {
+  width: 224.68px;
+  height: 49px;
+  border-radius: 999px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.findus-btn-primary {
+  background: #d4621a;
+  color: #ffffff;
+  border: none;
+}
+
+.findus-btn-primary:hover {
+  background: #bb5718;
+}
+
+.findus-btn-secondary {
+  background: #FFFFFF14;
+  color: #ffffff;
+  border: 1px solid #FFFFFF2E;
+}
+
+.findus-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width: 991px) {
+  .findus-cta-section {
+    padding: 70px 20px;
+  }
+
+  .findus-cta-title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .findus-cta-description {
+    max-width: 600px;
+  }
+
+  .findus-cta-buttons {
+    gap: 16px;
+  }
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 767px) {
+  .findus-cta-section {
+    padding: 60px 20px;
+  }
+
+  .findus-cta-label {
+    font-size: 14px;
+    letter-spacing: 2.5px;
+  }
+
+  .findus-cta-title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .findus-cta-title br,
+  .findus-cta-description br {
+    display: none;
+  }
+
+  .findus-cta-description {
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 32px;
+  }
+
+  .findus-cta-buttons {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .findus-btn-primary,
+  .findus-btn-secondary {
+    width: 100%;
+    max-width: 320px;
+  }
+}

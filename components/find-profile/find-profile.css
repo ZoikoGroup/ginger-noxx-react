@@ -1,0 +1,894 @@
+.find-profile-hero {
+  width: 100%;
+  height: 731px;
+  position: relative;
+  overflow: hidden;
+  background: #1c0c04;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Background radial glow */
+
+.find-profile-glow-main {
+  position: absolute;
+  width: 1440px;
+  height: 932px;
+  left: 0;
+  top: 0;
+  background: radial-gradient(
+    circle at 60% 40%,
+    rgba(212, 98, 26, 0.2),
+    rgba(212, 98, 26, 0) 65%
+  );
+}
+
+/* Top right blur */
+
+.find-profile-glow-top {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 1000px;
+  top: -100px;
+  border-radius: 50%;
+  background: rgba(212, 98, 26, 0.1);
+  filter: blur(32px);
+}
+
+/* Bottom left blur */
+
+.find-profile-glow-left {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  left: -60px;
+  top: 471px;
+  border-radius: 50%;
+  background: rgba(212, 98, 26, 0.05);
+  filter: blur(32px);
+}
+
+/* Center blur */
+
+.find-profile-glow-center {
+  position: absolute;
+  width: 192px;
+  height: 192px;
+  left: 360px;
+  top: 372px;
+  border-radius: 50%;
+  background: rgba(212, 98, 26, 0.05);
+  filter: blur(32px);
+}
+
+/* Badge */
+
+.find-profile-badge {
+  position: absolute;
+  width: 420px;
+  height: 45px;
+  left: 50%;
+  top: 76px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #D4621A26;
+  border: 1px solid #D4621A4D;
+  border-radius: 999px;
+  color: #e8844a;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2.8px;
+}
+
+/* Title */
+
+.find-profile-title {
+  position: absolute;
+  width: 620px;
+  height: 264px;
+  left: 50%;
+  top: 146px;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.find-profile-title h1 {
+  margin: 25px 0 0;
+  color: #ffffff;
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 67.2px;
+  font-family: "Poppins", sans-serif;
+}
+
+.find-profile-title h2 {
+  margin: 0;
+  color: #d4621a;
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 67.2px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Description */
+
+.find-profile-description {
+  position: absolute;
+  width: 746px;
+  height: 83px;
+  left: 50%;
+  top: 325px;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #ffffff;
+  font-size: 16.8px;
+  font-weight: 400;
+  line-height: 29.4px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Feature Points */
+
+.find-profile-points {
+  position: absolute;
+  top: 426px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  white-space: nowrap;
+}
+
+.find-profile-point {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255,255,255,0.7);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19.2px;
+  font-family: "Poppins", sans-serif;
+}
+
+.find-profile-point span {
+  width: 4px;
+  height: 4px;
+  background: #d4621a;
+  border-radius: 2px;
+}
+
+/* Buttons Wrapper */
+
+.find-profile-buttons {
+  position: absolute;
+  top: 501px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;    
+}
+
+/* Primary Button */
+
+.find-profile-primary-btn {
+  width: 280px;
+  height: 61px;
+  border: none;
+  border-radius: 999px;
+  background: #d4621a;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  box-shadow:
+  0px 8px 24px #D4621A47;
+}
+
+/* Secondary Button */
+
+.find-profile-secondary-btn {
+  width: 280px;
+  height: 61px;
+  border-radius: 999px;
+  border: 1px solid #FFFFFF26;
+  background: #ffffff;
+  color: #2A1205;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+/* Review Section */
+
+.find-profile-review {
+  position: absolute;
+  top: 609px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+/* Avatar Wrapper */
+.find-profile-avatar-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.find-profile-avatar {
+  width: 32px;
+  height: 32px;
+  margin-left: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: linear-gradient(
+    135deg,
+    #D4621A,
+    #B54E10
+  );
+  border: 2px solid #000000;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.find-profile-avatar:first-child {
+  margin-left: 0;
+}
+
+/* Rating */
+
+.find-profile-rating {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  height: 24px;
+}
+
+.find-profile-stars {
+  color: #d4621a;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.2px;
+  font-family: "Poppins", sans-serif;
+}
+
+.find-profile-rating-text {
+  color: #FFFFFFBD;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.2px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ============================= 
+Responsive Design
+ =============================*/
+
+@media (max-width: 1024px) {
+
+  .find-profile-hero {
+    height: 680px;
+  }
+  .find-profile-badge {
+    top: 60px;
+    width: 350px;
+  }
+  .find-profile-title {
+    width: 90%;
+    top: 140px;
+  }
+  .find-profile-title h1,
+  .find-profile-title h2 {
+    font-size: 42px;
+    line-height: 56px;
+  }
+  .find-profile-description {
+    width: 85%;
+    top: 315px;
+  }
+  .find-profile-points {
+    gap: 20px;
+  }
+  .find-profile-buttons {
+    top: 490px;
+  }
+  .find-profile-review {
+    top: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .find-profile-hero {
+    height: 720px;
+  }
+  .find-profile-glow-top {
+    left: 200px;
+    width: 350px;
+    height: 350px;
+  }
+  .find-profile-badge {
+    width: calc(100% - 40px);
+    height: 40px;
+    top: 45px;
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+  .find-profile-title {
+    width: 100%;
+    top: 120px;
+  }
+  .find-profile-title h1,
+  .find-profile-title h2 {
+    font-size: 34px;
+    line-height: 45px;
+  }
+  .find-profile-description {
+    width: calc(100% - 40px);
+    top: 260px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .find-profile-description br {
+    display: none;
+  }
+  .find-profile-points {
+    top: 390px;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .find-profile-point {
+    font-size: 12px;
+  }
+  .find-profile-buttons {
+    top: 500px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .find-profile-primary-btn,
+  .find-profile-secondary-btn {
+    width: calc(100% - 80px);
+    height: 56px;
+  }
+  .find-profile-review {
+    top: 650px;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .find-profile-rating {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .find-profile-hero {
+    height: 700px;
+  }
+  .find-profile-title h1,
+  .find-profile-title h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .find-profile-description {
+    top: 245px;
+  }
+  .find-profile-points {
+    top: 370px;
+  }
+  .find-profile-buttons {
+    top: 500px;
+  }
+  .find-profile-primary-btn,
+  .find-profile-secondary-btn {
+    width: calc(100% - 50px);
+  }
+  .find-profile-review {
+    top: 640px;
+  }
+}
+
+/* FIND PROFILE NOTIFY SECTION */
+
+.find-profile-notify-section {
+  width: 100%;
+  min-height: 876px;
+  background: #ffffff;
+  padding: 60px 0 ;
+  overflow: hidden;
+}
+
+.find-profile-notify-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Heading */
+
+.find-profile-notify-heading {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  line-height: 43.39px;
+  font-weight: 600;
+  color: #2B1208;
+  margin: 0 0 30px;
+}
+
+.find-profile-notify-heading span {
+  color: #D4621A;
+}
+
+/* Main Card */
+
+.find-profile-notify-card {
+  width: 700px;
+  height: 622.84px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 24px;
+  border: 1px solid #F5E9D9;
+  box-shadow:
+  0px 2px 16px #2B120812;
+  padding: 40px 49px;
+  text-align: center;
+}
+
+/* Icon */
+
+.find-profile-notify-icon {
+  width: 35.2px;
+  height: 49px;
+  margin: 0 auto 18px;
+}
+
+.find-profile-notify-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Title */
+
+.find-profile-notify-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 19.2px;
+  line-height: 30.72px;
+  font-weight: 700;
+  color: #2B1208;
+  margin: 0 0 8px;
+}
+
+/* Description */
+
+.find-profile-notify-description {
+  font-family: "Poppins", sans-serif;
+  font-size: 14.4px;
+  line-height: 23.76px;
+  font-weight: 400;
+  color: #7A5040;
+  margin-bottom: 30px;
+}
+
+/* Form */
+
+.find-profile-notify-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  text-align: left;
+}
+
+.find-profile-notify-field {
+  width: calc(50% - 8px);
+}
+
+.find-profile-notify-field.full {
+  width:100%;
+}
+
+/* Labels */
+
+.find-profile-notify-field label {
+  display:block;
+  margin-bottom:8px;
+  font-family:"Poppins",sans-serif;
+  font-size:11px;
+  line-height:17.6px;
+  font-weight:600;
+  color:#7A5040;
+}
+
+/* Input Box */
+
+.find-profile-notify-input {
+  width:100%;
+  height:44px;
+  border-radius:8px;
+  border:1px solid #F5E9D9;
+  display:flex;
+  align-items:center;
+  padding:0 14px;
+  font-family:"Poppins",sans-serif;
+  font-size:14.1px;
+  line-height: 20px;
+  font-weight:400;
+  color:#000000;
+  background:#ffffff;
+}
+/* Button */
+
+.find-profile-notify-button {
+  width:100%;
+  height:47px;
+  margin-top:0;
+  border:none;
+  border-radius:999px;
+  background:#D4621A;
+  color:#ffffff;
+  font-family:"Poppins",sans-serif;
+  font-size:14px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s ease;
+}
+
+.find-profile-notify-button:hover {
+  opacity:0.9;
+}
+
+/* Privacy Text */
+
+.find-profile-notify-policy {
+  width:100%;
+  text-align:center;
+  margin-top:0;
+  font-family:"Poppins",sans-serif;
+  font-size:11px;
+  line-height:16.5px;
+  font-weight:400;
+  color:#A8835C;
+}
+
+.find-profile-notify-policy span {
+  color:#D4621A;
+  text-decoration:underline;
+}
+
+/* ===============================
+   TABLET RESPONSIVE
+================================ */
+@media (max-width:1024px) {
+
+.find-profile-notify-section {
+  padding:80px 20px;
+}
+.find-profile-notify-heading {
+  font-size:32px;
+}
+.find-profile-notify-card {
+  width:90%;
+  height:auto;
+  padding:45px 35px;
+}
+.find-profile-notify-description br {
+  display:none;
+}
+}
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width:768px) {
+
+.find-profile-notify-section {
+  padding:60px 16px;
+  min-height:auto;
+}
+.find-profile-notify-heading {
+  font-size:28px;
+  line-height:36px;
+  margin-bottom:30px;
+}
+
+/* Card */
+
+.find-profile-notify-card {
+  width:100%;
+  height:auto;
+  border-radius:20px;
+  padding:35px 20px;
+}
+
+/* Icon */
+.find-profile-notify-icon {
+  width:38px;
+  height:42px;
+  margin-bottom:18px;
+}
+
+/* Title */
+
+.find-profile-notify-title {
+  font-size:18px;
+  line-height:28px;
+}
+/* Description */
+
+.find-profile-notify-description {
+  font-size:13px;
+  line-height:22px;
+  margin-bottom:28px;
+}
+/* Form stack */
+.find-profile-notify-form {
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.find-profile-notify-field,
+.find-profile-notify-field.full {
+  width:100%;
+}
+
+/* Inputs */
+
+.find-profile-notify-input {
+  height:44px;
+}
+
+/* Button */
+
+.find-profile-notify-button {
+  height:48px;
+  font-size:13px;
+}
+
+/* Privacy */
+
+.find-profile-notify-policy {
+  font-size:11px;
+  line-height:15px;
+}
+.find-profile-notify-policy br {
+  display:none;
+}
+}
+
+/* FIND PROFILE REVIEWS SECTION */
+
+.find-profile-reviews-section {
+  width:100%;
+  min-height:517px;
+  background:#FDFAF6;
+  padding:50px 20px;
+  overflow:hidden;
+}
+
+.find-profile-reviews-container {
+  max-width:1440px;
+  margin:0 auto;
+}
+
+/* Badge */
+
+.find-profile-reviews-badge {
+  width:148px;
+  height:26px;
+  margin:0 auto 20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#FFF3EB;
+  border-radius:100px;
+  border:1px solid #B84A0633;
+  font-family:"Poppins",sans-serif;
+  font-size:10px;
+  font-weight:700;
+  line-height:16px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:#B84A06;
+}
+
+/* Heading */
+
+.find-profile-reviews-heading {
+  text-align:center;
+  margin:0 0 28px;
+  font-family:"Poppins",sans-serif;
+  font-size:34px;
+  line-height:52.8px;
+  font-weight:700;
+}
+
+.find-profile-reviews-heading .dark {
+  color:#1E1208;
+}
+
+.find-profile-reviews-heading span:not(.dark){
+  color:#B84A06;
+  font-weight:300;
+}
+
+/* Cards Grid */
+
+.find-profile-reviews-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  max-width:1152px;
+  margin:0 auto;
+}
+
+/* Review Card */
+
+.find-profile-review-card {
+  height:294px;
+  background:#ffffff;
+  border-radius:20px;
+  border:1px solid #B4783C24;
+  box-shadow:
+  0px 2px 16px #643C1414;
+  padding:29px;
+  position:relative;
+}
+/* Stars */
+
+.find-profile-review-stars {
+  font-family:"Poppins",sans-serif;
+  font-size:15px;
+  line-height:24px;
+  letter-spacing:2px;
+  color:#D49010;
+  margin-bottom:10px;
+}
+
+/* Review Text */
+
+.find-profile-review-text {
+  font-family:"Poppins",sans-serif;
+  font-size:14px;
+  line-height:23.8px;
+  font-weight:400;
+  color:#4A3420;
+  margin: 0;
+}
+
+/* User Details */
+
+.find-profile-review-user {
+  position:absolute;
+  left:29px;
+  bottom:30px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.find-profile-review-avatar {
+  width:36px;
+  height:36px;
+  border-radius:18px;
+  background:#CACACA;
+}
+
+.find-profile-review-details {
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+}
+
+.find-profile-review-details h4 {
+  margin:0;
+  font-family:"Poppins",sans-serif;
+  font-size:13px;
+  line-height:20.8px;
+  font-weight:700;
+  color:#1E1208;
+}
+
+.find-profile-review-tag {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:max-content;
+  height:20px;
+  padding:0 8px;
+  background:#FFF3EB;
+  border-radius:100px;
+  font-family:"Poppins",sans-serif;
+  font-size:10px;
+  line-height:16px;
+  font-weight:600;
+  color:#B84A06;
+}
+/* Verified Purchase */
+
+.find-profile-review-verified {
+  position:absolute;
+  left:75px;
+  bottom:13px;
+  font-family:"Poppins",sans-serif;
+  font-size:10px;
+  line-height:16px;
+  font-weight:500;
+  color:#2E8B6E;
+}
+
+/* ===============================
+   TABLET RESPONSIVE
+================================ */
+
+@media(max-width:1024px){
+
+.find-profile-reviews-section {
+  padding:50px 20px;
+}
+.find-profile-reviews-heading {
+  font-size:32px;
+}
+.find-profile-reviews-grid {
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+.find-profile-review-card {
+  height:300px;
+}
+}
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================ */
+
+@media(max-width:768px){
+
+.find-profile-reviews-section {
+  min-height:auto;
+  padding:45px 16px;
+}
+.find-profile-reviews-heading {
+  font-size:28px;
+  line-height:40px;
+}
+.find-profile-reviews-grid {
+  grid-template-columns:1fr;
+  gap:20px;
+}
+.find-profile-review-card {
+  height:310px;
+  padding:24px;
+}
+.find-profile-review-stars {
+  font-size:15px;
+}
+.find-profile-review-text {
+  font-size:13px;
+  line-height:22px;
+}
+.find-profile-review-user {
+  left:24px;
+  bottom:35px;
+}
+
+.find-profile-review-verified {
+  left:70px;
+  bottom:15px;
+}
+}

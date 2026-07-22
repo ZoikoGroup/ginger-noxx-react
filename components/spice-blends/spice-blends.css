@@ -1,0 +1,1814 @@
+/* Spice Blends Hero */
+
+.spice-blends-hero {
+  position: relative;
+  overflow: hidden;
+  background: #421B07;
+  min-height: 453px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spice-blends-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 60% 40%,
+    rgba(212, 98, 26, 0.2) 0%,
+    rgba(212, 98, 26, 0) 65%
+  );
+}
+
+.spice-blends-container {
+  position: relative;
+  z-index: 2;
+  width: 1120px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+  text-align: center;
+   padding: 70px 0 20px;
+}
+
+.spice-blends-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 63.23px;
+  margin-bottom: 15px;
+}
+
+.title-white {
+  color: #ffffff;
+}
+
+.title-orange {
+  color: #d4621a;
+}
+
+.spice-blends-description {
+  width: 738px;
+  max-width: 100%;
+  margin: 0 auto;
+  color: #FFFFFF85;
+  font-family: "Poppins", sans-serif;
+  font-size: 16.8px;
+  font-weight: 400;
+  line-height: 29.4px;
+}
+
+.spice-blends-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.primary-btn,
+.secondary-btn {
+  width: 203.09px;
+  height: 49px;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.primary-btn {
+  background: #d4621a;
+  color: #ffffff;
+}
+
+.primary-btn:hover {
+  background: #bf5414;
+}
+
+.secondary-btn {
+  border: 2px solid #FFFFFF40;
+  color: #ffffff;
+}
+
+.secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.spice-blends-stats {
+  width: 568px;
+  max-width: 100%;
+  margin: 55px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid #FFFFFF3D;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item h3 {
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 25.6px;
+  font-weight: 800;
+  line-height: 25.6px;
+  margin-bottom: 8px;
+}
+
+.stat-item p {
+  color: #FFFFFF8F;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17.6px;
+}
+
+/* ===============================
+   Responsive
+=============================== */
+
+@media (max-width: 991px) {
+  .spice-blends-hero {
+    padding: 80px 0;
+    min-height: auto;
+  }
+
+  .spice-blends-title {
+    font-size: 30px;
+    line-height: 48px;
+  }
+
+  .spice-blends-description {
+    width: 100%;
+  }
+
+  .spice-blends-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 240px;
+  }
+
+  .spice-blends-stats {
+    width: 100%;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .spice-blends-hero {
+    padding: 70px 0 60px;
+  }
+
+  .spice-blends-title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .spice-blends-description {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .spice-blends-stats {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .stat-item h3 {
+    margin-bottom: 10px;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+/* Spice Products Section */
+
+.spice-products-section {
+  background: #ffffff;
+  padding: 60px 0 50px;
+}
+
+.spice-products-container {
+  width: 1120px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+/* Heading */
+
+.spice-products-heading {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.spice-products-heading h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 47.01px;
+  color: #2b1208;
+  margin-bottom: 18px;
+}
+
+.spice-products-heading .orange {
+  color: #d4621a;
+}
+
+.spice-products-heading p {
+  width: 542.88px;
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  font-size: 15.5px;
+  font-weight: 400;
+  line-height: 27.16px;
+  color: #7a5040;
+}
+
+/* Filter Buttons */
+
+.spice-filter-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.filter-btn {
+  height: 34px;
+  padding: 0 22px;
+  border-radius: 999px;
+  border: 1px solid #F5E9D9;
+  background: #ffffff;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #7a5040;
+  transition: 0.3s ease;
+}
+
+.filter-btn:hover {
+  border-color: #d4621a;
+  color: #d4621a;
+}
+
+.filter-btn.active {
+  background: #d4621a;
+  color: #ffffff;
+  border-color: #d4621a;
+}
+
+/* Product Grid */
+
+.spice-products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* Product Card */
+
+.spice-product-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #f5e9d9;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px #2B120812;
+  transition: 0.35s ease;
+}
+
+.spice-product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(43, 18, 8, 0.12);
+}
+
+/* Image */
+
+.product-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  background: #ececec;
+}
+
+.product-image {
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+.spice-product-card:hover .product-image {
+  transform: scale(1.06);
+}
+
+/* Content */
+
+.product-content {
+  padding: 18px;
+}
+
+.product-category {
+  display: block;
+  margin-bottom: 6px;
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 16px;
+}
+
+.product-content h3 {
+  color: #2b1208;
+  font-family: "Poppins", sans-serif;
+  font-size: 15.5px;
+  font-weight: 700;
+  line-height: 20.18px;
+  margin-bottom: 6px;
+}
+
+.product-description {
+  color: #7a5040;
+  font-family: "Poppins", sans-serif;
+  font-size: 12.8px;
+  font-weight: 400;
+  line-height: 19.84px;
+  min-height: 60px;
+  margin-bottom: 10px;
+}
+
+/* Reviews */
+
+.product-review {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.stars {
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 17.6px;
+}
+
+.review-count {
+  color: #A8835C;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 17.6px;
+}
+/* Product Footer */
+
+.product-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-price {
+  color: #2b1208;
+  font-family: "Poppins", sans-serif;
+  font-size: 15.5px;
+  font-weight: 800;
+  line-height: 24.83px;
+}
+
+.add-btn {
+  width: 103px;
+  height: 34px;
+  background: #d4621a;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.add-btn:hover {
+  background: #b95216;
+}
+
+/* Badges */
+
+.product-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 5;
+  padding: 6px 14px;
+  border-radius: 999px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.product-badge.popular {
+  background: #d4621a;
+}
+
+.product-badge.new {
+  background: #276749;
+}
+
+.product-badge.value {
+  background: #1c0c04;
+}
+
+/* View All Button */
+
+.spice-products-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 52px;
+}
+
+.view-all-btn {
+  width: 222.33px;
+  height: 49px;
+  border: 2px solid #d4621a;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #d4621a;
+  background: transparent;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.view-all-btn:hover {
+  background: #d4621a;
+  color: #ffffff;
+}
+
+/* =====================================================
+   Responsive
+===================================================== */
+
+@media (max-width: 1200px) {
+
+  .spice-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+}
+
+@media (max-width: 991px) {
+
+  .spice-products-section {
+    padding: 70px 0;
+  }
+
+  .spice-products-heading h2 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .spice-products-heading p {
+    width: 100%;
+  }
+
+  .spice-filter-buttons {
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .spice-products-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .spice-products-heading h2 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .spice-products-heading p {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .product-content {
+    padding: 18px;
+  }
+
+  .product-description {
+    min-height: auto;
+  }
+
+  .product-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .add-btn {
+    width: 100%;
+  }
+
+  .view-all-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .spice-products-section {
+    padding: 60px 0;
+  }
+
+  .spice-products-container {
+    max-width: calc(100% - 24px);
+  }
+
+  .spice-products-heading {
+    margin-bottom: 28px;
+  }
+
+  .spice-filter-buttons {
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+
+  .filter-btn {
+    width: 100%;
+  }
+
+  .product-image-wrapper {
+    height: 220px;
+  }
+
+}
+/* Flavor System Section */
+
+.spice-flavor-section {
+  background: #FDF6EE;
+  padding: 60px 0 60px;
+}
+
+.spice-flavor-container {
+  width: 1120px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+/* Heading */
+
+.spice-flavor-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.spice-flavor-heading h2 {
+  margin-bottom: 18px;
+  color: #2B1208;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 47.01px;
+}
+
+.spice-flavor-heading .orange {
+  color: #D4621A;
+}
+
+.spice-flavor-heading p {
+  width: 571.9px;
+  max-width: 100%;
+  margin: 0 auto;
+  color: #7A5040;
+  font-family: "Poppins", sans-serif;
+  font-size: 15.5px;
+  font-weight: 400;
+  line-height: 27.16px;
+}
+
+/* Grid */
+
+.spice-flavor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/*  Card */
+
+.spice-flavor-card {
+  background: #FFFFFF;
+  border: 1px solid #F5E9D9;
+  border-radius: 24px;
+  box-shadow: 0 2px 12px #2B120812;
+  padding: 32px;
+  transition: all 0.3s ease;
+}
+
+.spice-flavor-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(43, 18, 8, 0.12);
+}
+
+/* Content */
+
+.spice-flavor-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Emoji + Tag */
+
+.spice-flavor-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.spice-flavor-emoji {
+  font-size: 10px;
+  line-height: 1;
+  line-height: 16px;
+}
+
+.spice-flavor-tag {
+  color: #D4621A;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.spice-flavor-content h3 {
+  margin-bottom: 8px;
+  color: #2B1208;
+  font-family: "Poppins", sans-serif;
+  font-size: 16.8px;
+  font-weight: 700;
+  line-height: 26.88px;
+}
+
+.spice-flavor-description {
+  margin-bottom: 8px;
+  min-height: 72px;
+  color: #7A5040;
+  font-family: "Poppins", sans-serif;
+  font-size: 13.3px;
+  font-weight: 400;
+  line-height: 21.25px;
+}
+
+/* Chips */
+
+.spice-flavor-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.spice-flavor-chip {
+  padding: 6px 14px;
+  border: 1px solid #F5E9D9;
+  border-radius: 999px;
+  background: #FDF6EE;
+  color: #7A5040;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 17.6px;
+}
+/* Price Section */
+
+.spice-flavor-price-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.spice-flavor-old-price {
+  color: #A8835C;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-decoration: line-through;
+}
+
+.spice-flavor-price {
+  color: #D4621A;
+  font-family: "Poppins", sans-serif;
+  font-size: 22.4px;
+  font-weight: 800;
+  line-height: 35.84px;
+}
+
+.spice-flavor-save {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  background: #D4621A;
+  border-radius: 999px;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+/* Button */
+
+.spice-flavor-button {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #D4621A;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.spice-flavor-button:hover {
+  background: #BC5716;
+  transform: translateY(-2px);
+}
+
+/* =====================================================
+   Responsive
+===================================================== */
+
+@media (max-width: 1200px) {
+
+  .spice-flavor-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .spice-flavor-section {
+    padding: 70px 0;
+  }
+
+  .spice-flavor-heading h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .spice-flavor-heading p {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .spice-flavor-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .spice-flavor-card {
+    padding: 24px;
+  }
+
+  .spice-flavor-description {
+    min-height: auto;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .spice-flavor-section {
+    padding: 60px 0;
+  }
+
+  .spice-flavor-container {
+    max-width: calc(100% - 24px);
+  }
+
+  .spice-flavor-heading h2 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .spice-flavor-heading p {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .spice-flavor-price {
+    font-size: 22px;
+  }
+
+  .spice-flavor-price-row {
+    gap: 10px;
+  }
+
+  .spice-flavor-button {
+    height: 44px;
+  }
+
+}
+/* Real Cooking Section */
+
+.spice-cooking-section {
+  background: #ffffff;
+  padding: 70px 0 70px;
+}
+
+.spice-cooking-container {
+  width: 1120px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+/* Heading */
+
+.spice-cooking-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.spice-cooking-heading h2 {
+  color: #2b1208;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 47.01px;
+}
+
+.spice-cooking-heading .orange {
+  color: #d4621a;
+}
+
+/* Grid */
+
+.spice-cooking-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+
+.spice-cooking-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #f5e9d9;
+  border-radius: 16px;
+  padding: 28px 10px 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.spice-cooking-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(43, 18, 8, 0.08);
+}
+
+/* Number */
+
+.spice-cooking-number {
+  margin-bottom: 20px;
+  color: #d4621a;
+  opacity: 18%;
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 32px;
+}
+
+/* Icon */
+
+.spice-cooking-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.spice-cooking-icon-img {
+  width: 28.8px;
+  height: 40px;
+  object-fit: contain;
+}
+/* Title & Description */
+
+.spice-cooking-card h3 {
+  margin-bottom: 10px;
+  color: #2b1208;
+  font-family: "Poppins", sans-serif;
+  font-size: 15.5px;
+  font-weight: 700;
+  line-height: 24.83px;
+}
+
+.spice-cooking-card p {
+  color: #7a5040;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21.65px;
+}
+
+/* =====================================================
+   Responsive
+===================================================== */
+
+@media (max-width: 1200px) {
+
+  .spice-cooking-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .spice-cooking-section {
+    padding: 60px 0;
+  }
+
+  .spice-cooking-container {
+    max-width: calc(100% - 24px);
+  }
+
+  .spice-cooking-heading {
+    margin-bottom: 40px;
+  }
+
+  .spice-cooking-heading h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .spice-cooking-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .spice-cooking-card {
+    padding: 24px 20px;
+  }
+
+  .spice-cooking-number {
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 18px;
+  }
+
+  .spice-cooking-icon {
+    margin-bottom: 20px;
+  }
+
+  .spice-cooking-icon-img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .spice-cooking-card h3 {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .spice-cooking-card p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .spice-cooking-heading h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .spice-cooking-card {
+    border-radius: 14px;
+  }
+
+  .spice-cooking-icon-img {
+    width: 34px;
+    height: 34px;
+  }
+
+}
+/* Kitchen Uses Section */
+
+.spice-kitchen-section {
+  background: #FDF6EE;
+  padding: 40px 0 60px;
+}
+
+.spice-kitchen-container {
+  width: 1120px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+/* Heading */
+
+.spice-kitchen-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.spice-kitchen-heading h2 {
+  color: #2B1208;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 47.01px;
+}
+
+.spice-kitchen-heading .orange {
+  color: #D4621A;
+}
+
+/* Grid */
+
+.spice-kitchen-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+/* Card */
+
+.spice-kitchen-card {
+  background: #FFFFFF;
+  border: 1px solid #F5E9D9;
+  border-radius: 8px;
+  padding: 28px 18px 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.spice-kitchen-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(43, 18, 8, 0.08);
+}
+
+/* Icon */
+
+.spice-kitchen-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.spice-kitchen-icon-img {
+  width: 28.8px;
+  height: 40px;
+  object-fit: contain;
+}
+/* Card Content */
+
+.spice-kitchen-card h3 {
+  margin-bottom: 10px;
+  color: #2B1208;
+  font-family: "Poppins", sans-serif;
+  font-size: 13.6px;
+  font-weight: 700;
+  line-height: 21.76px;
+}
+
+.spice-kitchen-card p {
+  color: #7A5040;
+  font-family: "Poppins", sans-serif;
+  font-size: 14.1px;
+  font-weight: 400;
+  line-height: 18.6px;
+}
+
+/* =====================================================
+   Responsive
+===================================================== */
+
+@media (max-width: 1200px) {
+
+  .spice-kitchen-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .spice-kitchen-section {
+    padding: 60px 0;
+  }
+
+  .spice-kitchen-heading h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .spice-kitchen-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .spice-kitchen-container {
+    max-width: calc(100% - 24px);
+  }
+
+  .spice-kitchen-heading {
+    margin-bottom: 36px;
+  }
+
+  .spice-kitchen-heading h2 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .spice-kitchen-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .spice-kitchen-card {
+    padding: 24px 18px;
+  }
+
+  .spice-kitchen-icon-img {
+    width: 36px;
+    height: 36px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .spice-kitchen-section {
+    padding: 50px 0;
+  }
+
+  .spice-kitchen-heading h2 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .spice-kitchen-card h3 {
+    font-size: 15px;
+  }
+
+  .spice-kitchen-card p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+}
+/* Trusted in Real Kitchens */
+
+.spice-testimonial-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 60px 0;
+}
+
+.spice-testimonial-container {
+  width: 1120px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+.spice-testimonial-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.spice-testimonial-heading h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height:47.01px;
+  color: #2b1208;
+}
+
+.spice-testimonial-heading .orange {
+  color: #d4621a;
+}
+
+.spice-testimonial-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+/* Rating Card */
+
+.spice-testimonial-rating-card {
+  width: 260px;
+  flex-shrink: 0;
+  background: #fdf6ee;
+  border: 1px solid #f5e9d9;
+  border-radius: 16px;
+  padding: 30px;
+}
+
+.spice-testimonial-score {
+  font-family: "Poppins", sans-serif;
+  font-size: 60.8px;
+  font-weight: 800;
+  line-height: 60.8px;
+  color: #d4621a;
+  text-align: center;
+}
+
+.spice-testimonial-stars {
+  margin-top: 0;
+  text-align: center;
+  color: #d4621a;
+  font-size: 19.2px;
+  letter-spacing: 0%;
+  line-height: 30.72px;
+}
+
+.spice-testimonial-review-count {
+  margin-top: 4px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 19.2px;
+  color: #7a5040;
+}
+
+.spice-testimonial-rating-list {
+  margin-top: 18px;
+}
+
+.spice-testimonial-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.spice-testimonial-rating-label {
+  width: 22px;
+  font-size: 11px;
+  line-height: 17.6px;
+  color: #7a5040;
+  font-family: "Poppins", sans-serif;
+}
+
+.spice-testimonial-progress {
+  flex: 1;
+  height: 7px;
+  background: #F5E9D9;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.spice-testimonial-progress-fill {
+  height: 100%;
+  background: #d4621a;
+  border-radius: 999px;
+}
+
+.spice-testimonial-rating-percent {
+  width: 32px;
+  text-align: right;
+  font-size: 10px;
+  line-height: 16px;
+  color: #7a5040;
+  font-family: "Poppins", sans-serif;
+}
+/* Reviews */
+
+.spice-testimonial-reviews {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.spice-testimonial-card {
+  background: #ffffff;
+  border: 1px solid #f5e9d9;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px #2B120812;
+  padding: 24px;
+}
+
+.spice-testimonial-card-stars {
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  line-height: 20.8px;
+  margin-bottom: 12px;
+}
+
+.spice-testimonial-quote {
+  padding-left: 0;
+}
+
+
+.spice-testimonial-quote h3 {
+  border-left: 3px solid #d4621a;
+  padding-left: 14px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14.9px;
+  font-weight: 700;
+  line-height: 20.83px;
+  font-style: italic;
+  color: #2b1208;
+  margin-bottom: 10px;
+}
+
+.spice-testimonial-quote p {
+  font-family: "Poppins", sans-serif;
+  font-size: 13.3px;
+  font-weight: 400;
+  line-height: 21.91px;
+  color: #7a5040;
+}
+
+.spice-testimonial-footer {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.spice-testimonial-footer h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20.8px;
+  color: #2b1208;
+  margin-bottom: -6px;
+}
+
+.spice-testimonial-footer span {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #d4621a;
+}
+
+.spice-testimonial-verified {
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  line-height: 17.6px;
+  color: #A8835C;
+  white-space: nowrap;
+}
+
+/* ===============================
+   Responsive
+================================= */
+
+@media (max-width: 991px) {
+  .spice-testimonial-wrapper {
+    flex-direction: column;
+  }
+
+  .spice-testimonial-rating-card {
+    width: 100%;
+  }
+
+  .spice-testimonial-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .spice-testimonial-section {
+    padding: 60px 0;
+  }
+
+  .spice-testimonial-heading h2 {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .spice-testimonial-card {
+    padding: 20px;
+  }
+
+  .spice-testimonial-score {
+    font-size: 52px;
+  }
+
+  .spice-testimonial-stars {
+    font-size: 18px;
+  }
+
+  .spice-testimonial-quote h3,
+  .spice-testimonial-quote p {
+    font-size: 13px;
+  }
+}
+/* CLEAN STANDARD SECTION */
+
+.spice-blends-clean-standard-section {
+  width: 100%;
+  background: #fdf6ee;
+  padding: 40px 0 60px;
+}
+
+
+.spice-blends-clean-standard-container {
+  width: 1440px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+
+.spice-blends-clean-standard-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+.spice-blends-clean-standard-heading h2 {
+  margin: 0;
+  color: #2b1208;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 47.01px;
+}
+
+
+.spice-blends-clean-standard-heading span {
+  color: #d4621a;
+}
+
+
+.spice-blends-clean-standard-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.spice-blends-clean-standard-card {
+  width: 390px;
+  height: 234.06px;
+  border-radius: 24px;
+  padding: 36px 32px;
+  box-sizing: border-box;
+}
+
+
+.spice-blends-clean-standard-out {
+  background: #C04413;
+  border: 1px solid #F5E9D9;
+}
+
+
+.spice-blends-clean-standard-in {
+  background: #269C65;
+}
+
+
+.spice-blends-clean-standard-label {
+  margin: 0 0 14px;
+  color: #FFFFFF;
+  opacity: 60%;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 16px;
+}
+
+
+.spice-blends-clean-standard-label-in {
+  color: #FFFFFFB2;
+}
+
+
+.spice-blends-clean-standard-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.spice-blends-clean-standard-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.spice-blends-clean-standard-icon {
+
+  width: 22px;
+  height: 22px;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  line-height: 16px;
+  color: #F8F8F8;
+}
+
+
+.spice-blends-clean-standard-icon-out {
+  background: #FFFFFF4A;
+}
+
+
+.spice-blends-clean-standard-icon-in {
+  background: #FFFFFF33;
+}
+
+
+
+.spice-blends-clean-standard-out-text,
+.spice-blends-clean-standard-in-text {
+  margin: 0;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 14.1px;
+  font-weight: 400;
+  line-height: 22.53px;
+}
+
+
+.spice-blends-clean-standard-out-text {
+  text-decoration: line-through;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width: 900px){
+
+  .spice-blends-clean-standard-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .spice-blends-clean-standard-card {
+    width: 90%;
+  }
+
+
+  .spice-blends-clean-standard-heading h2 {
+    font-size: 32px;
+  }
+
+}
+
+
+@media(max-width:600px){
+
+  .spice-blends-clean-standard-heading h2 {
+    font-size: 28px;
+  }
+
+
+  .spice-blends-clean-standard-card {
+
+    height: auto;
+    padding: 30px 22px;
+
+  }
+
+
+  .spice-blends-clean-standard-out-text,
+  .spice-blends-clean-standard-in-text {
+
+    font-size: 13px;
+
+  }
+
+}
+/* SPICE BLENDS CTA SECTION */
+
+.spice-blends-cta-section {
+  width: 100%;
+  height: 465px;
+  position: relative;
+  overflow: hidden;
+  background: #421B07;
+  display: flex;
+  justify-content: center;
+}
+
+
+.spice-blends-cta-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 80%,
+    rgba(212, 98, 26, 0.10),
+    rgba(212, 98, 26, 0) 60%
+  );
+}
+
+.spice-blends-cta-container {
+  width: 100%;
+  max-width: 1440px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 35px;
+}
+
+.spice-blends-cta-heading h2 {
+  margin: 0;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44.16px;
+
+}
+
+.spice-blends-cta-heading span {
+  color: #d4621a;
+}
+
+.spice-blends-cta-description {
+  margin: 20px auto 0;
+  color: #FFFFFF73;
+  font-family: "Poppins", sans-serif;
+  font-size: 14.9px;
+  font-weight: 400;
+  line-height: 25.3px;
+
+}
+/* BUTTONS */
+
+.spice-blends-cta-buttons {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+}
+
+.spice-blends-cta-primary,
+.spice-blends-cta-secondary {
+  height: 49px;
+  border-radius: 999px;
+  padding: 0 28px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+
+}
+
+.spice-blends-cta-primary {
+  background: #d4621a;
+  border: none;
+  color: #ffffff;
+
+}
+
+.spice-blends-cta-secondary {
+  background: transparent;
+  border: 2px solid #FFFFFF40;
+  color: #ffffff;
+
+}
+
+/* CERTIFICATION BADGES */
+
+.spice-blends-cta-certifications {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.spice-blends-cta-badge {
+  height: 24px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background:#FFFFFF12;
+  color: #FFFFFF5C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 16px;
+
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px){
+
+  .spice-blends-cta-section {
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .spice-blends-cta-heading h2 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .spice-blends-cta-description br {
+    display: none;
+  }
+
+  .spice-blends-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .spice-blends-cta-primary,
+  .spice-blends-cta-secondary {
+    width: 220px;
+  }
+}
+
+@media(max-width: 600px){
+  .spice-blends-cta-heading h2 {
+    font-size: 28px;
+  }
+
+  .spice-blends-cta-description {
+    padding: 0 20px;
+  }
+
+  .spice-blends-cta-certifications {
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+}

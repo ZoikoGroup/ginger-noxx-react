@@ -903,7 +903,7 @@ grid-template-columns:1fr;
 }
 
 .wholesale-cta-left p {
-  width: 470px;
+  width: 520.48px;
   font-size: 15.2px;
   line-height: 25.08px;
   font-weight: 400;
@@ -1105,8 +1105,8 @@ width:100%;
     position:absolute;
     inset:0;
     background:radial-gradient(circle at 50% 80%,
-    rgba(255,255,255,.10) 0%,
-    rgba(255,255,255,0) 60%);
+    #D4621A21 13%,
+    #D4621A00 0%);
 }
 
 .wholesale-final-content{

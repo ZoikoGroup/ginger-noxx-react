@@ -5,7 +5,7 @@
   position: relative;
   width: 100%;
   max-width: 1440px;
-  min-height: 612px;
+  min-height: 560px;
   margin: 0 auto;
   background: #FDFAF6;
   overflow: hidden;
@@ -259,7 +259,7 @@ Responsive
 
 .about-story{
     background:#FDFAF6;
-    padding:80px 0 0 0;
+    padding:80px 0 50px 0;
 }
 
 .about-story-container{
@@ -272,7 +272,7 @@ Responsive
     justify-content:space-between;
     align-items:center;
     gap:0px;
-    margin-bottom:50px;
+    margin-bottom:0;
     
 }
 

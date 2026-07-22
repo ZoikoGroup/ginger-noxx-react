@@ -476,7 +476,7 @@
     font-size:12px;
     line-height:18.6px;
 
-    margin-bottom:10px;
+    margin-bottom:-8px;
 
     min-height:38px;
 }
@@ -488,14 +488,12 @@
     display:flex;
     align-items:center;
     gap:8px;
-
-    margin-bottom:10px;
+    margin-bottom:-4px;
 }
 
 .stars{
 
     color:#D4621A;
-
     font-size:12px;
     line-height: 19.2px;
     font-weight: 400;
@@ -504,8 +502,8 @@
 .rating-text{
 
     color:#A8835C;
-
-    font-size:11px;
+    font-size:11px !important;
+    margin-top: 15px;
     line-height: 17.6px;
     font-weight: 400;
 }

@@ -2,12 +2,12 @@ import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import SnacksHero from "@/components/snacks/SnacksHero";
-import ShopByCraving from "@/components/snacks/ShopByCraving";
-import MostLovedSnacks from "@/components/snacks/MostLovedSnacks";
-import SnacksThatDoMore from "@/components/snacks/SnacksThatDoMore";
-import SnacksReviews from "@/components/snacks/SnacksReviews";
-import SnacksCTA from "@/components/snacks/SnacksCTA";
+import SnacksHero from "@/app/snacks/components/SnacksHero";
+import ShopByCraving from "@/app/snacks/components/ShopByCraving";
+import MostLovedSnacks from "@/app/snacks/components/MostLovedSnacks";
+import SnacksThatDoMore from "@/app/snacks/components/SnacksThatDoMore";
+import SnacksReviews from "@/app/snacks/components/SnacksReviews";
+import SnacksCTA from "@/app/snacks/components/SnacksCTA";
 
 export const metadata = {
   title: "Ginger Snacks | GingerNoxx",

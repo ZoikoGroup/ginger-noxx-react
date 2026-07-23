@@ -1,17 +1,17 @@
-import "@/components/why/why.css";
+import "@/app/why/components/why.css";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import WhyHero from "@/components/why/WhyHero";
-import WhyBenefits from "@/components/why/WhyBenefits";
-import WhyEvidence from "@/components/why/WhyEvidence";
-import WhyComparison from "@/components/why/WhyComparison";
-import WhyInnovation from "@/components/why/WhyInnovation";
-import WhyMoments from "@/components/why/WhyMoments";
-import WhyProducts from "@/components/why/WhyProducts";
-import WhyTestimonials from "@/components/why/WhyTestimonials";
-import WhyCTA from "@/components/why/WhyCTA";
+import WhyHero from "@/app/why/components/WhyHero";
+import WhyBenefits from "@/app/why/components/WhyBenefits";
+import WhyEvidence from "@/app/why/components/WhyEvidence";
+import WhyComparison from "@/app/why/components/WhyComparison";
+import WhyInnovation from "@/app/why/components/WhyInnovation";
+import WhyMoments from "@/app/why/components/WhyMoments";
+import WhyProducts from "@/app/why/components/WhyProducts";
+import WhyTestimonials from "@/app/why/components/WhyTestimonials";
+import WhyCTA from "@/app/why/components/WhyCTA";
 
 export default function WhyPage() {
   return (

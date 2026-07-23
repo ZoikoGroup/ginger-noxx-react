@@ -1,8 +1,8 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import FAQHero from "@/components/faq/FAQHero";
-import FAQContent from "@/components/faq/FAQContent";
-import FAQContact from "@/components/faq/FAQContact";
+import FAQHero from "@/app/faq/components/FAQHero";
+import FAQContent from "@/app/faq/components/FAQContent";
+import FAQContact from "@/app/faq/components/FAQContact";
 
 export default function FAQPage() {
   return (

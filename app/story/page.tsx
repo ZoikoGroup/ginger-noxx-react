@@ -1,17 +1,17 @@
-import "@/components/story/story.css";
+import "@/app/story/components/story.css";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import StoryHero from "@/components/story/StoryHero";
-import StoryProblem from "@/components/story/StoryProblem";
-import StoryBirth from "@/components/story/StoryBirth";
-import StoryProducts from "@/components/story/StoryProducts";
-import StoryGlobalFlavor from "@/components/story/StoryGlobalFlavor";
-import StoryInnovation from "@/components/story/StoryInnovation";
-import StoryPromise from "@/components/story/StoryPromise";
-import MissionSection from "@/components/story/MissionSection";
-import StoryCTA from "@/components/story/StoryCTA";
+import StoryHero from "@/app/story/components/StoryHero";
+import StoryProblem from "@/app/story/components/StoryProblem";
+import StoryBirth from "@/app/story/components/StoryBirth";
+import StoryProducts from "@/app/story/components/StoryProducts";
+import StoryGlobalFlavor from "@/app/story/components/StoryGlobalFlavor";
+import StoryInnovation from "@/app/story/components/StoryInnovation";
+import StoryPromise from "@/app/story/components/StoryPromise";
+import MissionSection from "@/app/story/components/MissionSection";
+import StoryCTA from "@/app/story/components/StoryCTA";
 
 
 export default function StoryPage() {

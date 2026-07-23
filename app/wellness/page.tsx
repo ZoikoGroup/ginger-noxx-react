@@ -2,15 +2,15 @@ import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import WellnessHero from "@/components/wellness/WellnessHero";
-import WellnessTrustBar from "@/components/wellness/WellnessTrustBar";
-import EasiestWayToBegin from "@/components/wellness/EasiestWayToBegin";
-import DailyRhythm from "@/components/wellness/DailyRhythm";
-import ExploreByFocus from "@/components/wellness/ExploreByFocus";
-import MostTrustedChoices from "@/components/wellness/MostTrustedChoices";
-import WellnessSets from "@/components/wellness/WellnessSets";
-import WellnessReviews from "@/components/wellness/WellnessReviews";
-import WellnessCTA from "@/components/wellness/WellnessCTA";
+import WellnessHero from "@/app/wellness/components/WellnessHero";
+import WellnessTrustBar from "@/app/wellness/components/WellnessTrustBar";
+import EasiestWayToBegin from "@/app/wellness/components/EasiestWayToBegin";
+import DailyRhythm from "@/app/wellness/components/DailyRhythm";
+import ExploreByFocus from "@/app/wellness/components/ExploreByFocus";
+import MostTrustedChoices from "@/app/wellness/components/MostTrustedChoices";
+import WellnessSets from "@/app/wellness/components/WellnessSets";
+import WellnessReviews from "@/app/wellness/components/WellnessReviews";
+import WellnessCTA from "@/app/wellness/components/WellnessCTA";
 
 export const metadata = {
   title: "Ginger Wellness | GingerNoxx",

@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import RefundContent from "@/components/refunds/RefundContent";
+import RefundContent from "@/app/refunds/components/RefundContent";
 
 const Page = () => {
   return (

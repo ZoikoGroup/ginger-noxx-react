@@ -2,13 +2,13 @@ import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import BundlesHero from "@/components/bundles-and-gifts/BundlesHero";
-import NeedGiftFast from "@/components/bundles-and-gifts/NeedGiftFast";
-import AllBundles from "@/components/bundles-and-gifts/AllBundles";
-import BuildYourOwn from "@/components/bundles-and-gifts/BuildYourOwn";
-import WhyBundles from "@/components/bundles-and-gifts/WhyBundles";
-import CustomerReviews from "@/components/bundles-and-gifts/CustomerReviews";
-import BundlesCTA from "@/components/bundles-and-gifts/BundlesCTA";
+import BundlesHero from "@/app/bundles-and-gifts/components/BundlesHero";
+import NeedGiftFast from "@/app/bundles-and-gifts/components/NeedGiftFast";
+import AllBundles from "@/app/bundles-and-gifts/components/AllBundles";
+import BuildYourOwn from "@/app/bundles-and-gifts/components/BuildYourOwn";
+import WhyBundles from "@/app/bundles-and-gifts/components/WhyBundles";
+import CustomerReviews from "@/app/bundles-and-gifts/components/CustomerReviews";
+import BundlesCTA from "@/app/bundles-and-gifts/components/BundlesCTA";
 
 export const metadata = {
   title: "Bundles & Gifts | GingerNoxx",

@@ -1,16 +1,16 @@
-import "@/components/spice-blends/spice-blends.css";
+import "@/app/spice-blends/components/spice-blends.css";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import SpiceBlendsHero from "@/components/spice-blends/SpiceBlendsHero";
-import SpiceBlendsProducts from "@/components/spice-blends/SpiceBlendsProducts";
-import SpiceBlendsFlavorSystem from "@/components/spice-blends/SpiceBlendsFlavorSystem";
-import SpiceBlendsRealCooking from "@/components/spice-blends/SpiceBlendsRealCooking";
-import SpiceBlendsKitchenUses from "@/components/spice-blends/SpiceBlendsKitchenUses";
-import SpiceBlendsTestimonials from "@/components/spice-blends/SpiceBlendsTestimonials";
-import CleanStandard from "@/components/spice-blends/CleanStandard";
-import SpiceBlendsCTA from "@/components/spice-blends/SpiceBlendsCTA";
+import SpiceBlendsHero from "@/app/spice-blends/components/SpiceBlendsHero";
+import SpiceBlendsProducts from "@/app/spice-blends/components/SpiceBlendsProducts";
+import SpiceBlendsFlavorSystem from "@/app/spice-blends/components/SpiceBlendsFlavorSystem";
+import SpiceBlendsRealCooking from "@/app/spice-blends/components/SpiceBlendsRealCooking";
+import SpiceBlendsKitchenUses from "@/app/spice-blends/components/SpiceBlendsKitchenUses";
+import SpiceBlendsTestimonials from "@/app/spice-blends/components/SpiceBlendsTestimonials";
+import CleanStandard from "@/app/spice-blends/components/CleanStandard";
+import SpiceBlendsCTA from "@/app/spice-blends/components/SpiceBlendsCTA";
 
 export default function SpiceBlendsPage() {
   return (

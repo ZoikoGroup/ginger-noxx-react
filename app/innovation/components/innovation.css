@@ -1,0 +1,548 @@
+/* ==========================================
+   INNOVATION MODULE STYLESHEET
+   ========================================== */
+
+/* --- HERO SECTION --- */
+.innov-hero-section {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  min-height: 520px;
+  margin: 0 auto;
+  background-color: #1C0A03;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 76px;
+  padding-bottom: 56px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.innov-hero-radial {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 65% 65% at 50% 50%, rgba(212, 98, 26, 0.16) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.innov-hero-blur-top {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  left: 1050px;
+  top: -80px;
+  background: rgba(212, 98, 26, 0.12);
+  border-radius: 225px;
+  filter: blur(36px);
+  pointer-events: none;
+}
+
+.innov-hero-blur-bottom {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: -40px;
+  top: 380px;
+  background: rgba(212, 98, 26, 0.06);
+  border-radius: 150px;
+  filter: blur(36px);
+  pointer-events: none;
+}
+
+.innov-hero-content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.innov-hero-title {
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.innov-hero-title-orange {
+  color: #D4621A;
+}
+
+.innov-hero-desc {
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 16.8px;
+  font-weight: 400;
+  line-height: 29.4px;
+  max-width: 847px;
+  text-align: center;
+}
+
+.innov-hero-buttons {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.innov-btn-primary {
+  height: 48px;
+  padding: 0 28px;
+  background-color: #D4621A;
+  border-radius: 9999px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(212, 98, 26, 0.35);
+  transition: all 0.3s ease;
+}
+
+.innov-btn-primary:hover {
+  background-color: #ba5214;
+  transform: translateY(-1px);
+}
+
+.innov-btn-outline {
+  height: 48px;
+  padding: 0 28px;
+  border-radius: 9999px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  background: transparent;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.innov-btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+}
+
+.innov-stats-bar {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 700px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(4px);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  overflow: hidden;
+}
+
+.innov-stat-item {
+  padding: 20px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.innov-stat-item:last-child {
+  border-right: none;
+}
+
+.innov-stat-val {
+  color: #D4621A;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.innov-stat-label {
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-top: 6px;
+}
+
+/* --- SECTION SHARED --- */
+.innov-section-cream {
+  width: 100%;
+  background-color: #FAF3EA;
+  padding-top: 64px;
+  padding-bottom: 72px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.innov-section-white {
+  width: 100%;
+  background-color: #ffffff;
+  padding-top: 64px;
+  padding-bottom: 72px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.innov-section-orange {
+  width: 100%;
+  background-color: #D4621A;
+  padding-top: 64px;
+  padding-bottom: 72px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* --- SECTION HEADINGS --- */
+.innov-heading {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 45.2px;
+  color: #2B1208;
+  text-align: center;
+}
+
+.innov-heading-orange {
+  color: #D4621A;
+}
+
+.innov-subheading {
+  margin-top: 16px;
+  color: #7A5040;
+  font-size: 15.5px;
+  font-weight: 400;
+  line-height: 27.16px;
+  text-align: center;
+  max-width: 680px;
+}
+
+/* --- FEATURE CARDS --- */
+.innov-features-grid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.innov-feature-card {
+  width: 100%;
+  min-height: 256px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #FFEDD5;
+  box-shadow: 0 2px 10px rgba(43, 18, 8, 0.04);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.innov-feature-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(43, 18, 8, 0.08);
+}
+
+.innov-feature-icon {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.innov-feature-title {
+  color: #2B1208;
+  font-size: 15.2px;
+  font-weight: 700;
+  line-height: 24.32px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.innov-feature-desc {
+  color: #7A5040;
+  font-size: 12.6px;
+  font-weight: 400;
+  line-height: 20.86px;
+  text-align: center;
+  white-space: pre-line;
+}
+
+/* --- PROCESS CARDS --- */
+.innov-process-grid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+  width: 100%;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.innov-process-card {
+  width: 100%;
+  height: 224px;
+  background-color: #D4621A;
+  border-radius: 24px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(212, 98, 26, 0.25);
+  position: relative;
+}
+
+.innov-process-num {
+  color: rgba(255, 255, 255, 0.20);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 40px;
+  margin-bottom: 4px;
+}
+
+.innov-process-icon {
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.innov-process-title {
+  color: #ffffff;
+  font-size: 13.1px;
+  font-weight: 700;
+  line-height: 20.99px;
+  margin-bottom: 4px;
+  white-space: nowrap;
+}
+
+.innov-process-desc {
+  color: rgba(255, 255, 255, 0.80);
+  font-size: 11.5px;
+  font-weight: 400;
+  line-height: 17.86px;
+  white-space: pre-line;
+}
+
+/* --- CASE STUDIES --- */
+.innov-case-grid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.innov-case-card {
+  width: 100%;
+  height: 320px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #FFEDD5;
+  box-shadow: 0 2px 10px rgba(43, 18, 8, 0.04);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.innov-case-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(43, 18, 8, 0.08);
+}
+
+.innov-case-img-box {
+  width: 100%;
+  height: 144px;
+  background-color: #d4d4d8;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.innov-case-tag {
+  color: #D4621A;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 16px;
+  margin-bottom: 4px;
+}
+
+.innov-case-title {
+  color: #2B1208;
+  font-size: 14.4px;
+  font-weight: 700;
+  line-height: 23.04px;
+  margin-bottom: 6px;
+}
+
+.innov-case-desc {
+  color: #7A5040;
+  font-size: 12.5px;
+  font-weight: 400;
+  line-height: 19.34px;
+}
+
+.innov-case-rating {
+  color: #D4621A;
+  font-size: 13.6px;
+  font-weight: 700;
+  line-height: 21.76px;
+  margin-top: 8px;
+}
+
+/* --- PARTNER SECTION --- */
+.innov-partner-grid {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.innov-partner-tag {
+  color: #D4621A;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+  line-height: 16px;
+}
+
+.innov-partner-quote {
+  margin-top: 14px;
+  padding-left: 20px;
+  border-left: 3px solid #D4621A;
+  color: #2B1208;
+  font-size: 22.4px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 33.6px;
+}
+
+.innov-partner-desc {
+  margin-top: 24px;
+  color: #7A5040;
+  font-size: 15.2px;
+  font-weight: 400;
+  line-height: 27.36px;
+  max-width: 495px;
+}
+
+.innov-partner-card {
+  width: 100%;
+  background-color: #FAF3EA;
+  border: 1px solid #FFEDD5;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  box-shadow: 0 2px 8px rgba(43, 18, 8, 0.03);
+}
+
+.innov-partner-card-icon {
+  font-size: 24px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.innov-partner-card-title {
+  color: #2B1208;
+  font-size: 14.1px;
+  font-weight: 700;
+  line-height: 22.53px;
+  margin-bottom: 2px;
+}
+
+.innov-partner-card-desc {
+  color: #7A5040;
+  font-size: 12.5px;
+  font-weight: 400;
+  line-height: 19.97px;
+}
+
+/* --- CTA SECTION --- */
+.innov-cta-heading {
+  color: #ffffff;
+  font-size: 44.8px;
+  font-weight: 600;
+  line-height: 50.18px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.innov-cta-sub {
+  color: #ffffff;
+  font-size: 15.5px;
+  font-weight: 400;
+  line-height: 26.38px;
+  text-align: center;
+  max-width: 568.9px;
+  margin-bottom: 36px;
+}
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+@media (max-width: 1200px) {
+  .innov-features-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .innov-process-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .innov-case-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .innov-partner-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .innov-hero-title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .innov-heading {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .innov-features-grid,
+  .innov-process-grid,
+  .innov-case-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .innov-stats-bar {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

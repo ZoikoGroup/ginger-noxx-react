@@ -1,5 +1,6 @@
-import "./footer.css";
+import "@/app/footer.css";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -92,17 +93,17 @@ export default function Footer() {
 
           <ul>
 
-            <li><a href="#">Beverages</a></li>
+            <li><Link href="/beverages">Beverages</Link></li>
 
-            <li><a href="#">Snacks</a></li>
+            <li><Link href="/snacks">Snacks</Link></li>
 
-            <li><a href="#">Wellness</a></li>
+            <li><Link href="/wellness">Wellness</Link></li>
 
-            <li><a href="#">Ingredients</a></li>
+            <li><Link href="/ingredients">Ingredients</Link></li>
 
-            <li><a href="#">Bundles &amp; Gifts</a></li>
+            <li><Link href="/bundles-and-gifts">Bundles &amp; Gifts</Link></li>
 
-            <li><a href="#">Subscriptions</a></li>
+            <li><Link href="/subscriptions">Subscriptions</Link></li>
 
           </ul>
 
@@ -116,17 +117,17 @@ export default function Footer() {
 
           <ul>
 
-            <li><a href="#">Our Story</a></li>
+            <li><Link href="/story">Our Story</Link></li>
 
-            <li><a href="#">Innovation Platform</a></li>
+            <li><Link href="/innovation">Innovation Platform</Link></li>
 
-            <li><a href="#">Why Ginger</a></li>
+            <li><Link href="/why">Why Ginger</Link></li>
 
-            <li><a href="#">Sustainability</a></li>
+            <li><Link href="/sustainability">Sustainability</Link></li>
 
-            <li><a href="#">Careers</a></li>
+            <li><Link href="/careers">Careers</Link></li>
 
-            <li><a href="#">Press</a></li>
+            <li><Link href="/press-media">Press</Link></li>
 
           </ul>
 
@@ -140,17 +141,17 @@ export default function Footer() {
 
           <ul>
 
-            <li><a href="#">Wholesale Portal</a></li>
+            <li><Link href="/wholesale">Wholesale Portal</Link></li>
 
-            <li><a href="#">Find a Stockist</a></li>
+            <li><Link href="/stockists">Find a Stockist</Link></li>
 
-            <li><a href="#">Contact Us</a></li>
+            <li><Link href="/contact-us">Contact Us</Link></li>
 
-            <li><a href="#">GingerNoxx Collective</a></li>
+            <li><Link href="/collective">GingerNoxx Collective</Link></li>
 
-            <li><a href="#">Blog / Lab Notes</a></li>
+            <li><Link href="/blog">Blog / Lab Notes</Link></li>
 
-            <li><a href="#">FAQs</a></li>
+            <li><Link href="/faq">FAQs</Link></li>
 
           </ul>
 
@@ -164,13 +165,13 @@ export default function Footer() {
 
           <ul>
 
-            <li><a href="#">Privacy Policy</a></li>
+            <li><Link href="/privacy">Privacy Policy</Link></li>
 
-            <li><a href="#">Terms of Use</a></li>
+            <li><Link href="/legal-terms">Terms of Use</Link></li>
 
-            <li><a href="#">Cookie Settings</a></li>
+            <li><Link href="/cookies">Cookie Settings</Link></li>
 
-            <li><a href="#">Accessibility</a></li>
+            <li><Link href="/accessibility">Accessibility</Link></li>
 
           </ul>
 

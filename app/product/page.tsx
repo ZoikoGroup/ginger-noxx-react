@@ -1,18 +1,18 @@
-import "@/components/product/product.css";
+import "@/app/product/components/product.css";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import ProductHero from "@/components/product/ProductHero";
-import ProductBenefits from "@/components/product/ProductBenefits";
-import ProductLifestyle from "@/components/product/ProductLifestyle";
-import ProductTrusted from "@/components/product/ProductTrusted";
-import ProductCleanStandard from "@/components/product/ProductCleanStandard";
-import ProductSystem from "@/components/product/ProductSystem";
-import ProductStartStrong from "@/components/product/ProductStartStrong";
-import ProductEffortless from "@/components/product/ProductEffortless";
-import ProductFAQ from "@/components/product/ProductFAQ";
-import ProductCTA from "@/components/product/ProductCTA";
+import ProductHero from "@/app/product/components/ProductHero";
+import ProductBenefits from "@/app/product/components/ProductBenefits";
+import ProductLifestyle from "@/app/product/components/ProductLifestyle";
+import ProductTrusted from "@/app/product/components/ProductTrusted";
+import ProductCleanStandard from "@/app/product/components/ProductCleanStandard";
+import ProductSystem from "@/app/product/components/ProductSystem";
+import ProductStartStrong from "@/app/product/components/ProductStartStrong";
+import ProductEffortless from "@/app/product/components/ProductEffortless";
+import ProductFAQ from "@/app/product/components/ProductFAQ";
+import ProductCTA from "@/app/product/components/ProductCTA";
 
 
 export default function ProductPage() {

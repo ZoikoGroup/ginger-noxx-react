@@ -1,0 +1,220 @@
+/* ==========================================
+   SNACKS MODULE STYLESHEET
+   ========================================== */
+
+/* --- HERO SECTION --- */
+.snacks-hero-section {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: 288px;
+  margin: 0 auto;
+  background-color: #0c0a09;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.snacks-hero-radial {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 65% 45% at 60% 45%, rgba(234, 88, 12, 0.20) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.snacks-hero-tag {
+  padding: 6px 18px;
+  border-radius: 999px;
+  background-color: rgba(234, 88, 12, 0.20);
+  border: 1px solid rgba(234, 88, 12, 0.30);
+  color: #fb923c;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2.80px;
+  margin-bottom: 14px;
+}
+
+.snacks-hero-title {
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 58.75px;
+  text-align: center;
+}
+
+.snacks-hero-title-orange {
+  color: #ea580c;
+}
+
+.snacks-hero-desc {
+  margin-top: 12px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  max-width: 530px;
+}
+
+/* --- SECTIONS SHARED --- */
+.snacks-section-white {
+  width: 100%;
+  background-color: #ffffff;
+  padding-top: 64px;
+  padding-bottom: 72px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.snacks-section-cream {
+  width: 100%;
+  background-color: #FAF3EA;
+  padding-top: 64px;
+  padding-bottom: 72px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.snacks-section-dark {
+  width: 100%;
+  background-color: #0c0a09;
+  padding-top: 64px;
+  padding-bottom: 72px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+/* --- HEADINGS --- */
+.snacks-tag {
+  color: #ea580c;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3.20px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.snacks-heading {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #1C1917;
+  text-align: center;
+}
+
+.snacks-heading-line {
+  width: 44px;
+  height: 2px;
+  background-color: #ea580c;
+  margin: 12px auto 16px auto;
+}
+
+.snacks-subheading {
+  color: #57534E;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+}
+
+/* --- GRIDS --- */
+.snacks-grid-4 {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.snacks-grid-3 {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- PRODUCT CARDS --- */
+.snacks-card-white {
+  width: 100%;
+  max-width: 256px;
+  min-height: 420px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  border: 1px solid #FFEDD5;
+  box-shadow: 0 2px 12px rgba(43, 18, 8, 0.07);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.snacks-card-white:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(43, 18, 8, 0.10);
+}
+
+.snacks-card-img-ash {
+  width: 100%;
+  height: 176px;
+  background-color: #a3a3a3;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* --- REVIEW CARDS --- */
+.snacks-review-card {
+  width: 100%;
+  max-width: 360px;
+  min-height: 288px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #FFEDD5;
+  box-shadow: 0 2px 12px rgba(43, 18, 8, 0.07);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.snacks-review-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(43, 18, 8, 0.10);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1200px) {
+  .snacks-grid-4, .snacks-grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .snacks-hero-title {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .snacks-heading {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .snacks-grid-4, .snacks-grid-3 {
+    grid-template-columns: 1fr;
+  }
+}

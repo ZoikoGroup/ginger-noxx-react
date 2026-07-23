@@ -1,15 +1,15 @@
-import "@/components/best-sellers/bestsellers.css";
+import "@/app/best-sellers/components/bestsellers.css";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import BestSellersHero from "@/components/best-sellers/BestSellersHero";
-import BestSellersFeatures from "@/components/best-sellers/BestSellersFeatures";
-import BestSellersProduct from "@/components/best-sellers/BestSellersProducts";
-import BestWhyLead from "@/components/best-sellers/BestWhyLead";
-import BestSellersBundles from "@/components/best-sellers/BestSellersBundles";
-import BestSellersTestimonials from "@/components/best-sellers/BestSellersTestimonials";
-import BestSellersFAQ from "@/components/best-sellers/BestSellersFAQ";
+import BestSellersHero from "@/app/best-sellers/components/BestSellersHero";
+import BestSellersFeatures from "@/app/best-sellers/components/BestSellersFeatures";
+import BestSellersProduct from "@/app/best-sellers/components/BestSellersProducts";
+import BestWhyLead from "@/app/best-sellers/components/BestWhyLead";
+import BestSellersBundles from "@/app/best-sellers/components/BestSellersBundles";
+import BestSellersTestimonials from "@/app/best-sellers/components/BestSellersTestimonials";
+import BestSellersFAQ from "@/app/best-sellers/components/BestSellersFAQ";
 
 
 export default function BestSellersPage() {

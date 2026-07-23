@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import CookieContent from "@/components/cookies/CookieContent";
+import CookieContent from "@/app/cookies/components/CookieContent";
 
 const Page = () => {
   return (

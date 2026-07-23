@@ -1,0 +1,316 @@
+/* ==========================================
+   BUNDLES & GIFTS MODULE STYLESHEET
+   ========================================== */
+
+/* --- HERO SECTION --- */
+.bundles-hero-section {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: 320px; /* h-80 */
+  margin: 0 auto;
+  background-color: #0c0a09; /* bg-stone-950 */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 48px 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bundles-hero-radial {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 65% 65% at 60% 45%, rgba(234, 88, 12, 0.20) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.bundles-hero-content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.bundles-hero-tag {
+  padding: 6px 18px;
+  border-radius: 999px;
+  background-color: rgba(234, 88, 12, 0.20);
+  border: 1px solid rgba(234, 88, 12, 0.30);
+  color: #fb923c;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2.80px;
+  margin-bottom: 16px;
+}
+
+.bundles-hero-title {
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 58.75px;
+  text-align: center;
+}
+
+.bundles-hero-title-orange {
+  color: #ea580c;
+}
+
+.bundles-hero-desc {
+  margin-top: 16px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+}
+
+/* --- SECTION SHARED --- */
+.bundles-section-cream {
+  width: 100%;
+  background-color: #FAF3EA; /* bg-orange-50 */
+  padding-top: 64px;
+  padding-bottom: 72px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bundles-section-white {
+  width: 100%;
+  background-color: #ffffff;
+  padding-top: 64px;
+  padding-bottom: 72px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bundles-section-dark {
+  width: 100%;
+  background-color: #0c0a09; /* bg-stone-950 */
+  padding-top: 72px;
+  padding-bottom: 80px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+/* --- HEADINGS --- */
+.bundles-tag {
+  color: #ea580c;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3.20px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.bundles-heading {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #1C1917;
+  text-align: center;
+}
+
+.bundles-heading-line {
+  width: 44px;
+  height: 2px;
+  background-color: #ea580c;
+  margin: 12px auto 16px auto;
+}
+
+.bundles-subheading {
+  color: #57534E;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  max-width: 560px;
+}
+
+/* --- NEED A GIFT FAST BOX --- */
+.bundles-fast-box {
+  width: 100%;
+  max-width: 1120px;
+  height: 288px; /* h-72 */
+  margin: 40px auto 0 auto;
+  background-color: #0c0a09;
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 36px;
+}
+
+/* --- ALL BUNDLES CARDS --- */
+.bundles-grid-4 {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bundles-card-white {
+  width: 100%;
+  max-width: 256px;
+  height: 453px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  border: 1px solid #FFEDD5;
+  box-shadow: 0 2px 12px rgba(43, 18, 8, 0.07);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bundles-card-white:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(43, 18, 8, 0.10);
+}
+
+.bundles-card-img-ash {
+  width: 100%;
+  height: 160px;
+  background-color: #a3a3a3; /* bg-neutral-400 ash image box */
+  position: relative;
+}
+
+/* --- BUILD YOUR OWN BOX --- */
+.bundles-grid-3 {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bundles-build-card {
+  width: 100%;
+  max-width: 360px;
+  height: 320px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  border: 1px solid #FFEDD5;
+  box-shadow: 0 2px 12px rgba(43, 18, 8, 0.07);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- WHY BUNDLES --- */
+.bundles-why-card {
+  width: 100%;
+  max-width: 256px;
+  height: 192px;
+  background-color: #FAF3EA;
+  border-radius: 16px;
+  border: 1px solid #FFEDD5;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* --- REVIEWS --- */
+.bundles-review-card {
+  width: 100%;
+  max-width: 360px;
+  height: 288px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #FFEDD5;
+  box-shadow: 0 2px 12px rgba(43, 18, 8, 0.07);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+/* --- CTA SECTION --- */
+.bundles-cta-title {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 47.84px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.bundles-cta-sub {
+  color: rgba(255, 255, 255, 0.40);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  max-width: 635px;
+  margin-bottom: 32px;
+}
+
+.bundles-cta-badge {
+  padding: 4px 14px;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.30);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+@media (max-width: 1200px) {
+  .bundles-grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .bundles-grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .bundles-fast-box {
+    flex-direction: column;
+    height: auto;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bundles-hero-title {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .bundles-heading {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .bundles-grid-4,
+  .bundles-grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .bundles-cta-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}

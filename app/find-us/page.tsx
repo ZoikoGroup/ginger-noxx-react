@@ -1,17 +1,17 @@
-import "@/components/find-us/find-us.css"
+import "@/app/find-us/components/find-us.css"
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import FindUsHero from "@/components/find-us/FindUsHero";
-import FindUsStatusGuide from "@/components/find-us/FindUsStatusGuide";
-import FindUsLocator from "@/components/find-us/FindUsLocator";
-import BuyOnlineCards from "@/components/find-us/BuyOnlineCards";
-import StockistsAvailability from "@/components/find-us/StockistsAvailability";
-import BringMarket from "@/components/find-us/BringMarket";
-import DistributionGlance from "@/components/find-us/DistributionGlance";
-import NotifyAvailability from "@/components/find-us/NotifyAvailability";
-import FindUsCTA from "@/components/find-us/FindUsCTA";
+import FindUsHero from "@/app/find-us/components/FindUsHero";
+import FindUsStatusGuide from "@/app/find-us/components/FindUsStatusGuide";
+import FindUsLocator from "@/app/find-us/components/FindUsLocator";
+import BuyOnlineCards from "@/app/find-us/components/BuyOnlineCards";
+import StockistsAvailability from "@/app/find-us/components/StockistsAvailability";
+import BringMarket from "@/app/find-us/components/BringMarket";
+import DistributionGlance from "@/app/find-us/components/DistributionGlance";
+import NotifyAvailability from "@/app/find-us/components/NotifyAvailability";
+import FindUsCTA from "@/app/find-us/components/FindUsCTA";
 
 export default function FindProfilePage() {
   return (

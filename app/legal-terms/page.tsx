@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import LegalTermsContent from "@/components/legal-terms/LegalTermsContent";
+import LegalTermsContent from "@/app/legal-terms/components/LegalTermsContent";
 
 export default function LegalTermsPage() {
   return (

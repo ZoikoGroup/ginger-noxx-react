@@ -2,14 +2,14 @@ import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import BeveragesHero from "@/components/beverages/BeveragesHero";
-import BeveragesTrustBar from "@/components/beverages/BeveragesTrustBar";
-import DecisionEngine from "@/components/beverages/DecisionEngine";
-import MostLovedBeverages from "@/components/beverages/MostLovedBeverages";
-import AllGingerBeverages from "@/components/beverages/AllGingerBeverages";
-import WhyGingerNoxx from "@/components/beverages/WhyGingerNoxx";
-import BeveragesReviews from "@/components/beverages/BeveragesReviews";
-import BeveragesCTA from "@/components/beverages/BeveragesCTA";
+import BeveragesHero from "@/app/beverages/components/BeveragesHero";
+import BeveragesTrustBar from "@/app/beverages/components/BeveragesTrustBar";
+import DecisionEngine from "@/app/beverages/components/DecisionEngine";
+import MostLovedBeverages from "@/app/beverages/components/MostLovedBeverages";
+import AllGingerBeverages from "@/app/beverages/components/AllGingerBeverages";
+import WhyGingerNoxx from "@/app/beverages/components/WhyGingerNoxx";
+import BeveragesReviews from "@/app/beverages/components/BeveragesReviews";
+import BeveragesCTA from "@/app/beverages/components/BeveragesCTA";
 
 export const metadata = {
   title: "Ginger Beverages | GingerNoxx",

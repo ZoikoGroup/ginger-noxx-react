@@ -2,12 +2,12 @@ import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import IngredientsHero from "@/components/ingredients/IngredientsHero";
-import CookThisTonight from "@/components/ingredients/CookThisTonight";
-import FlavourProfile from "@/components/ingredients/FlavourProfile";
-import MostUsedKitchen from "@/components/ingredients/MostUsedKitchen";
-import RealKitchensReviews from "@/components/ingredients/RealKitchensReviews";
-import IngredientsCTA from "@/components/ingredients/IngredientsCTA";
+import IngredientsHero from "@/app/ingredients/components/IngredientsHero";
+import CookThisTonight from "@/app/ingredients/components/CookThisTonight";
+import FlavourProfile from "@/app/ingredients/components/FlavourProfile";
+import MostUsedKitchen from "@/app/ingredients/components/MostUsedKitchen";
+import RealKitchensReviews from "@/app/ingredients/components/RealKitchensReviews";
+import IngredientsCTA from "@/app/ingredients/components/IngredientsCTA";
 
 export const metadata = {
   title: "Ginger Ingredients | GingerNoxx",

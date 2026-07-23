@@ -1,11 +1,11 @@
-import "@/components/find-profile/find-profile.css"
+import "@/app/find-profile/components/find-profile.css"
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import FindProfileHero from "@/components/find-profile/FindProfileHero";
-import FindProfileNotify from "@/components/find-profile/FindProfileNotify";
-import FindProfileReviews from "@/components/find-profile/FindProfileReviews";
+import FindProfileHero from "@/app/find-profile/components/FindProfileHero";
+import FindProfileNotify from "@/app/find-profile/components/FindProfileNotify";
+import FindProfileReviews from "@/app/find-profile/components/FindProfileReviews";
 
 export default function FindProfilePage() {
   return (

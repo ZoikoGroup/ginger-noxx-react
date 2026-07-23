@@ -1,0 +1,227 @@
+/* ==========================================
+   WELLNESS MODULE STYLESHEET
+   ========================================== */
+
+/* --- HERO SECTION --- */
+.wellness-hero-section {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: 320px;
+  margin: 0 auto;
+  background-color: #0c0a09;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 48px 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wellness-hero-radial {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 65% 65% at 50% 50%, rgba(234, 88, 12, 0.20) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.wellness-hero-tag {
+  padding: 6px 18px;
+  border-radius: 999px;
+  background-color: rgba(234, 88, 12, 0.20);
+  border: 1px solid rgba(234, 88, 12, 0.30);
+  color: #fb923c;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2.80px;
+  margin-bottom: 16px;
+}
+
+.wellness-hero-title {
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 58.75px;
+  text-align: center;
+}
+
+.wellness-hero-title-orange {
+  color: #ea580c;
+}
+
+.wellness-hero-desc {
+  margin-top: 16px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  max-width: 560px;
+}
+
+/* --- TRUST BAR --- */
+.wellness-trust-bar {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #FED7AA;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #57534E;
+}
+
+/* --- SECTION SHARED --- */
+.wellness-section-cream {
+  width: 100%;
+  background-color: #FAF3EA;
+  padding-top: 64px;
+  padding-bottom: 72px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wellness-section-white {
+  width: 100%;
+  background-color: #ffffff;
+  padding-top: 64px;
+  padding-bottom: 72px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wellness-section-dark {
+  width: 100%;
+  background-color: #0c0a09;
+  padding-top: 80px;
+  padding-bottom: 88px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+/* --- HEADINGS --- */
+.wellness-tag {
+  color: #ea580c;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3.20px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.wellness-heading {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #1C1917;
+  text-align: center;
+}
+
+.wellness-heading-line {
+  width: 44px;
+  height: 2px;
+  background-color: #ea580c;
+  margin: 12px auto 16px auto;
+}
+
+.wellness-subheading {
+  color: #57534E;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  max-width: 580px;
+}
+
+/* --- GRIDS --- */
+.wellness-grid-4 {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wellness-grid-3 {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wellness-grid-2 {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- CARDS --- */
+.wellness-card-white {
+  width: 100%;
+  max-width: 256px;
+  min-height: 430px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #FED7AA;
+  box-shadow: 0 4px 16px rgba(43, 18, 8, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.wellness-card-white:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(43, 18, 8, 0.09);
+}
+
+.wellness-card-img-ash {
+  width: 100%;
+  height: 160px;
+  background-color: #a3a3a3;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1200px) {
+  .wellness-grid-4, .wellness-grid-3, .wellness-grid-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .wellness-hero-title {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .wellness-heading {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .wellness-grid-4, .wellness-grid-3, .wellness-grid-2 {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import AccessibilityContent from "../../components/accessibility/AccessibilityContent";
+import AccessibilityContent from "@/app/accessibility/components/AccessibilityContent";
 
 const Page = () => {
   return (

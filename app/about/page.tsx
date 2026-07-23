@@ -1,19 +1,19 @@
-import "@/components/about/about.css";
+import "@/app/about/components/about.css";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import AboutHero from "@/components/about/AboutHero";
-import AboutStats from "@/components/about/AboutStats";
-import AboutStory from "@/components/about/AboutStory";
-import AboutVision from "@/components/about/AboutVision";
-import AboutModel from "@/components/about/AboutModel";
-import AboutAI from "@/components/about/AboutAI";
-import AboutEcosystem from "@/components/about/AboutEcosystem";
-import AboutPromise from "@/components/about/AboutPromise";
-import AboutSustainability from "@/components/about/AboutSustainability";
-import AboutFuture from "@/components/about/AboutFuture";
-import AboutCTA from "@/components/about/AboutCTA";
+import AboutHero from "@/app/about/components/AboutHero";
+import AboutStats from "@/app/about/components/AboutStats";
+import AboutStory from "@/app/about/components/AboutStory";
+import AboutVision from "@/app/about/components/AboutVision";
+import AboutModel from "@/app/about/components/AboutModel";
+import AboutAI from "@/app/about/components/AboutAI";
+import AboutEcosystem from "@/app/about/components/AboutEcosystem";
+import AboutPromise from "@/app/about/components/AboutPromise";
+import AboutSustainability from "@/app/about/components/AboutSustainability";
+import AboutFuture from "@/app/about/components/AboutFuture";
+import AboutCTA from "@/app/about/components/AboutCTA";
 export default function AboutPage() {
   return (
     <>

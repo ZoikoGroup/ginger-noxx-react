@@ -1,18 +1,18 @@
-import "@/components/innovations/innovations.css";
+import "@/app/innovations/components/innovations.css";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import InnovationHero from "@/components/innovations/InnovationHero";
-import InnovationWrongThings from "@/components/innovations/InnovationWrongThings";
-import InnovationSystems from "@/components/innovations/InnovationSystems";
-import InnovationGingerFusion from "@/components/innovations/InnovationGingerFusion";
-import InnovationFusionPlatform from "@/components/innovations/InnovationFusionPlatform";
-import InnovationConceptShelf from "@/components/innovations/InnovationConceptShelf";
-import InnovationBuiltScale from "@/components/innovations/InnovationBuiltScale";
-import InnovationDifference from "@/components/innovations/InnovationDifference";
-import InnovationAlreadyMotion from "@/components/innovations/InnovationAlreadyMotion";
-import InnovationPlatformReal from "@/components/innovations/InnovationPlatformReal";
+import InnovationHero from "@/app/innovations/components/InnovationHero";
+import InnovationWrongThings from "@/app/innovations/components/InnovationWrongThings";
+import InnovationSystems from "@/app/innovations/components/InnovationSystems";
+import InnovationGingerFusion from "@/app/innovations/components/InnovationGingerFusion";
+import InnovationFusionPlatform from "@/app/innovations/components/InnovationFusionPlatform";
+import InnovationConceptShelf from "@/app/innovations/components/InnovationConceptShelf";
+import InnovationBuiltScale from "@/app/innovations/components/InnovationBuiltScale";
+import InnovationDifference from "@/app/innovations/components/InnovationDifference";
+import InnovationAlreadyMotion from "@/app/innovations/components/InnovationAlreadyMotion";
+import InnovationPlatformReal from "@/app/innovations/components/InnovationPlatformReal";
 export default function InnovationsPage() {
   return (
     <>

@@ -1,20 +1,20 @@
-import "@/components/home/Home.css";
+import "@/app/Home/components/Home.css";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import Hero from "@/components/home/Hero";
-import BestSellers from "@/components/home/BestSellers";
-import ExplorePlatform from "@/components/home/ExplorePlatform";
-import GingerProfile from "@/components/home/GingerProfile";
-import WhyGinger from "@/components/home/WhyGinger";
-import InnovationPlatform from "@/components/home/InnovationPlatform";
-import OurStory from "@/components/home/OurStory";
-import ReviewsTrust from "@/components/home/ReviewsTrust";
-import TradeDistribution from "@/components/home/TradeDistribution";
-import PresenceBar from "@/components/home/PresenceBar";
-import EducationAuthority from "@/components/home/EducationAuthority"
-import Newsletter from "@/components/home/Newsletter";
+import Hero from "@/app/Home/components/Hero";
+import BestSellers from "@/app/Home/components/BestSellers";
+import ExplorePlatform from "@/app/Home/components/ExplorePlatform";
+import GingerProfile from "@/app/Home/components/GingerProfile";
+import WhyGinger from "@/app/Home/components/WhyGinger";
+import InnovationPlatform from "@/app/Home/components/InnovationPlatform";
+import OurStory from "@/app/Home/components/OurStory";
+import ReviewsTrust from "@/app/Home/components/ReviewsTrust";
+import TradeDistribution from "@/app/Home/components/TradeDistribution";
+import PresenceBar from "@/app/Home/components/PresenceBar";
+import EducationAuthority from "@/app/Home/components/EducationAuthority"
+import Newsletter from "@/app/Home/components/Newsletter";
 
 
 export default function Home() {

@@ -1,50 +1,56 @@
-import React from 'react';
 import "./careers.css";
 
 const values = [
   {
-    icon: '💡',
-    title: 'Innovation',
-    desc: 'Pushing boundaries with\nstructured creativity and the\nGinger-Fusion™ system — ideas\nthat define markets, not follow\nthem.'
+    title: "Innovation",
+    description:
+      "Pushing boundaries with structured creativity and the Ginger-Fusion™ system — ideas that define markets, not follow them.",
+    icon: "/careers/innovation.png",
   },
   {
-    icon: '⚖️',
-    title: 'Integrity',
-    desc: 'Responsible sourcing,\nsustainability, and ethical\ndecision-making in everything we\ndo — no shortcuts, no\ncompromises.'
+    title: "Integrity",
+    description:
+      "Responsible sourcing, sustainability, and ethical decision-making in everything we do — no shortcuts, no compromises.",
+    icon: "/careers/integrity.png",
   },
   {
-    icon: '🤝',
-    title: 'Inclusion',
-    desc: 'Diverse teams, inclusive culture,\nand equitable opportunities for all\n— we build better products when\nevery perspective is heard.'
+    title: "Inclusion",
+    description:
+      "Diverse teams, inclusive culture, and equitable opportunities for all — we build better products when every perspective is heard.",
+    icon: "/careers/inclusion.png",
   },
   {
-    icon: '🌍',
-    title: 'Impact',
-    desc: 'Your work drives measurable\nchange in food, wellness, and\nsustainability — here, purpose\nand performance are the same\nthing.'
-  }
+    title: "Impact",
+    description:
+      "Your work drives measurable change in food, wellness, and sustainability — here, purpose and performance are the same thing.",
+    icon: "/careers/impact.png",
+  },
 ];
 
 export default function CareersValues() {
   return (
-    <section className="careers-section-cream flex flex-col items-center px-6">
-      <div className="w-full max-w-[1080px] flex flex-col items-center text-center">
-
-        {/* Title */}
-        <h2 className="careers-heading">
-          What We <span className="careers-heading-orange">Stand For</span>
+    <section className="careers-values-section">
+      <div className="careers-values-container">
+        <h2 className="careers-values-heading">
+          <span className="careers-values-title">What We </span>
+          <span className="careers-values-highlight">Stand For</span>
         </h2>
 
-        {/* 4 Cards Grid */}
-        <div className="careers-values-grid justify-items-center">
-          {values.map((v, idx) => (
-            <div key={idx} className="careers-value-card">
-              <div className="text-3xl leading-10 mb-2 text-center">{v.icon}</div>
-              <h3 className="text-stone-900 text-base font-bold font-['Poppins'] leading-6 mb-2 text-center">{v.title}</h3>
-              <p className="text-stone-600 text-xs font-normal font-['Poppins'] leading-5 text-center whitespace-pre-line">{v.desc}</p>
+        <div className="careers-values-grid">
+          {values.map((value) => (
+            <div className="careers-value-card" key={value.title}>
+              <img
+                src={value.icon}
+                alt={value.title}
+                className="careers-value-icon"
+              />
+
+              <h3>{value.title}</h3>
+
+              <p>{value.description}</p>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

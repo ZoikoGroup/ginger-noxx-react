@@ -1,43 +1,34 @@
-import Image from "next/image";
 import "./beverages.css";
 
 export default function BeveragesHero() {
   return (
     <section className="beverages-hero-section">
-      {/* Background Image */}
-      <Image
-        src="/sustainability/one.png"
-        alt="Ginger Beverages background"
-        fill
-        priority
-        className="object-cover object-center opacity-30 pointer-events-none"
+      <div className="beverages-hero-radial"></div>
+
+      {/* Replace with your actual background image */}
+      <img
+        src="/images/beverages/beverages-hero-bg.png"
+        alt="Ginger Beverages"
+        className="beverages-hero-image"
       />
 
-      {/* Radial Overlay */}
-      <div className="beverages-hero-radial" />
+      <div className="beverages-hero-blur-right"></div>
+      <div className="beverages-hero-blur-left"></div>
 
-      {/* Background Blur Orbs */}
-      <div className="w-[384px] h-[384px] absolute right-[-80px] top-[-80px] bg-orange-600/10 rounded-full blur-2xl pointer-events-none" />
-      <div className="w-[288px] h-[288px] absolute left-[-40px] top-[54px] bg-orange-600/5 rounded-full blur-2xl pointer-events-none" />
-
-      {/* Content */}
-      <div className="relative z-10 flex flex-col items-center text-center">
-        {/* Category Pill Tag */}
-        <div className="beverages-hero-tag">
-          Shop · Beverages
-        </div>
-
-        {/* Title */}
-        <h1 className="beverages-hero-title">
-          Ginger <span className="beverages-hero-title-orange">Beverages</span>
-        </h1>
-
-        {/* Subtitle */}
-        <p className="beverages-hero-desc">
-          Refreshment, energy, and daily wellness<br />
-          powered by real ginger.
-        </p>
+      <div className="beverages-hero-badge">
+        SHOP · BEVERAGES
       </div>
+
+      <h1 className="beverages-hero-title">
+        <span className="title-white">Ginger </span>
+        <span className="title-orange">Beverages</span>
+      </h1>
+
+      <p className="beverages-hero-description">
+        Refreshment, energy, and daily wellness
+        <br />
+        powered by real ginger.
+      </p>
     </section>
   );
 }

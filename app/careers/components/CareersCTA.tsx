@@ -1,31 +1,33 @@
-import React from 'react';
 import "./careers.css";
 
 export default function CareersCTA() {
   return (
-    <section className="careers-section-orange flex flex-col items-center justify-center text-center px-4">
-      <div className="w-full max-w-[800px] mx-auto flex flex-col items-center text-center">
+    <section className="careers-cta-section">
+      <div className="careers-cta-overlay"></div>
 
-        {/* Title */}
+      <div className="careers-cta-container">
         <h2 className="careers-cta-title">
-          Join a Team That Values<br />Purpose and Precision
+          Join a Team That Values
+          <br />
+          Purpose and Precision
         </h2>
 
-        {/* Subtitle */}
-        <p className="careers-cta-sub">
-          Be part of creating products that set global standards in functional food, clean-label formulation, and sustainable impact.
+        <p className="careers-cta-description">
+          Build products that define categories. Work with people who care about
+          what they
+          <br />
+          create. Grow in an environment that rewards ambition and integrity.
         </p>
 
-        {/* Buttons */}
-        <div className="flex flex-wrap items-center justify-center gap-4">
-          <button className="h-[48px] px-[32px] bg-white hover:bg-stone-100 text-[#D4621A] text-sm font-bold rounded-full shadow-md transition-all duration-300 cursor-pointer border-none hover:-translate-y-0.5 font-['Poppins']">
+        <div className="careers-cta-buttons">
+          <a href="#" className="careers-cta-primary">
             Apply Now →
-          </button>
-          <button className="careers-btn-outline">
-            Learn More About Culture
-          </button>
-        </div>
+          </a>
 
+          <a href="#" className="careers-cta-secondary">
+            Learn More About Zoiko
+          </a>
+        </div>
       </div>
     </section>
   );

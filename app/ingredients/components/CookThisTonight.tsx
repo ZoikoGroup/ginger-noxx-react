@@ -1,59 +1,67 @@
-import React from 'react';
 import "./ingredients.css";
 
 const dishes = [
   {
-    icon: "🥘",
+    id: 1,
+    image: "/ingredients/stir-fry.png",
     title: "Stir Fry Bowl",
-    desc: "Quick, satisfying, and packed with ginger heat. 20 minutes from pan to table."
+    description:
+      "Quick, satisfying, and packed with ginger heat. 20 minutes from pan to table.",
   },
   {
-    icon: "🍗",
+    id: 2,
+    image: "/ingredients/ginger-chicken.png",
     title: "Ginger Chicken",
-    desc: "Roast or pan-fry. The Ginger Fire Sauce marinade transforms any chicken dish."
+    description:
+      "Roast or pan-fry. The Ginger Fire Sauce marinade transforms any chicken dish.",
   },
   {
-    icon: "🍜",
+    id: 3,
+    image: "/ingredients/quick-noodles.png",
     title: "Quick Noodles",
-    desc: "12 minutes. One pan. Real depth from the sauce — the fastest ginger meal."
-  }
+    description:
+      "12 minutes. One pan. Real depth from the sauce — the fastest ginger meal.",
+  },
 ];
 
-export default function CookThisTonight() {
+const CookThisTonight = () => {
   return (
-    <section className="ingred-section-cream flex flex-col items-center px-6">
-      <div className="w-full max-w-[1120px] flex flex-col items-center text-center">
+    <section className="cook-tonight-section">
+      <div className="cook-tonight-container">
+        <span className="cook-tonight-subtitle">
+          COOK THIS TONIGHT
+        </span>
 
-        {/* Tag */}
-        <div className="ingred-tag">
-          C O O K &nbsp; T H I S &nbsp; T O N I G H T
-        </div>
-
-        {/* Title */}
-        <h2 className="ingred-heading">
+        <h2 className="cook-tonight-title">
           Cook This Tonight
         </h2>
 
-        {/* Divider */}
-        <div className="ingred-heading-line" />
+        <div className="cook-tonight-divider"></div>
 
-        {/* Subtitle */}
-        <p className="ingred-subheading mb-6">
+        <p className="cook-tonight-description">
           Start with a simple dish — we will show you exactly what to use.
         </p>
 
-        {/* 3 Cards Grid */}
-        <div className="ingred-grid-3 justify-items-center">
-          {dishes.map((d, idx) => (
-            <div key={idx} className="ingred-icon-card">
-              <div className="text-3xl leading-none mb-3">{d.icon}</div>
-              <h3 className="text-stone-900 text-sm font-bold font-['Poppins'] leading-6 mb-1.5">{d.title}</h3>
-              <p className="text-stone-600 text-xs font-normal font-['Poppins'] leading-5">{d.desc}</p>
+        <div className="cook-tonight-grid">
+          {dishes.map((dish) => (
+            <div className="cook-tonight-card" key={dish.id}>
+              <div className="cook-tonight-icon">
+                <img src={dish.image} alt={dish.title} />
+              </div>
+
+              <h3 className="cook-tonight-card-title">
+                {dish.title}
+              </h3>
+
+              <p className="cook-tonight-card-description">
+                {dish.description}
+              </p>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
-}
+};
+
+export default CookThisTonight;

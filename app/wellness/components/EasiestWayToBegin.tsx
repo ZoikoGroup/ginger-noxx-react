@@ -1,87 +1,100 @@
-import React from 'react';
 import "./wellness.css";
 
-const beginOptions = [
+const wellnessSteps = [
+  
   {
-    icon: "⚡",
-    badge: "MOST POPULAR CHOICE",
-    badgeBg: "bg-[#ea580c] text-white",
+    id: 1,
+    image: "/wellness/morning-shot.png",
+    badge: "Recommended First Step",
     title: "Morning Shot",
-    desc: "20ml with your breakfast. Pure ginger intensity to start the day with clarity and energy.",
-    linkText: "Explore Shots →",
-    featured: true
+    description:
+      "60ml Ginger Fire Shot every morning. Takes 5 seconds. The simplest daily ginger habit.",
+    price: "Add to Cart — £18.99 for 6",
+    featured: true,
   },
   {
-    icon: "🍵",
-    badge: "EASY DAILY TEA",
-    badgeBg: "bg-orange-50 border border-orange-200 text-[#b45309]",
+    id: 2,
+    image: "/wellness/evening-tea.png",
     title: "Evening Tea",
-    desc: "Steep with warm water in the evening to unwind, digest comfortably, and soothe after meals.",
-    linkText: "Explore Teas →",
-    featured: false
+    description:
+      "Botanical Iced Tea every evening. Gentle ginger to support digestion and wind down after the day.",
+    price: "Add to Cart — £21.99 for 6",
+    featured: false,
   },
   {
-    icon: "🌾",
-    badge: "FAST SWALLOW",
-    badgeBg: "bg-orange-50 border border-orange-200 text-[#b45309]",
-    title: "Anytime Elixir",
-    desc: "Sip during focus hours or warm weather for hydration with a signature ginger bite.",
-    linkText: "Explore Elixirs →",
-    featured: false
-  }
+    id: 3,
+    image: "/wellness/anytime-drink.png",
+    title: "Anytime Drink",
+    description:
+      "Sparkling Ginger Lime whenever. No schedule required — just reach for it when you want something better.",
+    price: "Add to Cart — £19.99 for 6",
+    featured: false,
+  },
 ];
 
-export default function EasiestWayToBegin() {
+
+const EasiestWayToBegin = () => {
   return (
-    <section className="wellness-section-cream flex flex-col items-center px-6">
-      <div className="w-full max-w-[1140px] flex flex-col items-center text-center">
+    <section className="wellness-begin-section">
+      <div className="wellness-begin-container">
+        {/* Heading */}
 
-        {/* Tag */}
-        <div className="wellness-tag">
-          S T A R T &nbsp; S I M P L E
-        </div>
+        <span className="wellness-begin-subtitle">
+          START SIMPLE
+        </span>
 
-        {/* Title */}
-        <h2 className="wellness-heading">
+        <h2 className="wellness-begin-title">
           The Easiest Way to Begin
         </h2>
 
-        {/* Line Divider */}
-        <div className="wellness-heading-line" />
+        <div className="wellness-begin-divider"></div>
 
-        {/* Subtitle */}
-        <p className="wellness-subheading mb-8">
-          One simple addition to your morning, afternoon, or evening routine.
+        <p className="wellness-begin-description">
+          One low-effort starting point is all you need. Pick the format that
+          fits your
+          <br />
+          day.
         </p>
 
-        {/* 3 Cards Grid */}
-        <div className="wellness-grid-3 justify-items-center">
-          {beginOptions.map((item, idx) => (
-            <div 
-              key={idx} 
-              className={`w-full max-w-[340px] min-h-[220px] bg-white rounded-2xl p-6 flex flex-col items-center text-center justify-between shadow-sm transition-transform hover:-translate-y-1 ${
-                item.featured ? 'border-2 border-[#ea580c]' : 'border border-orange-100'
+        {/* Cards */}
+
+        <div className="wellness-begin-grid">
+          {wellnessSteps.map((item) => (
+            <div
+              key={item.id}
+              className={`wellness-begin-card ${
+                item.featured ? "featured" : ""
               }`}
             >
-              <div className="flex flex-col items-center w-full">
-                <div className="text-3xl leading-none mb-3">{item.icon}</div>
-                <span className={`px-2.5 py-0.5 text-[9px] font-bold uppercase rounded-full tracking-wider mb-2 ${item.badgeBg}`}>
-                  {item.badge}
-                </span>
-                <h3 className="text-stone-900 text-base font-bold font-['Poppins'] mb-2">{item.title}</h3>
-                <p className="text-stone-600 text-xs font-normal font-['Poppins'] leading-5">{item.desc}</p>
-              </div>
+              <img
+  src={item.image}
+  alt={item.title}
+  className="wellness-begin-icon"
+/>
 
-              <div className="mt-4 pt-2">
-                <span className="text-[#ea580c] font-bold font-['Poppins'] text-xs hover:underline cursor-pointer">
-                  {item.linkText}
-                </span>
-              </div>
+              {item.badge && (
+                <div className="wellness-begin-badge">
+                  {item.badge}
+                </div>
+              )}
+
+              <h3 className="wellness-begin-card-title">
+                {item.title}
+              </h3>
+
+              <p className="wellness-begin-card-description">
+                {item.description}
+              </p>
+
+              <button className="wellness-begin-price">
+                {item.price}
+              </button>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
-}
+};
+
+export default EasiestWayToBegin;

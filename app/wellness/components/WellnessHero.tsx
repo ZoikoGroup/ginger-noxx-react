@@ -1,35 +1,39 @@
-import Image from "next/image";
 import "./wellness.css";
 
-export default function WellnessHero() {
+const WellnessHero = () => {
   return (
     <section className="wellness-hero-section">
       {/* Background Image */}
-      <Image
-        src="/sustainability/one.png"
-        alt="Ginger Background"
-        fill
-        className="object-cover opacity-30"
-        priority
+      <img
+        src="/wellness/hero-bg.png"
+        alt="Ginger Wellness"
+        className="wellness-hero-image"
       />
 
-      {/* Radial Overlay */}
-      <div className="wellness-hero-radial" />
+      {/* Background Gradient */}
+      <div className="wellness-hero-gradient"></div>
 
-      {/* Content */}
-      <div className="wellness-hero-content">
-        <div className="wellness-hero-tag">
-          Shop · Wellness
-        </div>
+      {/* Blur Effects */}
+      <div className="wellness-hero-blur-right"></div>
+      <div className="wellness-hero-blur-left"></div>
 
-        <h1 className="wellness-hero-title">
-          Ginger <span className="wellness-hero-title-orange">Wellness</span>
-        </h1>
-
-        <p className="wellness-hero-desc">
-          Support your body naturally — with the power of real ginger.
-        </p>
+      {/* Badge */}
+      <div className="wellness-hero-badge">
+        <span>SHOP · WELLNESS</span>
       </div>
+
+      {/* Heading */}
+      <h1 className="wellness-hero-title">
+        <span className="title-white">Ginger </span>
+        <span className="title-orange">Wellness</span>
+      </h1>
+
+      {/* Description */}
+      <p className="wellness-hero-description">
+        Support your body naturally — with the power of ginger.
+      </p>
     </section>
   );
-}
+};
+
+export default WellnessHero;

@@ -1,227 +1,1996 @@
 /* ==========================================
-   WELLNESS MODULE STYLESHEET
-   ========================================== */
+   WELLNESS HERO SECTION
+========================================== */
 
-/* --- HERO SECTION --- */
 .wellness-hero-section {
   position: relative;
   width: 100%;
   max-width: 1440px;
-  height: 320px;
+  height: 240px;
   margin: 0 auto;
-  background-color: #0c0a09;
+  background: #1c0c04;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 48px 16px;
-  font-family: 'Poppins', sans-serif;
 }
 
-.wellness-hero-radial {
+/* Background Image */
+
+.wellness-hero-image {
+  position: absolute;
+  left: 0;
+  top: -558px;
+  width: 1440px;
+  height: 960px;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Background Gradient */
+
+.wellness-hero-gradient {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 65% 65% at 50% 50%, rgba(234, 88, 12, 0.20) 0%, transparent 65%);
-  pointer-events: none;
+  background: radial-gradient(
+    circle at 60% 45%,
+    rgba(212, 98, 26, 0.2) 0%,
+    rgba(212, 98, 26, 0) 65%
+  );
+  z-index: 1;
 }
 
-.wellness-hero-tag {
-  padding: 6px 18px;
+/* Blur Effects */
+
+.wellness-hero-blur-right {
+  position: absolute;
+  width: 384px;
+  height: 384px;
+  left: 1050px;
+  top: -80px;
+  border-radius: 225px;
+  background: rgba(212, 98, 26, 0.1);
+  filter: blur(48px);
+  z-index: 2;
+}
+
+.wellness-hero-blur-left {
+  position: absolute;
+  width: 288px;
+  height: 288px;
+  left: -40px;
+  top: 3px;
+  border-radius: 50%;
+  background: rgba(212, 98, 26, 0.05);
+  filter: blur(48px);
+  z-index: 2;
+}
+
+/* Badge */
+
+.wellness-hero-badge {
+  position: absolute;
+  top: 46px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(212, 98, 26, 0.2);
+  border: 1px solid rgba(212, 98, 26, 0.3);
   border-radius: 999px;
-  background-color: rgba(234, 88, 12, 0.20);
-  border: 1px solid rgba(234, 88, 12, 0.30);
-  color: #fb923c;
+  z-index: 3;
+}
+
+.wellness-hero-badge span {
+  color: #e8844a;
+  font-family: "Poppins", sans-serif;
   font-size: 10px;
   font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 2.8px;
   text-transform: uppercase;
-  letter-spacing: 2.80px;
-  margin-bottom: 16px;
 }
+
+/* Title */
 
 .wellness-hero-title {
-  color: #ffffff;
-  font-size: 56px;
+  position: absolute;
+  top: 98px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
   font-weight: 700;
   line-height: 58.75px;
-  text-align: center;
+  z-index: 3;
 }
 
-.wellness-hero-title-orange {
-  color: #ea580c;
-}
-
-.wellness-hero-desc {
-  margin-top: 16px;
+.title-white {
   color: #ffffff;
+}
+
+.title-orange {
+  color: #d4621a;
+}
+
+/* Description */
+
+.wellness-hero-description {
+  position: absolute;
+  top: 173px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 465px;
+  margin: 0;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
-  text-align: center;
-  max-width: 560px;
+  z-index: 3;
 }
 
-/* --- TRUST BAR --- */
-.wellness-trust-bar {
-  width: 100%;
-  background-color: #ffffff;
-  border-bottom: 1px solid #FED7AA;
-  padding: 14px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  flex-wrap: wrap;
-  font-family: 'Poppins', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  color: #57534E;
-}
+/* ==========================================
+   RESPONSIVE
+========================================== */
 
-/* --- SECTION SHARED --- */
-.wellness-section-cream {
-  width: 100%;
-  background-color: #FAF3EA;
-  padding-top: 64px;
-  padding-bottom: 72px;
-  font-family: 'Poppins', sans-serif;
-}
+@media (max-width: 1024px) {
+  .wellness-hero-title {
+    font-size: 48px;
+    line-height: 52px;
+  }
 
-.wellness-section-white {
-  width: 100%;
-  background-color: #ffffff;
-  padding-top: 64px;
-  padding-bottom: 72px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.wellness-section-dark {
-  width: 100%;
-  background-color: #0c0a09;
-  padding-top: 80px;
-  padding-bottom: 88px;
-  font-family: 'Poppins', sans-serif;
-  position: relative;
-}
-
-/* --- HEADINGS --- */
-.wellness-tag {
-  color: #ea580c;
-  font-size: 10px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 3.20px;
-  margin-bottom: 8px;
-  text-align: center;
-}
-
-.wellness-heading {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 40px;
-  color: #1C1917;
-  text-align: center;
-}
-
-.wellness-heading-line {
-  width: 44px;
-  height: 2px;
-  background-color: #ea580c;
-  margin: 12px auto 16px auto;
-}
-
-.wellness-subheading {
-  color: #57534E;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: center;
-  max-width: 580px;
-}
-
-/* --- GRIDS --- */
-.wellness-grid-4 {
-  margin-top: 36px;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 24px;
-  width: 100%;
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.wellness-grid-3 {
-  margin-top: 36px;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
-  width: 100%;
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.wellness-grid-2 {
-  margin-top: 36px;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
-  width: 100%;
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* --- CARDS --- */
-.wellness-card-white {
-  width: 100%;
-  max-width: 256px;
-  min-height: 430px;
-  background-color: #ffffff;
-  border-radius: 20px;
-  border: 1px solid #FED7AA;
-  box-shadow: 0 4px 16px rgba(43, 18, 8, 0.05);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.wellness-card-white:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(43, 18, 8, 0.09);
-}
-
-.wellness-card-img-ash {
-  width: 100%;
-  height: 160px;
-  background-color: #a3a3a3;
-  position: relative;
-  flex-shrink: 0;
-}
-
-/* --- RESPONSIVE --- */
-@media (max-width: 1200px) {
-  .wellness-grid-4, .wellness-grid-3, .wellness-grid-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .wellness-hero-description {
+    width: 90%;
   }
 }
 
 @media (max-width: 768px) {
+  .wellness-hero-section {
+    height: 300px;
+  }
+
+  .wellness-hero-image {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    object-fit: cover;
+  }
+
+  .wellness-hero-blur-left,
+  .wellness-hero-blur-right {
+    display: none;
+  }
+
+  .wellness-hero-badge {
+    top: 40px;
+  }
+
   .wellness-hero-title {
+    top: 90px;
+    width: 100%;
+    padding: 0 20px;
+    white-space: normal;
+    text-align: center;
     font-size: 40px;
     line-height: 44px;
   }
 
-  .wellness-heading {
-    font-size: 28px;
+  .wellness-hero-description {
+    top: 175px;
+    width: calc(100% - 40px);
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wellness-hero-section {
+    height: 290px;
+  }
+
+  .wellness-hero-title {
+    font-size: 34px;
+    line-height: 38px;
+  }
+
+  .wellness-hero-description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+/* ==========================================
+   WELLNESS TRUST BAR
+========================================== */
+
+.wellness-trust-bar {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-top: 1px solid #f5e9d9;
+  border-bottom: 1px solid #f5e9d9;
+}
+
+.wellness-trust-container {
+  min-height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 34px;
+  padding: 0 24px;
+  flex-wrap: wrap;
+}
+
+.wellness-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.wellness-trust-dot {
+  width: 5px;
+  height: 5px;
+  background: #d4621a;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.wellness-trust-text {
+  color: #7a5040;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1024px) {
+  .wellness-trust-container {
+    gap: 22px;
+    padding: 12px 24px;
+  }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+  .wellness-trust-container {
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 14px 20px;
+  }
+
+  .wellness-trust-item {
+    width: calc(50% - 8px);
+  }
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+  .wellness-trust-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .wellness-trust-item {
+    width: 100%;
+  }
+
+  .wellness-trust-text {
+    font-size: 11px;
+  }
+}
+/* ==========================================
+   EASIEST WAY TO BEGIN
+========================================== */
+
+.wellness-begin-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 160px 82px;
+  background: #fdf6ee;
+}
+
+.wellness-begin-container {
+  width: 100%;
+}
+
+/* Heading */
+
+.wellness-begin-subtitle {
+  display: block;
+  text-align: center;
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.wellness-begin-title {
+  margin: 12px 0 0;
+  text-align: center;
+  color: #1c0c04;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.wellness-begin-divider {
+  width: 44px;
+  height: 2px;
+  margin: 16px auto;
+  background: #d4621a;
+}
+
+.wellness-begin-description {
+  margin: 0 auto 48px;
+  text-align: center;
+  color: #7a5040;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* Cards */
+
+.wellness-begin-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.wellness-begin-card {
+  background: #ffffff;
+  border: 2px solid #f5e9d9;
+  border-radius: 24px;
+  text-align: center;
+  padding: 32px 28px;
+  transition: all 0.3s ease;
+}
+
+.wellness-begin-card.featured {
+  border-color: #d4621a;
+}
+
+.wellness-begin-card:hover {
+  transform: translateY(-4px);
+}
+
+.wellness-begin-icon {
+  width: 28.8px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 8px;
+}
+
+.wellness-begin-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  margin-bottom: 8px;
+  background: #d4621a;
+  border-radius: 999px;
+
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.wellness-begin-card-title {
+  margin: 0 0 6px;
+  color: #1c0c04;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.wellness-begin-card-description {
+  min-height: 72px;
+  margin: 0 0;
+  color: #7a5040;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.wellness-begin-price {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1024px) {
+
+  .wellness-begin-section {
+    padding: 70px 40px;
+  }
+
+  .wellness-begin-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .wellness-begin-section {
+    padding: 60px 20px;
+  }
+
+  .wellness-begin-title {
+    font-size: 30px;
     line-height: 36px;
   }
 
-  .wellness-grid-4, .wellness-grid-3, .wellness-grid-2 {
-    grid-template-columns: 1fr;
+  .wellness-begin-description {
+    font-size: 15px;
   }
+
+  .wellness-begin-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .wellness-begin-card {
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .wellness-begin-card-description {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .wellness-begin-section {
+    padding: 50px 16px;
+  }
+
+  .wellness-begin-title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .wellness-begin-description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .wellness-begin-card {
+    padding: 24px 20px;
+  }
+
+  .wellness-begin-icon {
+    font-size: 32px;
+  }
+
+  .wellness-begin-card-title {
+    font-size: 13px;
+  }
+
+  .wellness-begin-card-description {
+    font-size: 11px;
+    line-height: 18px;
+  }
+}
+/* ==========================================
+   DAILY RHYTHM
+========================================== */
+
+.daily-rhythm-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 160px 50px;
+  background: #ffffff;
+}
+
+.daily-rhythm-container {
+  width: 100%;
+}
+
+/* Heading */
+
+.daily-rhythm-subtitle {
+  display: block;
+  text-align: center;
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.daily-rhythm-title {
+  margin: 12px 0 0;
+  text-align: center;
+  color: #1c0c04;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.daily-rhythm-divider {
+  width: 44px;
+  height: 2px;
+  margin: 16px auto;
+  background: #d4621a;
+}
+
+.daily-rhythm-description {
+  margin: 0 auto 46px;
+  text-align: center;
+  color: #7a5040;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* Grid */
+
+.daily-rhythm-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+/* Card */
+
+.daily-rhythm-card {
+  background: #b54e10;
+  min-height: 255px;
+  padding: 32px 8px;
+  text-align: center;
+}
+
+.daily-rhythm-time {
+  display: block;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: "Poppins", sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.daily-rhythm-icon {
+  width: 20.8px;
+  height: 29px;
+  object-fit: contain;
+  margin: 0 auto 8px;
+  display: block;
+}
+
+.daily-rhythm-card-title {
+  margin: 0 0 4px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.daily-rhythm-card-description {
+  min-height: 60px;
+  margin: 0 0 10px;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "Poppins", sans-serif;
+  font-size: 11.7px;
+  font-weight: 400;
+  line-height: 18.1px;
+}
+
+.daily-rhythm-tag {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1024px) {
+
+  .daily-rhythm-section {
+    padding: 70px 40px;
+  }
+
+  .daily-rhythm-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .daily-rhythm-card {
+    min-height: 260px;
+  }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+  .daily-rhythm-section {
+    padding: 60px 20px;
+  }
+
+  .daily-rhythm-title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .daily-rhythm-description {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .daily-rhythm-grid {
+    grid-template-columns: 1fr;
+    border-radius: 20px;
+  }
+
+  .daily-rhythm-card {
+    min-height: auto;
+    padding: 30px 24px;
+  }
+
+  .daily-rhythm-card-description {
+    min-height: auto;
+  }
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+  .daily-rhythm-section {
+    padding: 50px 16px;
+  }
+
+  .daily-rhythm-title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .daily-rhythm-description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .daily-rhythm-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .daily-rhythm-card-title {
+    font-size: 13px;
+  }
+
+  .daily-rhythm-card-description {
+    font-size: 11px;
+    line-height: 18px;
+  }
+
+  .daily-rhythm-tag {
+    font-size: 9px;
+    padding: 6px 12px;
+  }
+}
+/* ==========================================
+   EXPLORE BY WELLNESS FOCUS
+========================================== */
+
+.wellness-focus-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 160px;
+  background: #fdf6ee;
+}
+
+.wellness-focus-container {
+  width: 100%;
+}
+
+/* Heading */
+
+.wellness-focus-subtitle {
+  display: block;
+  text-align: center;
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.wellness-focus-title {
+  margin: 12px 0 0;
+  text-align: center;
+  color: #1c0c04;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.wellness-focus-divider {
+  width: 44px;
+  height: 2px;
+  margin: 16px auto;
+  background: #d4621a;
+}
+
+.wellness-focus-description {
+  margin: 0 auto 48px;
+  max-width: 560px;
+  text-align: center;
+  color: #7a5040;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* Grid */
+
+.wellness-focus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* Card */
+
+.wellness-focus-card {
+  background: #ffffff;
+  border: 1px solid #f5e9d9;
+  border-radius: 16px;
+  padding: 28px 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.wellness-focus-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 8px 24px rgba(43, 18, 8, 0.08);
+}
+
+/* Icon */
+
+.wellness-focus-icon {
+  width: 24px;
+  height: 33px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 8px;
+}
+
+/* Title */
+
+.wellness-focus-card-title {
+  margin: 0;
+  color: #1c0c04;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+/* Description */
+
+.wellness-focus-card-description {
+  margin: 0;
+  color: #7a5040;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1024px) {
+
+  .wellness-focus-section {
+    padding: 70px 40px;
+  }
+
+  .wellness-focus-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+  .wellness-focus-section {
+    padding: 60px 20px;
+  }
+
+  .wellness-focus-title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .wellness-focus-description {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 36px;
+  }
+
+  .wellness-focus-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .wellness-focus-card {
+    max-width: 380px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px 20px;
+  }
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+  .wellness-focus-section {
+    padding: 50px 16px;
+  }
+
+  .wellness-focus-title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .wellness-focus-description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .wellness-focus-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .wellness-focus-card-title {
+    font-size: 13px;
+  }
+
+  .wellness-focus-card-description {
+    font-size: 11px;
+    line-height: 18px;
+  }
+}
+/* ==========================================
+   MOST TRUSTED CHOICES
+========================================== */
+
+.trusted-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 160px 100px;
+  background: #ffffff;
+}
+
+.trusted-container {
+  width: 100%;
+}
+
+/* Heading */
+
+.trusted-subtitle {
+  display: block;
+  text-align: center;
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.trusted-title {
+  margin: 12px 0 0;
+  text-align: center;
+  color: #1c0c04;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.trusted-divider {
+  width: 44px;
+  height: 2px;
+  background: #d4621a;
+  margin: 16px auto;
+}
+
+.trusted-description {
+  margin-bottom: 48px;
+  text-align: center;
+  color: #7a5040;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+/* Grid */
+
+.trusted-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+/* Card */
+
+.trusted-card {
+  background: #ffffff;
+  border: 1px solid #f5e9d9;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0px 2px 12px rgba(43, 18, 8, 0.07);
+  transition: 0.3s;
+}
+
+.trusted-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Image */
+
+.trusted-image {
+  position: relative;
+  width: 100%;
+  height: 176px;
+  background: #d9d9d9;
+}
+
+.trusted-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Badges */
+
+.trusted-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 6px 12px;
+  border-radius: 999px;
+
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+.trusted-badge.top-seller {
+  background: #d4621a;
+}
+
+.trusted-badge.best-value {
+  background: #276749;
+}
+
+/* Content */
+
+.trusted-content {
+  padding: 15px;
+}
+
+.trusted-category {
+  display: block;
+  margin-bottom: 8px;
+
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.trusted-product-title {
+  margin: 0 0 8px;
+
+  color: #1c0c04;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.trusted-product-description {
+  min-height: 64px;
+  margin: 0 0 8px;
+
+  color: #7a5040;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.trusted-price-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.trusted-price {
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.trusted-old-price {
+  color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.trusted-pack {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #d4621a;
+
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.trusted-btn {
+  width: 100%;
+  height: 42px;
+  border: none;
+  border-radius: 999px;
+  background: #d4621a;
+
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.trusted-btn:hover {
+  background: #b54e10;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:1024px){
+
+  .trusted-section{
+    padding:70px 40px;
+  }
+
+  .trusted-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+@media (max-width:768px){
+
+  .trusted-section{
+    padding:60px 20px;
+  }
+
+  .trusted-title{
+    font-size:30px;
+    line-height:36px;
+  }
+
+  .trusted-description{
+    font-size:15px;
+    margin-bottom:36px;
+  }
+
+  .trusted-grid{
+    grid-template-columns:1fr;
+    gap:24px;
+  }
+
+  .trusted-card{
+    max-width:360px;
+    width:100%;
+    margin:0 auto;
+  }
+
+}
+
+@media (max-width:480px){
+
+  .trusted-section{
+    padding:50px 16px;
+  }
+
+  .trusted-title{
+    font-size:28px;
+    line-height:34px;
+  }
+
+  .trusted-description{
+    font-size:14px;
+    line-height:22px;
+  }
+
+  .trusted-content{
+    padding:18px;
+  }
+
+  .trusted-image{
+    height:200px;
+  }
+
+  .trusted-product-title{
+    font-size:15px;
+  }
+
+  .trusted-price{
+    font-size:18px;
+  }
+
+  .trusted-btn{
+    height:40px;
+  }
+
+}
+/* ==========================================
+   WELLNESS SETS
+========================================== */
+
+.wellness-sets-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 160px;
+  background: #fdf6ee;
+}
+
+.wellness-sets-container {
+  width: 100%;
+}
+
+/* Heading */
+
+.wellness-sets-subtitle {
+  display: block;
+  text-align: center;
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.wellness-sets-title {
+  margin: 12px 0 0;
+  text-align: center;
+  color: #1c0c04;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.wellness-sets-divider {
+  width: 44px;
+  height: 2px;
+  margin: 16px auto;
+  background: #d4621a;
+}
+
+.wellness-sets-description {
+  margin: 0 auto 48px;
+  text-align: center;
+  color: #7a5040;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* Grid */
+
+.wellness-sets-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+/* Card */
+
+.wellness-set-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+
+  background: #ffffff;
+  border: 1px solid #f5e9d9;
+  border-radius: 24px;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.wellness-set-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 8px 24px rgba(43, 18, 8, 0.08);
+}
+
+/* Icon */
+
+.wellness-set-icon-box {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #fdf6ee;
+  border: 1px solid #f5e9d9;
+  border-radius: 16px;
+}
+
+.wellness-set-icon {
+  width: 24px;
+  height: 33px;
+  object-fit: contain;
+}
+
+/* Content */
+
+.wellness-set-content {
+  flex: 1;
+}
+
+.wellness-set-category {
+  display: block;
+  margin-bottom: 4px;
+
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+.wellness-set-title {
+  margin: 0 0 6px;
+
+  color: #1c0c04;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.wellness-set-text {
+  margin: 0 0 8px;
+
+  color: #7a5040;
+  font-family: "Poppins", sans-serif;
+  font-size: 12.5px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.wellness-set-price-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.wellness-set-price {
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.wellness-set-saving {
+  color: #7a5040;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.wellness-set-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 130px;
+  height: 38px;
+
+  border: none;
+  border-radius: 999px;
+  background: #d4621a;
+
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.wellness-set-btn:hover {
+  background: #b54e10;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1024px) {
+
+  .wellness-sets-section {
+    padding: 70px 40px;
+  }
+
+  .wellness-sets-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+  .wellness-sets-section {
+    padding: 60px 20px;
+  }
+
+  .wellness-sets-title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .wellness-sets-description {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 36px;
+  }
+
+  .wellness-set-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 24px;
+  }
+
+  .wellness-set-price-row {
+    justify-content: center;
+  }
+
+  .wellness-set-btn {
+    width: 100%;
+    max-width: 220px;
+  }
+
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+  .wellness-sets-section {
+    padding: 50px 16px;
+  }
+
+  .wellness-sets-title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .wellness-sets-description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .wellness-set-icon-box {
+    width: 52px;
+    height: 52px;
+  }
+
+  .wellness-set-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .wellness-set-title {
+    font-size: 13px;
+  }
+
+  .wellness-set-text {
+    font-size: 11px;
+    line-height: 18px;
+  }
+
+  .wellness-set-price {
+    font-size: 16px;
+  }
+
+  .wellness-set-btn {
+    height: 40px;
+    font-size: 11px;
+  }
+
+}
+/* ==========================================
+   WELLNESS REVIEWS
+========================================== */
+
+.wellness-reviews-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 160px;
+  background: #ffffff;
+}
+
+.wellness-reviews-container {
+  width: 100%;
+}
+
+/* Heading */
+
+.wellness-reviews-subtitle {
+  display: block;
+  text-align: center;
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.wellness-reviews-title {
+  margin: 12px 0 0;
+  text-align: center;
+  color: #1c0c04;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.wellness-reviews-divider {
+  width: 44px;
+  height: 2px;
+  margin: 16px auto 48px;
+  background: #d4621a;
+}
+
+/* Grid */
+
+.wellness-reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+/* Card */
+
+.wellness-review-card {
+  background: #ffffff;
+  border: 1px solid #f5e9d9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 12px rgba(43, 18, 8, 0.07);
+  transition: all 0.3s ease;
+}
+
+.wellness-review-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Stars */
+
+.wellness-review-stars {
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+/* Tag */
+
+.wellness-review-tag {
+  display: inline-block;
+  padding: 5px 12px;
+  margin-bottom: 8px;
+
+  background: #fff3e8;
+  border: 1px solid #e8d0b8;
+  border-radius: 999px;
+
+  color: #a8835c;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+/* Review Title */
+
+.wellness-review-heading {
+  border-left: 3px solid #d4621a;
+  padding-left: 14px;
+  margin-bottom: 8px;
+}
+
+.wellness-review-heading h3 {
+  margin: 0;
+
+  color: #1c0c04;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+/* Description */
+
+.wellness-review-description {
+  min-height: 105px;
+  margin: 0 0 4px;
+
+  color: #7a5040;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* Footer */
+
+.wellness-review-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.wellness-review-name {
+  color: #1c0c04;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.wellness-review-verified {
+  color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:1024px){
+
+  .wellness-reviews-section{
+    padding:70px 40px;
+  }
+
+  .wellness-reviews-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+  .wellness-reviews-section{
+    padding:60px 20px;
+  }
+
+  .wellness-reviews-title{
+    font-size:30px;
+    line-height:36px;
+  }
+
+  .wellness-reviews-grid{
+    grid-template-columns:1fr;
+    gap:24px;
+  }
+
+  .wellness-review-card{
+    max-width:420px;
+    margin:0 auto;
+    width:100%;
+  }
+
+  .wellness-review-description{
+    min-height:auto;
+  }
+
+  .wellness-review-footer{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:6px;
+  }
+
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width:480px){
+
+  .wellness-reviews-section{
+    padding:50px 16px;
+  }
+
+  .wellness-reviews-title{
+    font-size:28px;
+    line-height:34px;
+  }
+
+  .wellness-review-card{
+    padding:20px;
+  }
+
+  .wellness-review-heading h3{
+    font-size:13px;
+    line-height:22px;
+  }
+
+  .wellness-review-description{
+    font-size:11px;
+    line-height:18px;
+  }
+
+  .wellness-review-tag{
+    font-size:9px;
+  }
+
+  .wellness-review-name,
+  .wellness-review-verified{
+    font-size:11px;
+  }
+
+}
+/* ==========================================
+   WELLNESS CTA
+========================================== */
+
+.wellness-cta-section {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 88px 20px 80px;
+  background: #1c0c04;
+  overflow: hidden;
+}
+
+.wellness-cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 80%,
+    rgba(212, 98, 26, 0.2) 0%,
+    rgba(212, 98, 26, 0) 60%
+  );
+  pointer-events: none;
+}
+
+.wellness-cta-container {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Subtitle */
+
+.wellness-cta-subtitle {
+  display: block;
+  margin-bottom: 16px;
+
+  color: rgba(212, 98, 26, 0.7);
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+/* Title */
+
+.wellness-cta-title {
+  margin: 0;
+
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 47.84px;
+}
+
+/* Description */
+
+.wellness-cta-description {
+  max-width: 650px;
+  margin: 24px auto 36px;
+
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25.84px;
+}
+
+/* Buttons */
+
+.wellness-cta-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.wellness-cta-primary,
+.wellness-cta-secondary {
+  height: 48px;
+  border-radius: 999px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.wellness-cta-primary {
+  min-width: 140px;
+  border: none;
+  background: #d4621a;
+  color: #ffffff;
+}
+
+.wellness-cta-primary:hover {
+  background: #b54e10;
+}
+
+.wellness-cta-secondary {
+  min-width: 170px;
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid rgba(255,255,255,.25);
+}
+
+.wellness-cta-secondary:hover {
+  border-color: #ffffff;
+}
+
+/* Badges */
+
+.wellness-cta-badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.wellness-cta-badge {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.05);
+
+  color: rgba(255,255,255,.3);
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: .5px;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:1024px){
+
+  .wellness-cta-section{
+    padding:80px 30px 70px;
+  }
+
+  .wellness-cta-title{
+    font-size:34px;
+    line-height:44px;
+  }
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+  .wellness-cta-section{
+    padding:70px 20px 60px;
+  }
+
+  .wellness-cta-title{
+    font-size:30px;
+    line-height:38px;
+  }
+
+  .wellness-cta-description{
+    font-size:15px;
+    line-height:24px;
+    margin:20px auto 32px;
+  }
+
+  .wellness-cta-buttons{
+    flex-direction:column;
+    gap:14px;
+  }
+
+  .wellness-cta-primary,
+  .wellness-cta-secondary{
+    width:100%;
+    max-width:280px;
+  }
+
+  .wellness-cta-badges{
+    gap:8px;
+  }
+
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width:480px){
+
+  .wellness-cta-section{
+    padding:60px 16px 50px;
+  }
+
+  .wellness-cta-title{
+    font-size:28px;
+    line-height:34px;
+  }
+
+  .wellness-cta-description{
+    font-size:14px;
+    line-height:22px;
+  }
+
+  .wellness-cta-badge{
+    font-size:9px;
+    padding:6px 10px;
+  }
+
 }

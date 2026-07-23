@@ -1,61 +1,92 @@
-import React from 'react';
 import "./careers.css";
 
 const jobs = [
   {
-    tag: "SALES & EXPANSION",
-    title: "Account Manager — GingerNoxx™",
-    location: "London HQ / Hybrid",
+    department: "Marketing & Brand",
+    title: "Senior Brand Manager — GingerNoxx™",
+    location: "📍 Remote / UK",
+    type: "⏰ Full-Time",
+    extra: "💰 Competitive",
+    badge: "New",
   },
   {
-    tag: "TECHNICAL R&D",
-    title: "Food Scientist — Beverage Formulations",
-    location: "London HQ / On-site",
+    department: "Culinary Innovation & R&D",
+    title: "Food Scientist — Beverage Formulation",
+    location: "📍 Sacramento, CA",
+    type: "⏰ Full-Time",
+    extra: "🔬 R&D",
+    badge: "New",
   },
   {
-    tag: "E-COMMERCE & DIGITAL",
+    department: "Technology & Digital",
     title: "E-Commerce Manager — International Markets",
-    location: "London HQ / Remote",
+    location: "📍 London, UK",
+    type: "⏰ Full-Time",
+    extra: "💻 Digital",
   },
   {
-    tag: "SUPPLY CHAIN & LOGISTICS",
-    title: "Global Supply Chain Lead",
-    location: "London HQ / Hybrid",
-  }
+    department: "Marketing & Brand",
+    title: "Content & Social Media Lead",
+    location: "📍 Remote",
+    type: "⏰ Full-Time",
+    extra: "✍️ Creative",
+  },
 ];
 
 export default function CareersJobs() {
   return (
-    <section className="careers-section-cream flex flex-col items-center px-6">
-      <div className="w-full max-w-[1080px] flex flex-col items-center text-center">
-
+    <section className="careers-jobs-section">
+      <div className="careers-jobs-container">
         {/* Heading */}
-        <h2 className="careers-heading">
-          Current <br />
-          <span className="careers-heading-orange">Opportunities</span>
+        <h2 className="careers-jobs-heading">
+          <span className="careers-jobs-title">
+            Current
+            <br />
+          </span>
+          <span className="careers-jobs-highlight">
+            Opportunities
+          </span>
         </h2>
 
-        {/* Jobs List */}
+        {/* Job Cards */}
         <div className="careers-jobs-list">
-          {jobs.map((job, idx) => (
-            <div key={idx} className="careers-job-card">
-              <div className="flex flex-col text-left">
-                <span className="careers-job-tag">{job.tag}</span>
-                <h3 className="careers-job-title">{job.title}</h3>
-                <span className="careers-job-location">📍 {job.location}</span>
+          {jobs.map((job) => (
+            <div className="career-job-card" key={job.title}>
+              <div className="career-job-left">
+                <div className="career-job-category">
+                  {job.department}
+                </div>
+
+                <h3>{job.title}</h3>
+
+                <div className="career-job-meta">
+                  <span>{job.location}</span>
+                  <span>{job.type}</span>
+                  <span>{job.extra}</span>
+                </div>
               </div>
-              <button className="careers-apply-btn">
-                Apply →
-              </button>
+
+              <div className="career-job-right">
+                {job.badge && (
+                  <div className="career-job-badge">
+                    {job.badge}
+                  </div>
+                )}
+
+                <a href="#" className="career-job-apply">
+                  Apply →
+                </a>
+              </div>
             </div>
           ))}
         </div>
 
-        {/* View Open Positions Button */}
-        <button className="mt-10 h-12 px-8 rounded-full border-2 border-[#D4621A] text-[#D4621A] hover:bg-[#D4621A] hover:text-white text-sm font-semibold transition-colors cursor-pointer bg-transparent">
-          View Open Positions ↓
-        </button>
-
+        {/* Bottom Button */}
+        <div className="careers-jobs-footer">
+          <a href="#" className="careers-jobs-button">
+            View All Open Positions →
+          </a>
+        </div>
       </div>
     </section>
   );

@@ -1,35 +1,42 @@
-import Image from "next/image";
 import "./ingredients.css";
 
-export default function IngredientsHero() {
+const IngredientsHero = () => {
   return (
-    <section className="ingred-hero-section">
+    <section className="ingredients-hero-section">
+      {/* Background */}
+      <div className="ingredients-hero-bg"></div>
+
       {/* Background Image */}
-      <Image
-        src="/sustainability/one.png"
-        alt="Ginger Background"
-        fill
-        className="object-cover opacity-30"
-        priority
+      <img
+        src="/ingredients/hero-bg.png"
+        alt="Ginger Ingredients"
+        className="ingredients-hero-image"
       />
 
-      {/* Radial Overlay */}
-      <div className="ingred-hero-radial" />
+      {/* Blur Effects */}
+      <div className="ingredients-hero-blur-right"></div>
+      <div className="ingredients-hero-blur-left"></div>
 
-      {/* Content */}
-      <div className="ingred-hero-content">
-        <div className="ingred-hero-tag">
+      <div className="ingredients-hero-content">
+        <div className="ingredients-hero-badge">
           Shop · Ingredients
         </div>
 
-        <h1 className="ingred-hero-title">
-          Ginger <span className="ingred-hero-title-orange">Ingredients</span>
+        <h1 className="ingredients-hero-title">
+          <span className="ingredients-hero-title-white">
+            Ginger{" "}
+          </span>
+          <span className="ingredients-hero-title-orange">
+            Ingredients
+          </span>
         </h1>
 
-        <p className="ingred-hero-desc">
+        <p className="ingredients-hero-description">
           Bring bold flavour, warmth, and depth to every dish with real ginger.
         </p>
       </div>
     </section>
   );
-}
+};
+
+export default IngredientsHero;

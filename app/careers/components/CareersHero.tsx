@@ -1,60 +1,58 @@
-import Image from "next/image";
 import "./careers.css";
 
 export default function CareersHero() {
   return (
     <section className="careers-hero-section">
       {/* Background Image */}
-      <Image
-        src="/innovation/hero.png"
-        alt="Careers Background"
-        fill
-        className="object-cover opacity-50"
-        priority
+      <img
+        src="/careers/one.png"
+        alt="Careers Hero"
+        className="careers-hero-bg"
       />
 
-      {/* Radial Overlay */}
-      <div className="careers-hero-radial" />
+      {/* Gradient Overlay */}
+      <div className="careers-hero-overlay"></div>
 
       {/* Content */}
       <div className="careers-hero-content">
-
-        {/* Title */}
         <h1 className="careers-hero-title">
-          Build <span className="careers-hero-title-orange">With Us</span>
+          <span className="careers-title-white">Build </span>
+          <span className="careers-title-orange">With Us</span>
         </h1>
 
-        {/* Subtitle */}
-        <p className="careers-hero-desc">
-          Shape the future of functional food and beverage. Explore open roles across R&amp;D, operations, marketing, and leadership.
+        <p className="careers-hero-description">
+          At Zoiko Foods Corp, we are shaping the future of
+          <br />
+          food innovation. Join a team where creativity, science, and global
+          impact converge.
         </p>
 
-        {/* Buttons */}
         <div className="careers-hero-buttons">
-          <button className="careers-btn-primary">
-            View Open Positions ↓
-          </button>
-          <button className="careers-btn-outline">
-            Why Join Us
-          </button>
+          <a href="#jobs" className="careers-btn-primary">
+            View Open Positions →
+          </a>
+
+          <a href="#why-work" className="careers-btn-secondary">
+            Why Work With Us
+          </a>
         </div>
 
-        {/* Stats Bar */}
-        <div className="careers-stats-bar">
-          <div className="careers-stat-item">
-            <span className="careers-stat-val">15+</span>
-            <span className="careers-stat-label">Global Team</span>
+        <div className="careers-hero-stats">
+          <div className="career-stat">
+            <h3>6+</h3>
+            <p>Global Markets</p>
           </div>
-          <div className="careers-stat-item">
-            <span className="careers-stat-val">40+</span>
-            <span className="careers-stat-label">SKUs Developed</span>
+
+          <div className="career-stat">
+            <h3>40+</h3>
+            <p>SKUs in Development</p>
           </div>
-          <div className="careers-stat-item">
-            <span className="careers-stat-val">11</span>
-            <span className="careers-stat-label">Sourcing Regions</span>
+
+          <div className="career-stat">
+            <h3>∞</h3>
+            <p>Room to Grow</p>
           </div>
         </div>
-
       </div>
     </section>
   );

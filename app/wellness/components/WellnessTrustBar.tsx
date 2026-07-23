@@ -1,25 +1,26 @@
-import React from 'react';
 import "./wellness.css";
 
 const trustItems = [
   "Clean Ingredients",
-  "No Artificial Fillers",
-  "Holistic Support",
-  "Daily Ritual",
-  "Halal & Vegan Certified"
+  "No Artificial Additives",
+  "Ethically Sourced",
+  "Everyday Use",
+  "Halal and Vegan Certified",
 ];
 
-export default function WellnessTrustBar() {
+const WellnessTrustBar = () => {
   return (
-    <div className="wellness-trust-bar">
-      {trustItems.map((item, idx) => (
-        <React.Fragment key={idx}>
-          <div className="flex items-center gap-2">
-            <span className="text-[#ea580c] font-bold">•</span>
-            <span>{item}</span>
+    <section className="wellness-trust-bar">
+      <div className="wellness-trust-container">
+        {trustItems.map((item, index) => (
+          <div className="wellness-trust-item" key={index}>
+            <span className="wellness-trust-dot"></span>
+            <span className="wellness-trust-text">{item}</span>
           </div>
-        </React.Fragment>
-      ))}
-    </div>
+        ))}
+      </div>
+    </section>
   );
-}
+};
+
+export default WellnessTrustBar;

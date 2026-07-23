@@ -1,43 +1,41 @@
-import Image from "next/image";
 import "./snacks.css";
 
-export default function SnacksHero() {
+const SnacksHero = () => {
   return (
     <section className="snacks-hero-section">
       {/* Background Image */}
-      <Image
-        src="/sustainability/one.png"
-        alt="Ginger Snacks background"
-        fill
-        priority
-        className="object-cover object-center opacity-30 pointer-events-none"
+      <img
+        src="/snacks/hero-bg.png"
+        alt="Ginger Snacks"
+        className="snacks-hero-image"
       />
 
-      {/* Radial Overlay */}
-      <div className="snacks-hero-radial" />
+      {/* Background Gradient */}
+      <div className="snacks-hero-gradient"></div>
 
-      {/* Background Blur Glow Orbs */}
-      <div className="w-[384px] h-[384px] absolute right-[-80px] top-[-80px] bg-orange-600/10 rounded-full blur-2xl pointer-events-none" />
-      <div className="w-[288px] h-[288px] absolute left-[-40px] top-[52px] bg-orange-600/5 rounded-full blur-2xl pointer-events-none" />
+      {/* Blur Effects */}
+      <div className="snacks-hero-blur-right"></div>
+      <div className="snacks-hero-blur-left"></div>
 
-      {/* Content */}
-      <div className="relative z-10 flex flex-col items-center text-center">
-        {/* Tag Pill */}
-        <div className="snacks-hero-tag">
-          Shop · Snacks
-        </div>
-
-        {/* Title */}
-        <h1 className="snacks-hero-title">
-          Ginger <span className="snacks-hero-title-orange">Snacks</span>
-        </h1>
-
-        {/* Subtitle */}
-        <p className="snacks-hero-desc">
-          Sweet, spicy, and everything in between<br />
-          snacks made better with ginger.
-        </p>
+      {/* Badge */}
+      <div className="snacks-hero-badge">
+        <span>SHOP · SNACKS</span>
       </div>
+
+      {/* Heading */}
+      <h1 className="snacks-hero-title">
+        <span className="title-white">Ginger </span>
+        <span className="title-orange">Snacks</span>
+      </h1>
+
+      {/* Description */}
+      <p className="snacks-hero-description">
+        Sweet, spicy, and everything in between
+        <br />
+        snacks made better with ginger.
+      </p>
     </section>
   );
-}
+};
+
+export default SnacksHero;

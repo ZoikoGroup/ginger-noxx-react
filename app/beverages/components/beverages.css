@@ -1,237 +1,1511 @@
 /* ==========================================
-   BEVERAGES / DRINKS MODULE STYLESHEET
-   ========================================== */
+   BEVERAGES HERO SECTION
+========================================== */
 
-/* --- HERO SECTION --- */
 .beverages-hero-section {
   position: relative;
   width: 100%;
   max-width: 1440px;
   height: 288px;
   margin: 0 auto;
-  background-color: #0c0a09;
+  background: #1c0c04;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 32px 16px;
-  font-family: 'Poppins', sans-serif;
 }
+
+/* Background */
 
 .beverages-hero-radial {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 65% 45% at 60% 45%, rgba(234, 88, 12, 0.20) 0%, transparent 65%);
-  pointer-events: none;
+  background: radial-gradient(
+    circle at 60% 45%,
+    rgba(212, 98, 26, 0.2) 0%,
+    rgba(212, 98, 26, 0) 65%
+  );
 }
 
-.beverages-hero-tag {
-  padding: 6px 18px;
-  border-radius: 999px;
-  background-color: rgba(234, 88, 12, 0.20);
-  border: 1px solid rgba(234, 88, 12, 0.30);
-  color: #fb923c;
-  font-size: 10px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 2.80px;
-  margin-bottom: 14px;
+.beverages-hero-image {
+  position: absolute;
+  left: 0;
+  top: -558px;
+  width: 1440px;
+  height: 960px;
+  object-fit: cover;
 }
 
-.beverages-hero-title {
-  color: #ffffff;
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 58.75px;
-  text-align: center;
+/* Blur Effects */
+
+.beverages-hero-blur-right {
+  position: absolute;
+  width: 384px;
+  height: 384px;
+  right: -20px;
+  top: -80px;
+  border-radius: 50%;
+  background: rgba(212, 98, 26, 0.1);
+  filter: blur(32px);
 }
 
-.beverages-hero-title-orange {
-  color: #ea580c;
+.beverages-hero-blur-left {
+  position: absolute;
+  width: 288px;
+  height: 288px;
+  left: -40px;
+  top: 54px;
+  border-radius: 50%;
+  background: rgba(212, 98, 26, 0.05);
+  filter: blur(32px);
 }
 
-.beverages-hero-desc {
-  margin-top: 12px;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28px;
-  text-align: center;
-  max-width: 500px;
-}
+/* Badge */
 
-/* --- TRUST BAR --- */
-.beverages-trust-bar {
-  width: 100%;
-  background-color: #ffffff;
-  border-top: 1px solid #FFEDD5;
-  border-bottom: 1px solid #FFEDD5;
-  height: 56px;
+.beverages-hero-badge {
+  position: absolute;
+  top: 57px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 176px;
+  height: 32px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  font-family: 'Poppins', sans-serif;
-  font-size: 12px;
-  color: #57534E;
-}
 
-/* --- SECTIONS SHARED --- */
-.beverages-section-white {
-  width: 100%;
-  background-color: #ffffff;
-  padding-top: 64px;
-  padding-bottom: 72px;
-  font-family: 'Poppins', sans-serif;
-}
+  background: rgba(212, 98, 26, 0.2);
+  border: 1px solid rgba(212, 98, 26, 0.3);
+  border-radius: 999px;
 
-.beverages-section-cream {
-  width: 100%;
-  background-color: #FAF3EA;
-  padding-top: 64px;
-  padding-bottom: 72px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.beverages-section-dark {
-  width: 100%;
-  background-color: #0c0a09;
-  padding-top: 64px;
-  padding-bottom: 72px;
-  font-family: 'Poppins', sans-serif;
-  position: relative;
-}
-
-/* --- HEADINGS --- */
-.beverages-tag {
-  color: #ea580c;
+  color: #e8844a;
+  font-family: "Poppins", sans-serif;
   font-size: 10px;
   font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 2.8px;
   text-transform: uppercase;
-  letter-spacing: 3.20px;
-  margin-bottom: 8px;
-  text-align: center;
 }
 
-.beverages-heading {
-  font-size: 36px;
+/* Title */
+
+.beverages-hero-title {
+  position: absolute;
+  top: 109px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  margin: 0;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
   font-weight: 700;
-  line-height: 40px;
-  color: #1C1917;
+  line-height: 58.75px;
+
+  white-space: nowrap;
   text-align: center;
 }
 
-.beverages-heading-line {
-  width: 44px;
-  height: 2px;
-  background-color: #ea580c;
-  margin: 12px auto 16px auto;
+.title-white {
+  color: #ffffff;
 }
 
-.beverages-subheading {
-  color: #57534E;
+.title-orange {
+  color: #d4621a;
+}
+
+/* Description */
+
+.beverages-hero-description {
+  position: absolute;
+  top: 185px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 500px;
+
+  margin: 0;
+
+  color: #ffffff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
-  text-align: center;
 }
+/* ==========================================
+   RESPONSIVE - BEVERAGES HERO
+========================================== */
 
-/* --- GRIDS --- */
-.beverages-grid-4 {
-  margin-top: 36px;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 24px;
-  width: 100%;
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.beverages-grid-3 {
-  margin-top: 36px;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
-  width: 100%;
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* --- PRODUCT CARDS --- */
-.beverages-card-white {
-  width: 100%;
-  max-width: 256px;
-  min-height: 420px;
-  background-color: #ffffff;
-  border-radius: 24px;
-  border: 1px solid #FFEDD5;
-  box-shadow: 0 2px 12px rgba(43, 18, 8, 0.07);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.beverages-card-white:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(43, 18, 8, 0.10);
-}
-
-.beverages-card-img-ash {
-  width: 100%;
-  height: 176px;
-  background-color: #a3a3a3;
-  position: relative;
-  flex-shrink: 0;
-}
-
-/* --- REVIEW CARDS --- */
-.beverages-review-card {
-  width: 100%;
-  max-width: 360px;
-  min-height: 288px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  border: 1px solid #FFEDD5;
-  box-shadow: 0 2px 12px rgba(43, 18, 8, 0.07);
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: left;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.beverages-review-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(43, 18, 8, 0.10);
-}
-
-/* --- RESPONSIVE --- */
 @media (max-width: 1200px) {
-  .beverages-grid-4, .beverages-grid-3 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .beverages-hero-section {
+    height: 270px;
+  }
+
+  .beverages-hero-image {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    object-fit: cover;
+  }
+
+  .beverages-hero-title {
+    font-size: 52px;
+    line-height: 1.1;
+  }
+
+  .beverages-hero-description {
+    top: 180px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .beverages-hero-section {
+    height: 250px;
+    padding: 0 20px;
+  }
+
+  .beverages-hero-badge {
+    top: 40px;
+  }
+
+  .beverages-hero-title {
+    top: 90px;
+    font-size: 42px;
+    line-height: 1.15;
+    white-space: normal;
+  }
+
+  .beverages-hero-description {
+    top: 165px;
+    width: 90%;
+    font-size: 15px;
+    line-height: 24px;
   }
 }
 
 @media (max-width: 768px) {
-  .beverages-hero-title {
-    font-size: 40px;
-    line-height: 44px;
+  .beverages-hero-section {
+    height: 230px;
+    padding: 0 16px;
   }
 
-  .beverages-heading {
+  .beverages-hero-blur-right,
+  .beverages-hero-blur-left {
+    display: none;
+  }
+
+  .beverages-hero-badge {
+    width: 165px;
+    height: 30px;
+    top: 30px;
+
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+
+  .beverages-hero-title {
+    top: 75px;
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .beverages-hero-description {
+    top: 145px;
+    width: 95%;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .beverages-hero-section {
+    height: 220px;
+    padding: 0 16px;
+  }
+
+  .beverages-hero-badge {
+    width: 150px;
+    height: 28px;
+    top: 24px;
+
+    font-size: 8px;
+    letter-spacing: 1.8px;
+  }
+
+  .beverages-hero-title {
+    top: 65px;
     font-size: 28px;
+    line-height: 1.2;
+    white-space: normal;
+  }
+
+  .beverages-hero-description {
+    top: 130px;
+    width: 100%;
+    padding: 0 12px;
+
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+/* ==========================================
+   BEVERAGES TRUST BAR
+========================================== */
+
+.beverages-trust-bar {
+  width: 100%;
+  max-width: 1440px;
+  height: 56px;
+  margin: 0 auto;
+
+  background: #ffffff;
+
+  border-top: 1px solid #f5e9d9;
+  border-bottom: 1px solid #f5e9d9;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 34px;
+}
+
+.beverages-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #7a5040;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.beverages-trust-semibold {
+  font-weight: 600;
+}
+
+.beverages-trust-dot {
+  width: 5px;
+  height: 5px;
+  background: #d4621a;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+/* ==========================================
+   RESPONSIVE - BEVERAGES TRUST BAR
+========================================== */
+
+@media (max-width: 1200px) {
+  .beverages-trust-bar {
+    gap: 22px;
+    padding: 0 20px;
+  }
+
+  .beverages-trust-item {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 992px) {
+  .beverages-trust-bar {
+    height: auto;
+    padding: 16px 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px 28px;
+  }
+
+  .beverages-trust-item {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .beverages-trust-bar {
+    padding: 18px 20px;
+    gap: 14px 20px;
+  }
+
+  .beverages-trust-item {
+    width: calc(50% - 10px);
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .beverages-trust-bar {
+    padding: 16px;
+    gap: 14px;
+  }
+
+  .beverages-trust-item {
+    width: 100%;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .beverages-trust-dot {
+    width: 5px;
+    height: 5px;
+  }
+}
+/* ==========================================
+   DECISION ENGINE
+========================================== */
+
+.beverages-decision-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 20px 72px;
+  background: #fdf6ee;
+}
+
+.beverages-decision-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.beverages-decision-label {
+  display: block;
+  margin-bottom: 16px;
+
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.beverages-decision-title {
+  margin: 0;
+
+  color: #2b1208;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.beverages-decision-line {
+  width: 44px;
+  height: 2px;
+  margin: 18px auto 16px;
+  background: #d4621a;
+}
+
+.beverages-decision-description {
+  max-width: 400px;
+  margin: 0 auto 56px;
+
+  color: #7a5040;
+  font-family: "Poppins", sans-serif;
+  font-size: 15.5px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.beverages-decision-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+}
+
+.beverages-decision-card {
+  
+ 
+  padding: 24px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.3s ease;
+}
+
+.beverages-decision-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.beverages-decision-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  margin-bottom: 18px;
+}
+
+.beverages-decision-card h3 {
+  margin: 0 0 8px;
+
+  color: #171717;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.beverages-decision-card p {
+  margin: 0;
+
+  color: rgba(34, 34, 34, 0.4);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1024px) {
+  .beverages-decision-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .beverages-decision-section {
+    padding: 60px 20px;
+  }
+
+  .beverages-decision-title {
+    font-size: 30px;
     line-height: 36px;
   }
 
-  .beverages-grid-4, .beverages-grid-3 {
+  .beverages-decision-description {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+
+  .beverages-decision-grid {
+    gap: 18px;
+  }
+
+  .beverages-decision-card {
+    padding: 22px 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .beverages-decision-grid {
     grid-template-columns: 1fr;
+  }
+
+  .beverages-decision-title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .beverages-decision-description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .beverages-decision-card {
+    padding: 20px 16px;
+  }
+
+  .beverages-decision-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+/* ==========================================
+   MOST LOVED PRODUCTS
+========================================== */
+
+.beverages-loved-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 20px 100px;
+  background: #ffffff;
+}
+
+.beverages-loved-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.beverages-loved-label {
+  display: block;
+  margin-bottom: 14px;
+
+  text-align: center;
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.beverages-loved-title {
+  margin: 0;
+
+  text-align: center;
+  color: #2b1208;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.beverages-loved-line {
+  width: 44px;
+  height: 2px;
+  background: #d4621a;
+  margin: 18px auto 16px;
+}
+
+.beverages-loved-description {
+  margin: 0 0 56px;
+
+  text-align: center;
+  color: #7a5040;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+/* Grid */
+
+.beverages-loved-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+/* Card */
+
+.beverages-loved-card {
+  background: #ffffff;
+  border: 1px solid #f5e9d9;
+  border-radius: 24px;
+  overflow: hidden;
+
+  box-shadow: 0 2px 12px rgba(43, 18, 8, 0.07);
+
+  transition: 0.3s ease;
+}
+
+.beverages-loved-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Image */
+
+.beverages-loved-image {
+  position: relative;
+  height: 180px;
+  background: #e5e5e5;
+}
+
+.beverages-loved-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Badge */
+
+.beverages-loved-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+
+  padding: 6px 14px;
+  border-radius: 999px;
+
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.beverages-loved-badge.orange {
+  background: #d4621a;
+}
+
+.beverages-loved-badge.dark {
+  background: #1c0c04;
+}
+
+.beverages-loved-badge.green {
+  background: #276749;
+}
+
+/* Content */
+
+.beverages-loved-content {
+  padding: 20px;
+}
+
+.product-category {
+  display: block;
+  margin-bottom: 8px;
+
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.beverages-loved-content h3 {
+  margin: 0 0 0px;
+
+  color: #2b1208;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+
+  min-height: 48px;
+}
+
+.beverages-loved-content p {
+  margin: 0 0 12px;
+
+  color: #7a5040;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+
+  min-height: 40px;
+}
+
+/* Price */
+
+.product-price-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.price {
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.old-price {
+  color: #979797;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.pack {
+  padding: 4px 10px;
+
+  border-radius: 999px;
+  background: #d4621a;
+
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+/* Button */
+
+.product-btn {
+  width: 100%;
+  height: 42px;
+
+  border: none;
+  border-radius: 999px;
+
+  background: #d4621a;
+  color: #ffffff;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.product-btn:hover {
+  background: #b85313;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1100px) {
+  .beverages-loved-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .beverages-loved-section {
+    padding: 60px 20px;
+  }
+
+  .beverages-loved-title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .beverages-loved-grid {
+    gap: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .beverages-loved-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .beverages-loved-title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .beverages-loved-description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .beverages-loved-content {
+    padding: 18px;
+  }
+
+  .beverages-loved-content h3 {
+    min-height: auto;
+  }
+
+  .beverages-loved-content p {
+    min-height: auto;
+  }
+}
+/* ==========================================
+   ALL GINGER BEVERAGES
+========================================== */
+
+.beverages-all-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 20px 100px;
+  background: #fdf6ee;
+}
+
+.beverages-all-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.beverages-all-label {
+  display: block;
+  text-align: center;
+  margin-bottom: 14px;
+
+  color: #d4621a;
+  font: 600 10px/16px "Poppins", sans-serif;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.beverages-all-title {
+  margin: 0;
+  text-align: center;
+
+  color: #2b1208;
+  font: 700 36px/40px "Poppins", sans-serif;
+}
+
+.beverages-all-line {
+  width: 44px;
+  height: 2px;
+  margin: 18px auto 48px;
+  background: #d4621a;
+}
+
+.beverages-all-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.beverages-all-card {
+  background: #fff;
+  border: 1px solid #f5e9d9;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(43, 18, 8, 0.07);
+  transition: .3s;
+}
+
+.beverages-all-card:hover {
+  transform: translateY(-6px);
+}
+
+.beverages-all-image {
+  height: 180px;
+  background: #d9d9d9;
+}
+
+.beverages-all-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.beverages-all-content {
+  padding: 20px;
+}
+
+.beverages-all-content h3 {
+  margin: 0px 0 -20px;
+
+  color: #2b1208;
+  font: 700 16px/24px "Poppins", sans-serif;
+
+  min-height: 48px;
+}
+
+.beverages-all-content p {
+  margin: 0 0 4px;
+
+  color: #7a5040;
+  font: 400 12px/20px "Poppins", sans-serif;
+
+  min-height: 60px;
+}
+
+.beverages-all-content .price {
+  display: block;
+  margin-bottom: 6px;
+
+  color: #d4621a;
+  font: 700 20px/32px "Poppins", sans-serif;
+}
+
+@media (max-width:1100px) {
+  .beverages-all-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (max-width:576px) {
+  .beverages-all-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .beverages-all-title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+/* ==========================================
+   WHY GINGERNOXX
+========================================== */
+
+.beverages-why-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  background: #1c0c04;
+}
+
+.beverages-why-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.beverages-why-label {
+  display: block;
+  margin-bottom: 14px;
+
+  text-align: center;
+
+  color: rgba(212, 98, 26, 0.7);
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.beverages-why-title {
+  margin: 0;
+
+  text-align: center;
+
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.beverages-why-line {
+  width: 44px;
+  height: 2px;
+  margin: 18px auto 50px;
+
+  background: #d4621a;
+}
+
+.beverages-why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.beverages-why-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+
+  padding: 28px 22px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  text-align: center;
+
+  transition: all 0.3s ease;
+}
+
+.beverages-why-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(212, 98, 26, 0.4);
+}
+
+.beverages-why-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin: 0 auto 18px;
+}
+
+.beverages-why-card h3 {
+  margin: 0 0 12px;
+
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.beverages-why-card p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1100px) {
+  .beverages-why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .beverages-why-section {
+    padding: 60px 20px;
+  }
+
+  .beverages-why-title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .beverages-why-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .beverages-why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .beverages-why-title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .beverages-why-card {
+    padding: 24px 18px;
+  }
+
+  .beverages-why-icon {
+    width: 34px;
+    height: 34px;
+  }
+}
+/* ==========================================
+   BEVERAGES REVIEWS
+========================================== */
+
+.beverages-reviews-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  background: #fdf6ee;
+}
+
+.beverages-reviews-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.beverages-reviews-label {
+  display: block;
+  margin-bottom: 12px;
+
+  text-align: center;
+
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.beverages-reviews-title {
+  margin: 0;
+
+  text-align: center;
+
+  color: #2b1208;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.beverages-reviews-line {
+  width: 44px;
+  height: 2px;
+  margin: 18px auto 16px;
+
+  background: #d4621a;
+}
+
+.beverages-reviews-rating {
+  margin: 0 0 48px;
+
+  text-align: center;
+
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+/* Grid */
+
+.beverages-reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* Card */
+
+.beverages-review-card {
+  background: #ffffff;
+  border: 1px solid #f5e9d9;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(43, 18, 8, 0.07);
+
+  padding: 24px;
+  transition: 0.3s ease;
+}
+
+.beverages-review-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Stars */
+
+.review-stars {
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+/* Product */
+
+.review-product {
+  display: inline-block;
+
+  padding: 6px 12px;
+  margin-bottom: 8px;
+
+  background: #fff3e8;
+  border: 1px solid #e8d0b8;
+  border-radius: 999px;
+
+  color: #a8835c;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+/* Heading */
+
+.review-heading {
+  border-left: 3px solid #d4621a;
+  padding-left: 12px;
+  margin-bottom: 8px;
+}
+
+.review-heading h3 {
+  margin: 0;
+
+  color: #2b1208;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+/* Review */
+
+.review-text {
+  margin: 0 0 0px;
+
+  color: #7a5040;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+
+  min-height: 80px;
+}
+
+/* Footer */
+
+.review-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-name {
+  color: #2b1208;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.review-verified {
+  color: #979797;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1100px) {
+  .beverages-reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .beverages-reviews-section {
+    padding: 60px 20px;
+  }
+
+  .beverages-reviews-title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .beverages-reviews-rating {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+
+  .beverages-reviews-grid {
+    gap: 20px;
+  }
+
+  .review-text {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .beverages-reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .beverages-reviews-title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .beverages-review-card {
+    padding: 20px;
+  }
+
+  .review-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
+/* ==========================================
+   BEVERAGES CTA
+========================================== */
+
+.beverages-cta-section {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 88px 20px 72px;
+  background: #1c0c04;
+  overflow: hidden;
+}
+
+.beverages-cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 80%,
+    rgba(212, 98, 26, 0.2) 0%,
+    rgba(212, 98, 26, 0) 60%
+  );
+}
+
+.beverages-cta-container {
+  position: relative;
+  z-index: 2;
+
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.beverages-cta-label {
+  display: block;
+  margin-bottom: 16px;
+
+  color: rgba(212, 98, 26, 0.7);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.beverages-cta-title {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 47.84px;
+}
+
+.beverages-cta-description {
+  max-width: 630px;
+  margin: 26px auto 34px;
+
+  color: rgba(255, 255, 255, 0.4);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 15.5px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.beverages-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.beverages-cta-primary,
+.beverages-cta-secondary {
+  height: 48px;
+  padding: 0 28px;
+
+  border-radius: 999px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.beverages-cta-primary {
+  background: #d4621a;
+  color: #ffffff;
+  border: none;
+}
+
+.beverages-cta-primary:hover {
+  background: #b85313;
+}
+
+.beverages-cta-secondary {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.beverages-cta-secondary:hover {
+  border-color: #d4621a;
+  color: #d4621a;
+}
+
+.beverages-cta-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.beverages-cta-tag {
+  padding: 6px 14px;
+
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 999px;
+
+  color: rgba(255, 255, 255, 0.3);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.8px;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 992px) {
+  .beverages-cta-title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .beverages-cta-description {
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 768px) {
+  .beverages-cta-section {
+    padding: 70px 20px;
+  }
+
+  .beverages-cta-title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .beverages-cta-description {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .beverages-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .beverages-cta-primary,
+  .beverages-cta-secondary {
+    width: 240px;
+  }
+}
+
+@media (max-width: 576px) {
+  .beverages-cta-title {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .beverages-cta-description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .beverages-cta-primary,
+  .beverages-cta-secondary {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .beverages-cta-tags {
+    gap: 8px;
+  }
+
+  .beverages-cta-tag {
+    font-size: 9px;
+    padding: 5px 12px;
   }
 }

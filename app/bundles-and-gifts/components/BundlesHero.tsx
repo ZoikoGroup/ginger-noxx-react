@@ -1,35 +1,32 @@
-import Image from "next/image";
 import "./bundles.css";
 
 export default function BundlesHero() {
   return (
     <section className="bundles-hero-section">
-      {/* Background Image */}
-      <Image
-        src="/sustainability/one.png"
-        alt="Ginger Farm Background"
-        fill
-        className="object-cover opacity-30"
-        priority
+      <div className="bundles-hero-radial"></div>
+
+      <img
+        src="/bundles-gifts/hero-bg.png"
+        alt="Bundles and Gifts"
+        className="bundles-hero-image"
       />
 
-      {/* Radial Overlay */}
-      <div className="bundles-hero-radial" />
+      <div className="bundles-hero-blur-right"></div>
+      <div className="bundles-hero-blur-left"></div>
 
-      {/* Content */}
-      <div className="bundles-hero-content">
-        <div className="bundles-hero-tag">
-          Shop · Bundles and Gifts
-        </div>
-
-        <h1 className="bundles-hero-title">
-          Bundles <span className="bundles-hero-title-orange">and</span> Gifts
-        </h1>
-
-        <p className="bundles-hero-desc">
-          Thoughtfully curated ginger experiences — ready to give or enjoy.
-        </p>
+      <div className="bundles-hero-badge">
+        SHOP · BUNDLES AND GIFTS
       </div>
+
+      <h1 className="bundles-hero-title">
+        <span className="bundles-white">Bundles </span>
+        <span className="bundles-orange">and</span>
+        <span className="bundles-white"> Gifts</span>
+      </h1>
+
+      <p className="bundles-hero-description">
+        Thoughtfully curated ginger experiences — ready to give or enjoy.
+      </p>
     </section>
   );
 }

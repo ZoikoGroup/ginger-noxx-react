@@ -1,113 +1,125 @@
-'use client';
-
-import React from 'react';
 import "./wellness.css";
 
-const products = [
+const trustedProducts = [
   {
+    id: 1,
+    image: "/wellness/most-trusted.png",
+    category: "Wellness Shots",
     title: "Ginger Fire Shot",
-    tag: "DAILY SHOTS",
-    badge: "HOT SHOT",
-    badgeBg: "bg-[#ea580c]",
-    desc: "Concentrated raw ginger juice with lemon and cayenne pepper. The morning wake-up shot.",
+    description:
+      "The number-one daily ginger ritual. 60ml concentrated ginger — pure, potent, effective.",
     price: "£18.99",
-    packBadge: "12-Pack"
+    pack: "6-Pack",
+    badge: "Top Seller",
+    badgeClass: "top-seller",
   },
   {
-    title: "Ginger Turmeric Shot",
-    tag: "DAILY SHOTS",
-    badge: null,
-    badgeBg: null,
-    desc: "Raw ginger juice combined with organic turmeric and black pepper for maximum absorption.",
+    id: 2,
+    image: "/wellness/most-trusted.png",
+    category: "Wellness Drinks",
+    title: "Ginger Turmeric Blend",
+    description:
+      "Anti-inflammatory daily drink. Ginger and turmeric working together as designed.",
     price: "£22.99",
-    packBadge: "12-Pack"
+    oldPrice: "£27.99",
   },
   {
-    title: "Relaxed Gut Tea",
-    tag: "HERBAL TEAS",
-    badge: null,
-    badgeBg: null,
-    desc: "Soothing organic chamomile tea with raw ginger root flakes for post-dinner relief.",
-    price: "£12.99",
-    packBadge: "20 Bags"
+    id: 3,
+    image: "/wellness/most-trusted.png",
+    category: "Evening Ritual",
+    title: "Botanical Iced Tea",
+    description:
+      "Calming botanical blend with gentle ginger. The perfect wind-down after any day.",
+    price: "£21.99",
+    pack: "6-Pack",
   },
   {
-    title: "Sparkling Ginger Elixir",
-    tag: "ELIXIRS & DRINKS",
-    badge: "JUST IN",
-    badgeBg: "bg-emerald-700",
-    desc: "Lightly sparkling pure ginger juice with pressed apple juice. Refreshing and crisp.",
-    price: "£16.99",
-    packBadge: null
-  }
+    id: 4,
+    image: "/wellness/most-trusted.png",
+    category: "Daily Hydration",
+    title: "Sparkling Ginger Lime",
+    description:
+      "The easiest entry into daily ginger. Refreshing, accessible, and genuinely enjoyable.",
+    price: "£19.99",
+    badge: "Best Value",
+    badgeClass: "best-value",
+  },
 ];
 
-export default function MostTrustedChoices() {
+const MostTrustedChoices = () => {
   return (
-    <section className="wellness-section-white flex flex-col items-center px-6">
-      <div className="w-full max-w-[1140px] flex flex-col items-center text-center">
+    <section className="trusted-section">
+      <div className="trusted-container">
+        <span className="trusted-subtitle">
+          MOST TRUSTED
+        </span>
 
-        {/* Tag */}
-        <div className="wellness-tag">
-          B E S T &nbsp; S E L L E R S
-        </div>
-
-        {/* Title */}
-        <h2 className="wellness-heading">
+        <h2 className="trusted-title">
           Most Trusted Choices
         </h2>
 
-        {/* Line Divider */}
-        <div className="wellness-heading-line" />
+        <div className="trusted-divider"></div>
 
-        {/* Subtitle */}
-        <p className="wellness-subheading mb-8">
-          Audited, reviewed, and loved.
+        <p className="trusted-description">
+          A simple place to start.
         </p>
 
-        {/* 4 Cards Grid */}
-        <div className="wellness-grid-4 justify-items-center">
-          {products.map((p, idx) => (
-            <div key={idx} className="wellness-card-white flex flex-col justify-between">
-              
-              {/* Ash Color Image Box */}
-              <div className="wellness-card-img-ash">
-                {p.badge && (
-                  <div className={`absolute top-2.5 left-2.5 px-2.5 py-1 ${p.badgeBg} rounded-full text-white text-[9px] font-bold uppercase tracking-wide`}>
-                    {p.badge}
-                  </div>
+        <div className="trusted-grid">
+          {trustedProducts.map((item) => (
+            <div className="trusted-card" key={item.id}>
+              <div className="trusted-image">
+                <img src={item.image} alt={item.title} />
+
+                {item.badge && (
+                  <span
+                    className={`trusted-badge ${item.badgeClass}`}
+                  >
+                    {item.badge}
+                  </span>
                 )}
               </div>
 
-              {/* Body */}
-              <div className="p-5 flex flex-col items-start text-left flex-1 justify-between w-full">
-                <div className="w-full">
-                  <span className="text-[#ea580c] text-[10px] font-bold uppercase tracking-widest block mb-1">{p.tag}</span>
-                  <h3 className="text-stone-900 text-base font-bold font-['Poppins'] mb-1.5">{p.title}</h3>
-                  <p className="text-stone-600 text-xs font-normal font-['Poppins'] leading-5 mb-3 min-h-[40px]">{p.desc}</p>
+              <div className="trusted-content">
+                <span className="trusted-category">
+                  {item.category}
+                </span>
+
+                <h3 className="trusted-product-title">
+                  {item.title}
+                </h3>
+
+                <p className="trusted-product-description">
+                  {item.description}
+                </p>
+
+                <div className="trusted-price-row">
+                  <span className="trusted-price">
+                    {item.price}
+                  </span>
+
+                  {item.oldPrice && (
+                    <span className="trusted-old-price">
+                      {item.oldPrice}
+                    </span>
+                  )}
+
+                  {item.pack && (
+                    <span className="trusted-pack">
+                      {item.pack}
+                    </span>
+                  )}
                 </div>
 
-                {/* Price + Button (Pinned to Bottom) */}
-                <div className="w-full flex flex-col gap-3 mt-auto pt-2">
-                  <div className="flex items-center gap-2 h-7">
-                    <span className="text-[#ea580c] text-xl font-bold font-['Poppins']">{p.price}</span>
-                    {p.packBadge && (
-                      <span className="px-2 py-0.5 bg-[#ea580c] text-white text-[9px] font-bold rounded-full">
-                        {p.packBadge}
-                      </span>
-                    )}
-                  </div>
-
-                  <button className="w-full h-10 bg-[#ea580c] hover:bg-[#c24413] text-white text-xs font-bold font-['Poppins'] rounded-full cursor-pointer transition-colors border-none">
-                    Add to Cart
-                  </button>
-                </div>
+                <button className="trusted-btn">
+                  Add to Cart
+                </button>
               </div>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
-}
+};
+
+export default MostTrustedChoices;

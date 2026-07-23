@@ -1,465 +1,1481 @@
 /* ==========================================
-   CAREERS MODULE STYLESHEET
+   CAREERS HERO
    ========================================== */
 
-/* --- HERO SECTION --- */
 .careers-hero-section {
   position: relative;
   width: 100%;
   max-width: 1440px;
-  min-height: 480px;
+  height: 648px;
   margin: 0 auto;
-  background-color: #1C0A03;
+  background: #1c0c04;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding-top: 76px;
-  padding-bottom: 56px;
-  font-family: 'Poppins', sans-serif;
 }
 
-.careers-hero-radial {
+/* Background Image */
+
+.careers-hero-bg {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 65% 65% at 50% 50%, rgba(212, 98, 26, 0.20) 0%, transparent 65%);
-  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
+/* Gradient Overlay */
+
+.careers-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 65% 40%,
+    rgba(212, 98, 26, 0.2) 0%,
+    rgba(212, 98, 26, 0) 65%
+  );
+  z-index: 1;
+}
+
+/* Content */
 
 .careers-hero-content {
   position: relative;
-  z-index: 10;
-  width: 100%;
-  max-width: 1080px;
-  margin: 0 auto;
+  z-index: 2;
+
+  height: 100%;
+
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 0 16px;
 }
+
+/* Heading */
 
 .careers-hero-title {
-  color: #ffffff;
-  font-size: 56px;
+  margin: 0;
+
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
   font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
+  line-height: 63.23px;
+}
+
+.careers-title-white {
+  color: #ffffff;
+}
+
+.careers-title-orange {
+  color: #d4621a;
+}
+
+/* Description */
+
+.careers-hero-description {
+  margin-top: 22px;
+
+  color: rgba(255, 255, 255, 0.8);
   text-align: center;
-}
-
-.careers-hero-title-orange {
-  color: #D4621A;
-}
-
-.careers-hero-desc {
-  margin-top: 18px;
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.7;
-  max-width: 720px;
-  text-align: center;
+  line-height: 28px;
 }
+
+/* Buttons */
 
 .careers-hero-buttons {
-  margin-top: 32px;
   display: flex;
-  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 44px;
+}
+
+.careers-btn-primary,
+.careers-btn-secondary {
+  width: 224px;
+  height: 48px;
+
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+
+  border-radius: 999px;
+
+  text-decoration: none;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
 }
 
 .careers-btn-primary {
-  height: 48px;
-  padding: 0 28px;
-  background-color: #D4621A;
-  border-radius: 9999px;
+  background: #d4621a;
   color: #ffffff;
-  font-size: 14px;
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 4px 20px rgba(212, 98, 26, 0.35);
-  transition: all 0.3s ease;
 }
 
 .careers-btn-primary:hover {
-  background-color: #ba5214;
-  transform: translateY(-1px);
+  background: #bf5515;
 }
 
-.careers-btn-outline {
-  height: 48px;
-  padding: 0 28px;
-  border-radius: 9999px;
-  border: 2px solid rgba(255, 255, 255, 0.6);
-  background: transparent;
+.careers-btn-secondary {
+  border: 2px solid rgba(255, 255, 255, 0.25);
   color: #ffffff;
+}
+
+.careers-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Stats */
+
+.careers-hero-stats {
+  width: 340px;
+  height: 64px;
+
+  margin-top: 42px;
+
+  border: 1px solid #d4621a;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.career-stat {
+  text-align: center;
+}
+
+.career-stat h3 {
+  margin: 0;
+
+  color: #d4621a;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.career-stat:last-child h3 {
+  font-weight: 700;
+}
+
+.career-stat p {
+  margin-top: 6px;
+
+  color: rgba(255, 255, 255, 0.3);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+@media (max-width: 991px) {
+  .careers-hero-section {
+    height: auto;
+    padding: 90px 24px;
+  }
+
+  .careers-hero-content {
+    height: auto;
+  }
+
+  .careers-hero-title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .careers-hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .careers-hero-stats {
+    width: 100%;
+    max-width: 340px;
+  }
+}
+
+@media (max-width: 767px) {
+  .careers-hero-title {
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .careers-hero-description {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .careers-btn-primary,
+  .careers-btn-secondary {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .careers-hero-stats {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    gap: 20px;
+  }
+}
+/* ==========================================
+   CAREERS INTRO
+   ========================================== */
+
+.careers-intro-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 80px 0;
+}
+
+.careers-intro-container {
+  width: 1080px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 64px;
+}
+
+/* ==========================================
+   LEFT CONTENT
+   ========================================== */
+
+.careers-intro-left {
+  width: 508px;
+}
+
+.careers-intro-quote {
+  border-left: 3px solid #d4621a;
+  padding-left: 23px;
+}
+
+.careers-intro-quote h2 {
+  margin: 0;
+
+  color: #2b1208;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.careers-intro-description {
+  margin-top: 20px;
+
+  color: #7a5040;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27.36px;
+}
+
+.careers-intro-btn {
+  margin-top: 34px;
+
+  width: 208px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 999px;
+
+  background: #d4621a;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 600;
-  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.careers-intro-btn:hover {
+  background: #be5515;
+}
+
+/* ==========================================
+   RIGHT CONTENT
+   ========================================== */
+
+.careers-intro-right {
+  width: 508px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ==========================================
+   CARD
+   ========================================== */
+
+.careers-highlight-card {
+  width: 100%;
+  min-height: 100px;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+
+  padding: 20px 22px;
+
+  background: #fdf6ee;
+
+  border: 1px solid #f5e9d9;
+  border-radius: 8px;
+}
+
+.careers-highlight-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.careers-highlight-content {
+  flex: 1;
+}
+
+.careers-highlight-content h3 {
+  margin: 0 0 8px;
+
+  color: #2b1208;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.careers-highlight-content p {
+  margin: 0;
+
+  color: #7a5040;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+@media (max-width: 1100px) {
+  .careers-intro-container {
+    width: 92%;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .careers-intro-left,
+  .careers-intro-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .careers-intro-section {
+    padding: 60px 20px;
+  }
+
+  .careers-intro-quote h2 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .careers-intro-description {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .careers-intro-btn {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .careers-highlight-card {
+    padding: 18px;
+    gap: 14px;
+  }
+
+  .careers-highlight-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+/* ==========================================
+   CAREERS VALUES
+========================================== */
+
+.careers-values-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 129px 180px 65px;
+  background: #fdf6ee;
+}
+
+.careers-values-container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/* ==========================================
+   HEADING
+========================================== */
+
+.careers-values-heading {
+  text-align: center;
+  margin: 0;
+}
+
+.careers-values-title {
+  color: #2b1208;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.careers-values-highlight {
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+/* ==========================================
+   GRID
+========================================== */
+
+.careers-values-grid {
+  margin-top: 82px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  gap: 18px;
+  margin-left: -80px;
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.careers-value-card {
+  width: 256.5px;
+  height: 260px;
+  background: #ffffff;
+  border: 1px solid #f5e9d9;
+  border-radius: 16px;
+
+  padding: 32px 22px 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
   transition: all 0.3s ease;
 }
 
-.careers-btn-outline:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-color: #ffffff;
+.careers-value-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
 }
 
-.careers-stats-bar {
-  margin-top: 40px;
-  width: 100%;
-  max-width: 600px;
-  background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(4px);
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  overflow: hidden;
+/* ==========================================
+   ICON
+========================================== */
+
+.careers-value-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 18px;
 }
 
-.careers-stat-item {
-  padding: 20px 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-}
+/* ==========================================
+   TITLE
+========================================== */
 
-.careers-stat-item:last-child {
-  border-right: none;
-}
+.careers-value-card h3 {
+  margin: 0 0 14px;
 
-.careers-stat-val {
-  color: #D4621A;
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 1;
-}
-
-.careers-stat-label {
-  color: rgba(255, 255, 255, 0.80);
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 1.4;
-  margin-top: 6px;
-}
-
-/* --- SECTION SHARED --- */
-.careers-section-cream {
-  width: 100%;
-  background-color: #FAF3EA;
-  padding-top: 64px;
-  padding-bottom: 72px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.careers-section-white {
-  width: 100%;
-  background-color: #ffffff;
-  padding-top: 64px;
-  padding-bottom: 72px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.careers-section-orange {
-  width: 100%;
-  background-color: #D4621A;
-  padding-top: 72px;
-  padding-bottom: 80px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.careers-section-dark {
-  width: 100%;
-  background-color: #1A0C05;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  font-family: 'Poppins', sans-serif;
-}
-
-/* --- HEADINGS --- */
-.careers-heading {
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 44px;
-  color: #1C1917;
-  text-align: center;
-}
-
-.careers-heading-orange {
-  color: #D4621A;
-}
-
-.careers-subheading {
-  margin-top: 12px;
-  color: #57534E;
-  font-size: 15.5px;
-  font-weight: 400;
-  line-height: 27px;
-  text-align: center;
-  max-width: 650px;
-}
-
-/* --- INTRO SECTION --- */
-.careers-intro-grid {
-  width: 100%;
-  max-width: 1080px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: center;
-}
-
-.careers-intro-quote-box {
-  padding-left: 20px;
-  border-left: 4px solid #D4621A;
-  margin-bottom: 24px;
-}
-
-.careers-benefit-card {
-  background-color: #ffffff;
-  border: 1px solid #FFEDD5;
-  border-radius: 12px;
-  padding: 20px;
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  box-shadow: 0 2px 8px rgba(43, 18, 8, 0.03);
-}
-
-/* --- VALUES CARDS --- */
-.careers-values-grid {
-  margin-top: 48px;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 24px;
-  width: 100%;
-  max-width: 1080px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.careers-value-card {
-  width: 100%;
-  max-width: 256px;
-  height: 240px;
-  background-color: #ffffff;
-  border-radius: 16px;
-  border: 1px solid #FFEDD5;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  box-shadow: 0 2px 10px rgba(43, 18, 8, 0.04);
-}
-
-/* --- ROLES CARDS --- */
-.careers-roles-grid {
-  margin-top: 48px;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
-  width: 100%;
-  max-width: 1080px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.careers-role-card {
-  width: 100%;
-  max-width: 320px;
-  height: 224px;
-  background-color: #ffffff;
-  border-radius: 16px;
-  border: 1px solid #FFEDD5;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  box-shadow: 0 2px 8px rgba(43, 18, 8, 0.03);
-  position: relative;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.careers-role-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(43, 18, 8, 0.06);
-}
-
-/* --- JOB ROWS --- */
-.careers-jobs-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  width: 100%;
-  max-width: 840px;
-  margin: 40px auto 0 auto;
-}
-
-.careers-job-card {
-  background-color: #ffffff;
-  border-radius: 16px;
-  border: 1px solid #FFEDD5;
-  padding: 20px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0 2px 8px rgba(43, 18, 8, 0.03);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.careers-job-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(43, 18, 8, 0.06);
-}
-
-.careers-job-tag {
-  color: #D4621A;
-  font-size: 10px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 4px;
-}
-
-.careers-job-title {
-  color: #1C1917;
+  color: #2b1208;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
 }
 
-.careers-job-location {
-  color: #78716C;
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.careers-value-card p {
+  margin: 0;
+
+  color: #7a5040;
+  font-family: "Poppins", sans-serif;
   font-size: 12px;
   font-weight: 400;
-  margin-top: 2px;
+  line-height: 20px;
 }
 
-.careers-apply-btn {
-  height: 40px;
-  padding: 0 24px;
-  background-color: #D4621A;
-  color: #ffffff;
-  font-size: 13px;
-  font-weight: 600;
-  border-radius: 9999px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
+/* ==========================================
+   RESPONSIVE
+========================================== */
 
-.careers-apply-btn:hover {
-  background-color: #ba5214;
-}
-
-/* --- TESTIMONIAL --- */
-.careers-testimonial-card {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  border-radius: 24px;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  backdrop-filter: blur(4px);
-}
-
-.careers-testimonial-stars {
-  color: #D4621A;
-  font-size: 20px;
-  margin-bottom: 16px;
-  text-align: center;
-}
-
-.careers-testimonial-quote {
-  color: #ffffff;
-  font-size: 18px;
-  font-style: italic;
-  font-weight: 500;
-  line-height: 32px;
-  max-width: 680px;
-  margin-bottom: 24px;
-  text-align: center;
-}
-
-/* --- CTA SECTION --- */
-.careers-cta-title {
-  color: #ffffff;
-  font-size: 44px;
-  font-weight: 700;
-  line-height: 1.2;
-  text-align: center;
-  margin-bottom: 16px;
-}
-
-.careers-cta-sub {
-  color: rgba(255, 255, 255, 0.90);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-  text-align: center;
-  max-width: 620px;
-  margin-bottom: 36px;
-}
-
-/* --- RESPONSIVE MEDIA QUERIES --- */
 @media (max-width: 1200px) {
+  .careers-values-section {
+    padding: 80px 24px;
+  }
+
+  .careers-values-container {
+    width: 100%;
+  }
+
   .careers-values-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .careers-roles-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .careers-intro-grid {
-    grid-template-columns: 1fr;
-    gap: 36px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
   }
 }
 
 @media (max-width: 768px) {
-  .careers-hero-title {
-    font-size: 36px;
-    line-height: 44px;
-  }
-
-  .careers-heading {
-    font-size: 28px;
-    line-height: 36px;
-  }
-
-  .careers-values-grid,
-  .careers-roles-grid {
+  .careers-values-grid {
     grid-template-columns: 1fr;
   }
 
-  .careers-job-card {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
+  .careers-values-title,
+  .careers-values-highlight {
+    font-size: 30px;
+    line-height: 36px;
   }
 
-  .careers-apply-btn {
+  .careers-value-card {
+    height: auto;
+    min-height: 240px;
+  }
+}
+/* ==========================================
+   CAREERS ROLES
+   ========================================== */
+
+.careers-roles-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.careers-roles-container {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+/* Heading */
+
+.careers-roles-heading {
+  margin: 0;
+  text-align: center;
+}
+
+.careers-roles-title {
+  color: #2b1208;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.careers-roles-highlight {
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.careers-roles-description {
+  margin-top: 24px;
+
+  color: #7a5040;
+  text-align: center;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* Grid */
+
+.careers-roles-grid {
+  margin-top: 56px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* Card */
+
+.careers-role-card {
+  min-height: 224px;
+  padding: 28px 24px;
+
+  background: #ffffff;
+
+  border: 1px solid #f5e9d9;
+  border-radius: 16px;
+
+  transition: all 0.3s ease;
+}
+
+.careers-role-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Icon */
+
+.careers-role-icon {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+/* Title */
+
+.careers-role-card h3 {
+  margin: 18px 0 14px;
+
+  color: #2b1208;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+/* Description */
+
+.careers-role-card p {
+  margin: 0;
+
+  color: #7a5040;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+
+  min-height: 60px;
+}
+
+/* Footer */
+
+.careers-role-footer {
+  margin-top: 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.careers-role-link {
+  color: #d4621a;
+
+  text-decoration: none;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.careers-role-link:hover {
+  text-decoration: underline;
+}
+
+/* Badge */
+
+.careers-role-badge {
+  padding: 3px 10px;
+
+  background: #d4621a;
+  border-radius: 999px;
+
+  color: #ffffff;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+@media (max-width: 1100px) {
+  .careers-roles-container {
+    width: 92%;
+  }
+
+  .careers-roles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .careers-roles-section {
+    padding: 70px 20px;
+  }
+
+  .careers-roles-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .careers-roles-title,
+  .careers-roles-highlight {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .careers-roles-description {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .careers-role-card {
+    min-height: auto;
+  }
+
+  .careers-role-card p {
+    min-height: auto;
+  }
+}
+/* ==========================================
+   CAREERS JOBS
+========================================== */
+
+.careers-jobs-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 102px 180px 77px;
+  background: #fdf6ee;
+}
+
+.careers-jobs-container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/* ==========================================
+   HEADING
+========================================== */
+
+.careers-jobs-heading {
+  margin: 0;
+  text-align: center;
+}
+
+.careers-jobs-title {
+  color: #2b1208;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.careers-jobs-highlight {
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+/* ==========================================
+   LIST
+========================================== */
+
+.careers-jobs-list {
+  margin-top: 56px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.career-job-card {
+  min-height: 112px;
+  background: #ffffff;
+  border: 1px solid #f5e9d9;
+  border-radius: 8px;
+
+  padding: 21px 25px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: all 0.3s ease;
+}
+
+.career-job-card:hover {
+  border-color: #d4621a;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+}
+
+/* ==========================================
+   LEFT
+========================================== */
+
+.career-job-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.career-job-category {
+  color: #d4621a;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 16px;
+}
+
+.career-job-left h3 {
+  margin: 4px 0 10px;
+
+  color: #2b1208;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.career-job-meta {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  color: #7a5040;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+/* ==========================================
+   RIGHT
+========================================== */
+
+.career-job-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.career-job-badge {
+  background: #d4621a;
+  color: #ffffff;
+
+  min-width: 39px;
+  height: 20px;
+
+  border-radius: 999px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.career-job-apply {
+  color: #d4621a;
+  text-decoration: none;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+
+  transition: color 0.3s;
+}
+
+.career-job-apply:hover {
+  color: #b74d10;
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.careers-jobs-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+.careers-jobs-button {
+  width: 234px;
+  height: 48px;
+
+  border: 2px solid #d4621a;
+  border-radius: 999px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #d4621a;
+  text-decoration: none;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.careers-jobs-button:hover {
+  background: #d4621a;
+  color: #ffffff;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1100px) {
+  .careers-jobs-section {
+    padding: 80px 24px;
+  }
+
+  .careers-jobs-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .career-job-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .career-job-right {
+    align-items: flex-start;
+  }
+
+  .career-job-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .careers-jobs-title,
+  .careers-jobs-highlight {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .careers-jobs-button {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+/* ==========================================
+   CAREERS CULTURE
+========================================== */
+
+.careers-culture-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 102px 0 88px;
+}
+
+.careers-culture-container {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+/* ==========================================
+   HEADING
+========================================== */
+
+.careers-culture-heading {
+  text-align: center;
+  margin: 0;
+}
+
+.careers-culture-title,
+.careers-culture-highlight {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.careers-culture-title {
+  color: #2b1208;
+}
+
+.careers-culture-highlight {
+  color: #d4621a;
+}
+
+/* ==========================================
+   GRID
+========================================== */
+
+.careers-culture-grid {
+  width: 1080px;
+  margin: 64px auto 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.careers-culture-card {
+  width: 320px;
+  height: 320px;
+
+  background: #ffffff;
+
+  border: 1px solid #f5e9d9;
+  border-radius: 16px;
+
+  overflow: hidden;
+
+  box-shadow: 0px 2px 12px rgba(43, 18, 8, 0.07);
+
+  transition: all 0.3s ease;
+}
+
+.careers-culture-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 8px 24px rgba(43, 18, 8, 0.12);
+}
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.careers-culture-image {
+  width: 100%;
+  height: 160px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.careers-culture-bg-dark {
+  background: linear-gradient(135deg, #1c0c04 0%, #2b1208 100%);
+}
+
+.careers-culture-bg-orange {
+  background: linear-gradient(135deg, #d4621a 0%, #f08d47 100%);
+}
+
+.careers-culture-bg-green {
+  background: linear-gradient(135deg, #2f6b4f 0%, #1d4f38 100%);
+}
+
+.careers-culture-icon {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.careers-culture-content {
+  padding: 18px 20px 20px;
+}
+
+.careers-culture-category {
+  display: block;
+  margin-bottom: 8px;
+
+  color: #d4621a;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 16px;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.careers-culture-content h3 {
+  margin: 0 0 12px;
+
+  color: #2b1208;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.careers-culture-content p {
+  margin: 0;
+
+  color: #7a5040;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1200px) {
+
+  .careers-culture-container,
+  .careers-culture-grid {
+    width: 100%;
+  }
+
+  .careers-culture-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .careers-culture-section {
+    padding: 70px 20px;
+  }
+
+  .careers-culture-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .careers-culture-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .careers-culture-title,
+  .careers-culture-highlight {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+/* ==========================================
+   CAREERS TESTIMONIAL
+========================================== */
+
+.careers-testimonial-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 144px 0;
+  background: #1c0c04;
+}
+
+.careers-testimonial-container {
+  width: 780px;
+  margin: 0 auto;
+}
+
+.careers-testimonial-card {
+  width: 780px;
+  height: 320px;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.careers-testimonial-stars {
+  margin-bottom: 30px;
+
+  color: #d4621a;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+
+  letter-spacing: 3px;
+}
+
+.careers-testimonial-quote {
+  margin: 0;
+
+  color: #ffffff;
+
+  text-align: center;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.careers-testimonial-role {
+  margin-top: 26px;
+
+  color: rgba(255, 255, 255, 0.5);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.careers-testimonial-company {
+  margin-top: 6px;
+
+  color: rgba(255, 255, 255, 0.3);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+  .careers-testimonial-section {
+    padding: 80px 20px;
+  }
+
+  .careers-testimonial-container,
+  .careers-testimonial-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .careers-testimonial-card {
+    padding: 40px 24px;
+    box-sizing: border-box;
+  }
+
+  .careers-testimonial-quote {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+/* ==========================================
+   CAREERS CTA
+========================================== */
+
+.careers-cta-section {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: 384px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #d4621a;
+}
+
+.careers-cta-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: radial-gradient(
+    circle at 50% 80%,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0) 60%
+  );
+}
+
+.careers-cta-container {
+  position: relative;
+  z-index: 2;
+
+  width: 1080px;
+  height: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.careers-cta-title {
+  margin: 0;
+
+  color: #ffffff;
+  text-align: center;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 50.18px;
+}
+
+.careers-cta-description {
+  margin: 28px 0 32px;
+
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.careers-cta-buttons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.careers-cta-primary,
+.careers-cta-secondary {
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 999px;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.careers-cta-primary {
+  width: 136px;
+
+  background: #ffffff;
+
+  color: #d4621a;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.careers-cta-primary:hover {
+  background: #f5f5f5;
+}
+
+.careers-cta-secondary {
+  width: 224px;
+
+  border: 2px solid rgba(255, 255, 255, 0.25);
+
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.careers-cta-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+  .careers-cta-section {
+    height: auto;
+    padding: 70px 20px;
+  }
+
+  .careers-cta-container {
     width: 100%;
   }
 
   .careers-cta-title {
-    font-size: 30px;
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .careers-cta-description {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .careers-cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .careers-cta-primary,
+  .careers-cta-secondary {
+    width: 100%;
+    max-width: 280px;
   }
 }

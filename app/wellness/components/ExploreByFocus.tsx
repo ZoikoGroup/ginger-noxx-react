@@ -1,77 +1,90 @@
-import React from 'react';
 import "./wellness.css";
 
-const focusAreas = [
+const wellnessFocus = [
   {
-    icon: "⚡",
-    title: "Energy & Focus",
-    desc: "Boost stamina & energy without jittery caffeine side effects."
+    id: 1,
+    image: "/wellness/energy-support.png",
+    title: "Energy Support",
+    description:
+      "Natural sustained energy without caffeine dependency or afternoon crashes.",
   },
   {
-    icon: "🧘‍♀️",
-    title: "Natural Digestion",
-    desc: "Historically used to soothe the stomach and support daily gut health."
+    id: 2,
+    image: "/wellness/gut-digestion.png",
+    title: "Gut and Digestion",
+    description:
+      "Products formulated around ginger's traditional digestive support properties.",
   },
   {
-    icon: "🛡️",
-    title: "Immune Defence",
-    desc: "Packed with antioxidants & natural gingerol to support your immune system."
+    id: 3,
+    image: "/wellness/immune-resilience.png",
+    title: "Immune Resilience",
+    description:
+      "Ginger, turmeric, and antioxidant-forward formulations for daily resilience.",
   },
   {
-    icon: "🌙",
+    id: 4,
+    image: "/wellness/rest-recovery.png",
     title: "Rest and Recovery",
-    desc: "Calm evening blends to ease post-workout soreness and night tension."
+    description:
+      "Calming botanical blends to support wind-down and overnight recovery.",
   },
   {
-    icon: "🏃‍♂️",
+    id: 5,
+    image: "/wellness/active-lifestyle.png",
     title: "Active Lifestyle",
-    desc: "On-the-go shots & elixirs designed to fuel an active, busy lifestyle."
+    description:
+      "Pre and post-workout ginger options for people who move every day.",
   },
   {
-    icon: "⚖️",
+    id: 6,
+    image: "/wellness/daily-balance.png",
     title: "Daily Balance",
-    desc: "Maintain overall balance and wellness with clean, daily ginger routines."
-  }
+    description:
+      "Everyday wellbeing without extreme protocols. Just consistent, gentle support.",
+  },
 ];
 
-export default function ExploreByFocus() {
+const ExploreByFocus = () => {
   return (
-    <section className="wellness-section-cream flex flex-col items-center px-6">
-      <div className="w-full max-w-[1140px] flex flex-col items-center text-center">
+    <section className="wellness-focus-section">
+      <div className="wellness-focus-container">
+        <span className="wellness-focus-subtitle">
+          EXPLORE BY FOCUS
+        </span>
 
-        {/* Tag */}
-        <div className="wellness-tag">
-          E N H A N C E &nbsp; T O D A Y
-        </div>
-
-        {/* Title */}
-        <h2 className="wellness-heading">
+        <h2 className="wellness-focus-title">
           Explore by Wellness Focus
         </h2>
 
-        {/* Line Divider */}
-        <div className="wellness-heading-line" />
+        <div className="wellness-focus-divider"></div>
 
-        {/* Subtitle */}
-        <p className="wellness-subheading mb-8">
-          Target specific body goals with our curated product line.
+        <p className="wellness-focus-description">
+          Find the products aligned with your specific daily wellness priority.
         </p>
 
-        {/* 6 Cards Grid (3 Columns x 2 Rows) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full justify-items-center">
-          {focusAreas.map((item, idx) => (
-            <div 
-              key={idx} 
-              className="w-full max-w-[360px] h-[160px] bg-white rounded-2xl p-6 border border-orange-100 shadow-sm flex flex-col items-center text-center justify-center transition-transform hover:-translate-y-1"
-            >
-              <div className="text-3xl leading-none mb-3">{item.icon}</div>
-              <h3 className="text-stone-900 text-sm font-bold font-['Poppins'] mb-1.5">{item.title}</h3>
-              <p className="text-stone-600 text-xs font-normal font-['Poppins'] leading-5 max-w-[280px]">{item.desc}</p>
+        <div className="wellness-focus-grid">
+          {wellnessFocus.map((item) => (
+            <div className="wellness-focus-card" key={item.id}>
+              <img
+                src={item.image}
+                alt={item.title}
+                className="wellness-focus-icon"
+              />
+
+              <h3 className="wellness-focus-card-title">
+                {item.title}
+              </h3>
+
+              <p className="wellness-focus-card-description">
+                {item.description}
+              </p>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
-}
+};
+
+export default ExploreByFocus;

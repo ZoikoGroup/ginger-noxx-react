@@ -1,58 +1,60 @@
-import React from 'react';
-import "./bundles.css";
-
-const reasons = [
-  {
-    icon: "🎯",
-    title: "No Guesswork",
-    desc: "Every bundle is pre-selected for taste, function, and ritual. No browsing required."
-  },
-  {
-    icon: "🎁",
-    title: "Premium Packaging",
-    desc: "Sustainable and reusable packaging on every bundle — gift-ready from the box."
-  },
-  {
-    icon: "💰",
-    title: "Real Savings",
-    desc: "Up to 26% savings versus buying individually — more product, lower cost per item."
-  },
-  {
-    icon: "🌍",
-    title: "Global Appeal",
-    desc: "Designed to delight diverse palates. No cultural borders — universal quality."
-  }
-];
-
 export default function WhyBundles() {
+  const features = [
+    {
+      icon: "/bundles-gifts/no-guesswork.png",
+      title: "No Guesswork",
+      description:
+        "Every bundle is pre-selected for taste, function, and ritual. No browsing required.",
+    },
+    {
+      icon: "/bundles-gifts/premium-packaging.png",
+      title: "Premium Packaging",
+      description:
+        "Sustainable and reusable packaging on every bundle — gift-ready from the box.",
+    },
+    {
+      icon: "/bundles-gifts/real-savings.png",
+      title: "Real Savings",
+      description:
+        "Up to 26% savings versus buying individually — more product, lower cost per item.",
+    },
+    {
+      icon: "/bundles-gifts/global-appeal.png",
+      title: "Global Appeal",
+      description:
+        "Designed to delight diverse palates. No cultural borders — universal quality.",
+    },
+  ];
+
   return (
-    <section className="bundles-section-white flex flex-col items-center px-6">
-      <div className="w-full max-w-[1140px] flex flex-col items-center text-center">
+    <section className="why-bundles-section">
+      <div className="why-bundles-container">
+        <span className="why-bundles-label">
+          WHY BUNDLES
+        </span>
 
-        {/* Tag */}
-        <div className="bundles-tag">
-          W h y &nbsp; B u n d l e s
-        </div>
-
-        {/* Title */}
-        <h2 className="bundles-heading">
+        <h2 className="why-bundles-title">
           Why Customers Choose Bundles
         </h2>
 
-        {/* Divider */}
-        <div className="bundles-heading-line" />
+        <div className="why-bundles-line"></div>
 
-        {/* 4 Cards Grid */}
-        <div className="bundles-grid-4 justify-items-center mt-6">
-          {reasons.map((r, idx) => (
-            <div key={idx} className="bundles-why-card">
-              <div className="text-3xl leading-none mb-3 text-center">{r.icon}</div>
-              <h3 className="text-stone-900 text-sm font-bold font-['Poppins'] leading-6 mb-2 text-center">{r.title}</h3>
-              <p className="text-stone-600 text-xs font-normal font-['Poppins'] leading-5 text-center">{r.desc}</p>
+        <div className="why-bundles-grid">
+          {features.map((item, index) => (
+            <div className="why-bundle-card" key={index}>
+              <div className="why-bundle-icon">
+                <img
+                  src={item.icon}
+                  alt={item.title}
+                />
+              </div>
+
+              <h3>{item.title}</h3>
+
+              <p>{item.description}</p>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

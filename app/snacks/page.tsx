@@ -1,13 +1,12 @@
-import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 import SnacksHero from "@/app/snacks/components/SnacksHero";
-import ShopByCraving from "@/app/snacks/components/ShopByCraving";
-import MostLovedSnacks from "@/app/snacks/components/MostLovedSnacks";
-import SnacksThatDoMore from "@/app/snacks/components/SnacksThatDoMore";
-import SnacksReviews from "@/app/snacks/components/SnacksReviews";
-import SnacksCTA from "@/app/snacks/components/SnacksCTA";
+import ShopByCraving from "./components/ShopByCraving";
+import MostLovedSnacks from "./components/MostLovedSnacks";
+import SnacksThatDoMore from "./components/SnacksThatDoMore";
+import SnacksReviews from "./components/SnacksReviews";
+import SnacksCTA from "./components/SnacksCTA";
 
 export const metadata = {
   title: "Ginger Snacks | GingerNoxx",
@@ -19,18 +18,16 @@ export default function SnacksPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen flex flex-col w-full bg-orange-50">
+
+      <main>
         <SnacksHero />
-        <div id="shop-craving" className="w-full">
-          <ShopByCraving />
-        </div>
+        <ShopByCraving />
         <MostLovedSnacks />
         <SnacksThatDoMore />
         <SnacksReviews />
-        <div id="build-box" className="w-full">
-          <SnacksCTA />
-        </div>
+        <SnacksCTA />
       </main>
+
       <Footer />
     </>
   );

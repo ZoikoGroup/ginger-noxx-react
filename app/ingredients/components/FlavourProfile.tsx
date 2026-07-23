@@ -1,64 +1,94 @@
-import React from 'react';
 import "./ingredients.css";
 
-const profiles = [
+const flavourProfiles = [
   {
-    icon: "🔥",
+    id: 1,
+    image: "/ingredients/flavour-1.png",
     title: "Bold and Fiery",
-    desc: "Strong ginger heat with chili depth. Marinades, stir-fries, glazes, hot sauces."
+    description: (
+      <>
+        Strong ginger heat with chili depth.
+                Marinades, stir-fries, glazes, hot
+              sauces.
+      </>
+    ),
   },
   {
-    icon: "🌿",
+    id: 2,
+    image: "/ingredients/flavour-2.png",
     title: "Aromatic and Herbal",
-    desc: "Ginger-forward spice complexity with earthy undertones. Soups, braises, curries."
+    description: (
+      <>
+        Ginger-forward spice complexity with
+                earthy undertones. Soups, braises,
+                curries.
+      </>
+    ),
   },
   {
-    icon: "🍋",
+    id: 3,
+    image: "/ingredients/flavour-3.png",
     title: "Bright and Citrus",
-    desc: "Lemon and ginger together. Dressings, marinades, light fish and grain dishes."
+    description: (
+      <>
+        Lemon and ginger together.
+                Dressings, marinades, light fish and
+                grain dishes.
+      </>
+    ),
   },
   {
-    icon: "🍯",
+    id: 4,
+    image: "/ingredients/flavour-4.png",
     title: "Sweet and Warm",
-    desc: "Ginger with honey warmth. Glazes, baking, sweet-savoury crossover dishes."
-  }
+    description: (
+      <>
+        Ginger with honey warmth. Glazes,
+ baking, sweet-savoury crossover dishes.
+      </>
+    ),
+  },
 ];
 
-export default function FlavourProfile() {
+const FlavourProfile = () => {
   return (
-    <section className="ingred-section-white flex flex-col items-center px-6">
-      <div className="w-full max-w-[1120px] flex flex-col items-center text-center">
+    <section className="flavour-profile-section">
+      <div className="flavour-profile-container">
+        <span className="flavour-profile-subtitle">
+          FIND YOUR FLAVOUR
+        </span>
 
-        {/* Tag */}
-        <div className="ingred-tag">
-          F I N D &nbsp; Y O U R &nbsp; F L A V O U R
-        </div>
-
-        {/* Title */}
-        <h2 className="ingred-heading">
+        <h2 className="flavour-profile-title">
           Find Your Flavour Profile
         </h2>
 
-        {/* Divider */}
-        <div className="ingred-heading-line" />
+        <div className="flavour-profile-divider"></div>
 
-        {/* Subtitle */}
-        <p className="ingred-subheading mb-6">
-          GingerNoxx ingredients span four distinct flavour territories. Find which speaks to your cooking.
+        <p className="flavour-profile-description">
+          GingerNoxx ingredients span four distinct flavour territories.
+                  Find which speaks to your cooking.
         </p>
 
-        {/* 4 Cards Grid */}
-        <div className="ingred-grid-4 justify-items-center">
-          {profiles.map((p, idx) => (
-            <div key={idx} className="ingred-icon-card">
-              <div className="text-3xl leading-none mb-3">{p.icon}</div>
-              <h3 className="text-stone-900 text-sm font-bold font-['Poppins'] leading-6 mb-1.5">{p.title}</h3>
-              <p className="text-stone-600 text-xs font-normal font-['Poppins'] leading-5">{p.desc}</p>
+        <div className="flavour-profile-grid">
+          {flavourProfiles.map((item) => (
+            <div className="flavour-profile-card" key={item.id}>
+              <div className="flavour-profile-icon">
+                <img src={item.image} alt={item.title} />
+              </div>
+
+              <h3 className="flavour-profile-card-title">
+                {item.title}
+              </h3>
+
+              <p className="flavour-profile-card-description">
+                {item.description}
+              </p>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
-}
+};
+
+export default FlavourProfile;

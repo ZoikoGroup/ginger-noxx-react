@@ -215,7 +215,7 @@
 }
 
 .stockists-list-box {
-  width: 384px;
+  width: 385px;
   height: 819px;
   background-color: #ffffff;
   border-radius: 16px; /* rounded-2xl */
@@ -224,14 +224,15 @@
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
+  
 }
 
 .stockists-list-header {
   height: 48px;
-  padding: 0 16px;
+  padding: 16px 16px;
   border-bottom: 1px solid #FFEDD5;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: space-between;
   flex-shrink: 0;
 }
@@ -243,6 +244,7 @@
   padding: 16px;
   border-bottom: 1px solid #FFEDD5;
   display: flex;
+  text-align: left;
   flex-direction: column;
   justify-content: space-between;
   transition: background-color 0.2s ease;

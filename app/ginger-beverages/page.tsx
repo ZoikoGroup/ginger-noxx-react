@@ -1,4 +1,5 @@
-import BeveragesPage, { metadata } from "../beverages/page";
+import BeveragesPage from "../beverages/page";
 
-export { metadata };
-export default BeveragesPage;
+export default function GingerBeveragesPage() {
+  return <BeveragesPage />;
+}

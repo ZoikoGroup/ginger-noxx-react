@@ -283,24 +283,129 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* Blog Newsletter */
+/* ==========================
+   BLOG NEWSLETTER
+========================== */
+
 .blog-newsletter-section {
   width: 100%;
-  background-color: #FAF3EA;
-  padding-top: 32px;
-  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+  background: #FDFAF6;
 }
 
 .blog-newsletter-card {
-  width: 100%;
-  max-width: 1080px;
-  background-color: #D9531E;
-  border-radius: 28px;
-  padding: 48px 24px 44px 24px;
+  width: 1080px;
+  min-height: 240px;
+  background: #D4621A;
+  border: 1px solid #F5E9D9;
+  border-radius: 24px;
+  box-shadow: 0 2px 12px rgba(43, 18, 8, 0.07);
+
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+
+  padding: 40px 32px;
+}
+
+.blog-newsletter-label {
+  color: #D4621A;
+  background: #FBFBFB;
+  padding: 4px 12px;
+  border-radius: 999px;
+
+  font-family: Poppins, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2.8px;
+  line-height: 16px;
+}
+
+.blog-newsletter-title {
+  margin-top: 12px;
+
+  color: #FFFFFF;
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.blog-newsletter-description {
+  max-width: 760px;
+  margin-top: 8px;
+
+  color: #FFFFFF;
   text-align: center;
-  box-shadow: 0px 4px 20px 0px rgba(217, 83, 30, 0.15);
-  margin: 0 auto;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.blog-newsletter-form {
+  display: flex;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.blog-newsletter-input {
+  width: 305px;
+  height: 48px;
+
+  padding: 0 18px;
+
+  border: 1px solid #F5E9D9;
+  border-right: none;
+
+  border-radius: 999px 0 0 999px;
+
+  background: #FBFBFB;
+
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  color: #A2A2A2;
+
+  outline: none;
+}
+
+.blog-newsletter-input::placeholder {
+  color: #A2A2A2;
+}
+
+.blog-newsletter-button {
+  width: 132px;
+  height: 48px;
+
+  border: 1px solid #F5E9D9;
+
+  border-radius: 0 999px 999px 0;
+
+  background: #F5E9D9;
+
+  color: #D4621A;
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.blog-newsletter-button:hover {
+  background: #ffffff;
+}
+
+.blog-newsletter-note {
+  margin-top: 18px;
+
+  color: #FFFFFF;
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
 }

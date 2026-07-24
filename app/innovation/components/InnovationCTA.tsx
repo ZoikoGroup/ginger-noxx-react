@@ -1,31 +1,29 @@
-import React from 'react';
-import './innovation.css';
+import "./innovation.css";
 
 export default function InnovationCTA() {
   return (
-    <section className="innov-section-orange px-4 flex flex-col items-center justify-center text-center">
-      <div className="w-full max-w-[800px] mx-auto flex flex-col items-center text-center">
-
-        {/* Title */}
-        <h2 className="innov-cta-heading">
+    <section className="innovation-cta-section">
+      <div className="innovation-cta-container">
+        <h2 className="innovation-cta-title">
           Bring Your Ideas to Life
         </h2>
 
-        {/* Subtitle */}
-        <p className="innov-cta-sub">
-          Whether you&apos;re a brand, a retailer, or a researcher, the Zoiko Foods Corp Innovation Platform is the infrastructure your next product needs.
+        <p className="innovation-cta-description">
+          Whether you&apos;re a brand, a retailer, or a researcher — the Zoiko
+          Foods Corp
+          <br />
+          Innovation Platform is the infrastructure your next product needs.
         </p>
 
-        {/* Buttons */}
-        <div className="flex flex-wrap items-center justify-center gap-4">
-          <button className="h-[48px] px-[32px] bg-white hover:bg-stone-100 text-[#D4621A] text-[15px] font-bold rounded-full shadow-md transition-all duration-300 cursor-pointer border-none hover:-translate-y-0.5">
-            Request a Demo
+        <div className="innovation-cta-buttons">
+          <button className="innovation-cta-primary">
+            Request a Demo →
           </button>
-          <button className="innov-btn-outline">
+
+          <button className="innovation-cta-secondary">
             View Case Studies
           </button>
         </div>
-
       </div>
     </section>
   );

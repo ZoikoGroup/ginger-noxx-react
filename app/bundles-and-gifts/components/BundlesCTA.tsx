@@ -1,3 +1,5 @@
+"use client";
+
 export default function BundlesCTA() {
   return (
     <section className="bundles-cta-section">
@@ -18,11 +20,17 @@ export default function BundlesCTA() {
         </p>
 
         <div className="bundles-cta-buttons">
-          <button className="bundles-cta-primary">
+          <button
+            className="bundles-cta-primary"
+            onClick={() => document.getElementById('all-bundles')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Shop All Bundles
           </button>
 
-          <button className="bundles-cta-secondary">
+          <button
+            className="bundles-cta-secondary"
+            onClick={() => document.getElementById('need-fast')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Need a Gift Fast
           </button>
         </div>

@@ -1,3 +1,5 @@
+"use client";
+
 import "./ingredients.css";
 
 const IngredientsCTA = () => {
@@ -21,11 +23,17 @@ const IngredientsCTA = () => {
         </p>
 
         <div className="ingredients-cta-buttons">
-          <button className="ingredients-cta-primary">
+          <button
+            className="ingredients-cta-primary"
+            onClick={() => document.getElementById('cook-tonight')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Cook This Tonight
           </button>
 
-          <button className="ingredients-cta-secondary">
+          <button
+            className="ingredients-cta-secondary"
+            onClick={() => document.getElementById('cook-tonight')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Shop Best Sellers
           </button>
         </div>

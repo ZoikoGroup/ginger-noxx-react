@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./legal-terms.css";
 
 const LegalTermsContent = () => {
@@ -260,9 +261,9 @@ const LegalTermsContent = () => {
               info@gingernoxx.com
             </a>{" "}
             or via our{" "}
-            <a href="/contact">
+            <Link href="/contact-us">
               Contact Us
-            </a>{" "}
+            </Link>{" "}
             page.
           </p>
 

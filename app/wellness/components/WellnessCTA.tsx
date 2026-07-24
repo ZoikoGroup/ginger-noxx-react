@@ -1,3 +1,5 @@
+"use client";
+
 import "./wellness.css";
 
 const WellnessCTA = () => {
@@ -22,11 +24,17 @@ const WellnessCTA = () => {
         </p>
 
         <div className="wellness-cta-buttons">
-          <button className="wellness-cta-primary">
+          <button
+            className="wellness-cta-primary"
+            onClick={() => document.getElementById('easiest-way-to-begin')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Start Simple
           </button>
 
-          <button className="wellness-cta-secondary">
+          <button
+            className="wellness-cta-secondary"
+            onClick={() => document.getElementById('daily-rhythm')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Build Your Rhythm
           </button>
         </div>

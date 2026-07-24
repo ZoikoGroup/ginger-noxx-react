@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./why.css";
 
 const badges = [
@@ -32,13 +33,13 @@ export default function WhyCTA() {
 
         <div className="why-cta-buttons">
 
-          <a href="#" className="cta-primary">
+          <Link href="#why-products" className="cta-primary">
             Explore Best Sellers →
-          </a>
+          </Link>
 
-          <a href="#" className="cta-secondary">
+          <Link href="/find-profile" className="cta-secondary">
             Find Your Ginger Profile
-          </a>
+          </Link>
 
         </div>
 

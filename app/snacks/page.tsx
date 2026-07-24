@@ -21,8 +21,12 @@ export default function SnacksPage() {
 
       <main>
         <SnacksHero />
-        <ShopByCraving />
-        <MostLovedSnacks />
+        <div id="shop-by-craving">
+          <ShopByCraving />
+        </div>
+        <div id="most-loved-snacks">
+          <MostLovedSnacks />
+        </div>
         <SnacksThatDoMore />
         <SnacksReviews />
         <SnacksCTA />

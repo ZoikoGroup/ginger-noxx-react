@@ -11,7 +11,7 @@ export default function Header() {
         <div className="w-full h-10 absolute left-0 top-0 bg-amber-700 border-b border-amber-700/20 flex items-center justify-center gap-1.5">
           <span className="text-white text-lg font-normal font-['Poppins'] leading-5 tracking-tight">✦</span>
           <span className="text-white text-xs font-normal font-['Poppins'] leading-5 tracking-tight">
-            Your Ginger Profile Not set <span className="font-bold underline cursor-pointer">Find yours</span> →
+            Your Ginger Profile Not set <Link href="/find-profile" className="font-bold underline cursor-pointer">Find yours</Link> →
           </span>
           <button style={{ left: '1406px', top: '10px' }} className="absolute opacity-40 text-center justify-center text-white text-xs font-normal font-['Poppins'] leading-5 tracking-tight hover:opacity-100">
             ✕
@@ -27,27 +27,29 @@ export default function Header() {
 
           {/* Links */}
           <div style={{ width: '595px', height: '36px', left: '427px', top: '14px' }} className="absolute">
-            <Link href="#" style={{ left: '54px', top: '1px' }} className="absolute w-16 h-9 rounded-lg hover:bg-black/5 transition-colors">
+            <Link href="/best-sellers" style={{ left: '54px', top: '1px' }} className="absolute w-16 h-9 rounded-lg hover:bg-black/5 transition-colors">
               <div style={{ left: '8px', top: '8px' }} className="absolute text-stone-700 text-xs font-semibold font-['Poppins'] leading-5">Shop ▾</div>
             </Link>
-            <Link href="#" style={{ left: '131px', top: '1px' }} className="absolute w-24 h-9 rounded-lg hover:bg-black/5 transition-colors">
+            <Link href="/why" style={{ left: '131px', top: '1px' }} className="absolute w-24 h-9 rounded-lg hover:bg-black/5 transition-colors">
               <div style={{ left: '12px', top: '7px' }} className="absolute text-stone-700 text-xs font-semibold font-['Poppins'] leading-5">Why Ginger</div>
             </Link>
             <Link href="/innovation" style={{ left: '248px', top: '1px' }} className="absolute w-24 h-9 rounded-lg hover:bg-black/5 transition-colors">
               <div style={{ left: '10px', top: '7px' }} className="absolute text-stone-700 text-xs font-semibold font-['Poppins'] leading-5">Innovation</div>
             </Link>
-            <Link href="#" style={{ left: '345px', top: '1px' }} className="absolute w-20 h-9 rounded-lg hover:bg-black/5 transition-colors">
+            <Link href="/story" style={{ left: '345px', top: '1px' }} className="absolute w-20 h-9 rounded-lg hover:bg-black/5 transition-colors">
               <div style={{ left: '8px', top: '7px' }} className="absolute text-stone-700 text-xs font-semibold font-['Poppins'] leading-5">Our Story</div>
             </Link>
-            <Link href="#" style={{ left: '438px', top: '1px' }} className="absolute w-24 h-9 rounded-lg hover:bg-black/5 transition-colors">
+            <Link href="/where-to-buy" style={{ left: '438px', top: '1px' }} className="absolute w-24 h-9 rounded-lg hover:bg-black/5 transition-colors">
               <div style={{ left: '-5px', top: '7px' }} className="absolute text-stone-700 text-xs font-semibold font-['Poppins'] leading-5">Where to Buy</div>
             </Link>
           </div>
 
           {/* Wholesale Button */}
-          <div style={{ left: '1030px', top: '17px' }} className="absolute w-32 h-7 bg-amber-700 rounded-[100px] shadow-[0px_2px_10px_0px_rgba(184,74,6,0.25)] hover:bg-amber-800 transition-colors cursor-pointer">
-            <div style={{ left: '16px', top: '8px' }} className="absolute text-center justify-center text-white text-xs font-bold font-['Arial'] tracking-tight">Wholesale Portal</div>
-          </div>
+          <Link href="/wholesale">
+            <div style={{ left: '1030px', top: '17px' }} className="absolute w-32 h-7 bg-amber-700 rounded-[100px] shadow-[0px_2px_10px_0px_rgba(184,74,6,0.25)] hover:bg-amber-800 transition-colors cursor-pointer">
+              <div style={{ left: '16px', top: '8px' }} className="absolute text-center justify-center text-white text-xs font-bold font-['Arial'] tracking-tight">Wholesale Portal</div>
+            </div>
+          </Link>
 
           {/* Icons */}
           <div style={{ left: '1178px', top: '15px' }} className="absolute w-8 h-8 rounded-lg hover:bg-black/5 transition-colors cursor-pointer">
@@ -55,13 +57,13 @@ export default function Header() {
               <Image src="/faqs/search.svg" alt="Search" width={16} height={16} />
             </div>
           </div>
-          
+
           <div style={{ left: '1220px', top: '15px' }} className="absolute w-8 h-8 rounded-lg hover:bg-black/5 transition-colors cursor-pointer">
             <div style={{ left: '8px', top: '8px' }} className="absolute w-4 h-4 flex items-center justify-center">
               <Image src="/faqs/user.svg" alt="User" width={16} height={16} />
             </div>
           </div>
-          
+
           <div style={{ left: '1262px', top: '15px' }} className="absolute w-8 h-8 rounded-lg hover:bg-black/5 transition-colors cursor-pointer">
             <div style={{ left: '8px', top: '8px' }} className="absolute w-4 h-4 flex items-center justify-center">
               <Image src="/faqs/cart.svg" alt="Cart" width={16} height={16} />
@@ -70,7 +72,7 @@ export default function Header() {
               <div style={{ left: '4px', top: '1.5px' }} className="absolute text-center justify-center text-white text-[9px] font-bold font-['Arial'] leading-[9px]">0</div>
             </div>
           </div>
-          
+
         </div>
       </div>
     </div>

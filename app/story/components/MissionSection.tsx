@@ -1,4 +1,7 @@
+import Link from "next/link";
+
 export default function MissionSection() {
+
   return (
     <section className="mission-section">
 
@@ -24,13 +27,13 @@ export default function MissionSection() {
 
         <div className="mission-buttons">
 
-          <a href="#" className="btn-primary">
+          <Link href="/best-sellers" className="btn-primary">
             Experience the Range →
-          </a>
+          </Link>
 
-          <a href="#" className="btn-secondary">
+          <Link href="/find-profile" className="btn-secondary">
             Find Your Ginger Profile
-          </a>
+          </Link>
 
         </div>
 

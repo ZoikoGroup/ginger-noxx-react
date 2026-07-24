@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./faq.css";
 
 export default function FAQContact() {
@@ -14,13 +15,13 @@ export default function FAQContact() {
         </p>
 
         <div className="faq-contact-buttons">
-          <a href="/contact" className="faq-contact-btn-primary">
+          <Link href="/contact-us" className="faq-contact-btn-primary">
             Contact Us
-          </a>
+          </Link>
 
-          <a href="/returns-policy" className="faq-contact-btn-secondary">
-            Returns Policy
-          </a>
+          <Link href="/privacy" className="faq-contact-btn-secondary">
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </section>

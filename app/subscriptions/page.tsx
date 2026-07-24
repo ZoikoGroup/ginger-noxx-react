@@ -21,7 +21,9 @@ export default function SubscriptionsPage() {
       <main>
         <SubscriptionHero />
         <SubscriptionBenefitsBar />
-        <SubscriptionFamilyPlan />
+        <div id="subscription-plans">
+          <SubscriptionFamilyPlan />
+        </div>
         <SubscriptionBenefits />
         <SubscriptionSteps />
         <BuiltForEveryMoment />

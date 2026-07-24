@@ -77,6 +77,10 @@
 }
 
 .story-btn-primary{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     width:226.83px;
     height:52.39px;
     border:none;
@@ -90,6 +94,10 @@
 }
 
 .story-btn-secondary{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     width:199.03px;
     height:52.39px;
     border-radius:999px;

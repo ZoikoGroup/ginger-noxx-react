@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 const SubscriptionCTA = () => {
@@ -42,11 +44,17 @@ const SubscriptionCTA = () => {
           </div>
 
           <div className="subscription-cta-actions">
-            <button className="subscription-cta-save">
+            <button
+              className="subscription-cta-save"
+              onClick={() => document.getElementById('subscription-plans')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Subscribe &amp; Save
             </button>
 
-            <button className="subscription-cta-plan">
+            <button
+              className="subscription-cta-plan"
+              onClick={() => document.getElementById('subscription-plans')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               View All Plans
             </button>
           </div>

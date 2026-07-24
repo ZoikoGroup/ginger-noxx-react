@@ -16,11 +16,11 @@ export default function WholesaleHero() {
         </p>
 
         <div className="wholesale-buttons">
-          <a href="#" className="primary-btn">
+          <a href="#wholesale-form" className="primary-btn">
             Apply for Wholesale Account
           </a>
 
-          <a href="#" className="secondary-btn">
+          <a href="#product-categories" className="secondary-btn">
             Download Product Overview
           </a>
         </div>

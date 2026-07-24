@@ -23,7 +23,9 @@ export default function StoryPage() {
       <StoryHero />
       <StoryProblem />
       <StoryBirth />
-      <StoryProducts />
+      <div id="story-products">
+        <StoryProducts />
+      </div>
       <StoryGlobalFlavor />
       <StoryInnovation />
       <StoryPromise />

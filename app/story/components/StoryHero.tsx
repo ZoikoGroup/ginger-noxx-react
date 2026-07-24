@@ -1,4 +1,7 @@
+import Link from "next/link";
+
 export default function StoryHero() {
+
   return (
     <section className="story-hero">
 
@@ -24,13 +27,13 @@ export default function StoryHero() {
         </div>
 
         <div className="story-buttons">
-          <button className="story-btn-primary">
+          <Link href="/best-sellers" className="story-btn-primary">
             Experience the Range
-          </button>
+          </Link>
 
-          <button className="story-btn-secondary">
+          <Link href="#story-products" className="story-btn-secondary">
             Explore the Platform
-          </button>
+          </Link>
         </div>
 
       </div>

@@ -15,7 +15,7 @@ import WholesaleFinalCTA from "@/app/wholesale/components/WholesaleFinalCTA";
 export default function BestSellersPage() {
   return (
     <>
-    <Header />
+      <Header />
 
       <WholesaleHero />
       <WholesaleCategory />
@@ -25,8 +25,8 @@ export default function BestSellersPage() {
       <WholesaleCTA />
       <WholesaleFAQ />
       <WholesaleFinalCTA />
-      
-    <Footer />  
+
+      <Footer />
     </>
   );
 }

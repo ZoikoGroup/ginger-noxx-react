@@ -56,7 +56,7 @@
 .coll-hero-desc {
   margin-top: 18px;
   color: rgba(255, 255, 255, 0.55);
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 28px;
   max-width: 953px;
@@ -69,13 +69,13 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px 48px;
   text-align: left;
-  max-width: 800px;
+  max-width: 850px;
 }
 
 .coll-check-item {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .coll-check-box {
@@ -94,9 +94,9 @@
 
 .coll-check-text {
   color: rgba(255, 255, 255, 0.70);
-  font-size: 14px;
+  font-size: 14.1px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 22.53px;
 }
 
 .coll-hero-members-bar {

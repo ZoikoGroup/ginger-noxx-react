@@ -18,9 +18,9 @@ export default function SustainabilityCTA() {
 
         {/* Buttons */}
         <div className="flex flex-wrap items-center justify-center gap-4">
-          <button className="h-[48px] px-[32px] bg-white hover:bg-stone-100 text-[#D9531E] text-sm font-bold rounded-full shadow-md transition-all duration-300 cursor-pointer border-none hover:-translate-y-0.5">
-            Shop GingerNoxx
-          </button>
+         <button className="inline-flex items-center justify-center h-[48px] px-[px] bg-white hover:bg-stone-100 text-[#D9531E] text-sm font-bold rounded-full shadow-md transition-all duration-300 cursor-pointer border-none whitespace-nowrap">
+  Shop GingerNoxx
+</button>
           <button className="sustain-btn-outline">
             Learn More About Our Practices
           </button>

@@ -126,6 +126,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-top: 40px;
 }
 
 .innov-btn-outline:hover {
@@ -339,77 +340,135 @@
   white-space: pre-line;
 }
 
-/* --- CASE STUDIES --- */
-.innov-case-grid {
-  margin-top: 48px;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
+.innov-btn-primary{
+  margin-top: 40px;
+}
+
+/* ===========================
+   CASE STUDIES
+=========================== */
+
+.innovation-case-section {
+  width: 100%;
+  background: #fff;
+  padding: 64px 0 60px;
+}
+
+.innovation-case-container {
   width: 100%;
   max-width: 1080px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.innov-case-card {
-  width: 100%;
-  height: 320px;
-  background-color: #ffffff;
-  border-radius: 16px;
-  border: 1px solid #FFEDD5;
-  box-shadow: 0 2px 10px rgba(43, 18, 8, 0.04);
-  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 16px;
   display: flex;
   flex-direction: column;
-  text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  align-items: center;
 }
 
-.innov-case-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(43, 18, 8, 0.08);
+.innovation-case-title {
+  text-align: center;
+  color: #1c1917;
+  font-family: Poppins, sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 40px;
 }
 
-.innov-case-img-box {
+.innovation-case-title span {
+  color: #D4621A;
+}
+
+.innovation-case-subtitle {
+  margin-top: 22px;
+  text-align: center;
+  color: #57534e;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.innovation-case-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 52px;
+}
+
+.innovation-case-card {
+  background: #fff;
+  border: 1px solid #F5E9D9;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(43, 18, 8, 0.07);
+}
+
+.innovation-case-image {
   width: 100%;
   height: 144px;
-  background-color: #d4d4d8;
-  position: relative;
-  overflow: hidden;
-  flex-shrink: 0;
+  background: #afafaf;
 }
 
-.innov-case-tag {
+.innovation-case-content {
+  padding: 20px;
+}
+
+.innovation-case-category {
   color: #D4621A;
+  font-family: Poppins, sans-serif;
   font-size: 10px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 16px;
-  margin-bottom: 4px;
 }
 
-.innov-case-title {
-  color: #2B1208;
-  font-size: 14.4px;
-  font-weight: 700;
-  line-height: 23.04px;
-  margin-bottom: 6px;
-}
-
-.innov-case-desc {
-  color: #7A5040;
-  font-size: 12.5px;
-  font-weight: 400;
-  line-height: 19.34px;
-}
-
-.innov-case-rating {
-  color: #D4621A;
-  font-size: 13.6px;
-  font-weight: 700;
-  line-height: 21.76px;
+.innovation-case-heading {
   margin-top: 8px;
+  color: #1c1917;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.innovation-case-description {
+  margin-top: 12px;
+  color: #57534e;
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  min-height: 80px;
+}
+
+.innovation-case-reviews {
+  margin-top: 18px;
+  color: #D4621A;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.innovation-case-button {
+  margin-top: 48px;
+  height: 48px;
+  padding: 0 36px;
+  border-radius: 999px;
+  border: 2px solid #D4621A;
+  background: transparent;
+  color: #D4621A;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.innovation-case-button:hover {
+  background: #D4621A;
+  color: #fff;
 }
 
 /* --- PARTNER SECTION --- */
@@ -485,24 +544,103 @@
   line-height: 19.97px;
 }
 
-/* --- CTA SECTION --- */
-.innov-cta-heading {
-  color: #ffffff;
-  font-size: 44.8px;
-  font-weight: 600;
-  line-height: 50.18px;
-  text-align: center;
-  margin-bottom: 16px;
+/* ==========================
+   INNOVATION CTA
+========================== */
+
+.innovation-cta-section {
+  position: relative;
+  width: 100%;
+  background: #D4621A;
+  overflow: hidden;
+  padding: 64px 16px;
 }
 
-.innov-cta-sub {
-  color: #ffffff;
-  font-size: 15.5px;
-  font-weight: 400;
-  line-height: 26.38px;
+.innovation-cta-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 80%,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  pointer-events: none;
+}
+
+.innovation-cta-container {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  max-width: 568.9px;
-  margin-bottom: 36px;
+}
+
+.innovation-cta-title {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 50.18px;
+}
+
+.innovation-cta-description {
+  margin-top: 18px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.innovation-cta-buttons {
+  margin-top: 34px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.innovation-cta-primary {
+  height: 56px;
+  padding: 0 32px;
+  border: none;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #D4621A;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.innovation-cta-primary:hover {
+  background: #f8f8f8;
+  transform: translateY(-2px);
+}
+
+.innovation-cta-secondary {
+  height: 56px;
+  padding: 0 30px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  background: transparent;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.innovation-cta-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.4);
 }
 
 /* --- RESPONSIVE MEDIA QUERIES --- */

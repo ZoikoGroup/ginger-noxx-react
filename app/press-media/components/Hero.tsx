@@ -32,16 +32,19 @@ export default function Hero() {
         </p>
 
         {/* Input + Button pill row */}
-        <div className="flex items-center w-full max-w-[480px] h-[48px] rounded-full overflow-hidden mt-[28px]">
-          <input
-            type="email"
-            placeholder="Enter your email address.."
-            className="flex-1 h-full bg-white outline-none text-stone-900 text-sm font-normal font-['Poppins'] placeholder-stone-400 px-5 border-none"
-          />
-          <button className="h-full px-6 bg-[#D9531E] hover:bg-[#c24413] text-white text-xs font-semibold font-['Poppins'] flex items-center justify-center transition-colors cursor-pointer border-none whitespace-nowrap">
-            Subscribe for Updates
-          </button>
-        </div>
+    <div className="mt-7 flex w-[520px] h-[44px] overflow-hidden rounded-full bg-white shadow-md">
+  <input
+    type="email"
+    placeholder="Enter your email address..."
+    className="flex-1 h-full bg-white px-6 text-sm text-stone-900 placeholder:text-stone-400 border-none outline-none"
+  />
+
+  <button className="w-[200px] h-full bg-[#D9531E] text-white text-[13px] font-semibold whitespace-nowrap">
+    Subscribe for Updates
+  </button>
+
+
+</div>
 
         {/* Spam notice */}
         <p className="press-disclaimer">

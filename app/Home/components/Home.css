@@ -99,6 +99,117 @@
   letter-spacing: 0.13px;
   line-height: 20.8px;
 }
+
+/* ==========================================
+   HERO SECTION RESPONSIVE
+========================================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+  .hero {
+    height: 600px;
+  }
+
+  .hero-subtitle {
+    margin-top: 0;
+    margin-right: 0;
+    font-size: 13px;
+  }
+
+  .hero-content h1 {
+    margin-right: 0;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: -2px;
+  }
+
+  .hero-description {
+    margin-right: 0;
+    max-width: 650px;
+    font-size: 17px;
+  }
+
+  .hero-buttons {
+    margin-right: 0;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .hero {
+    height: auto;
+    min-height: 520px;
+  }
+
+  .hero-content {
+    padding: 60px 20px;
+  }
+
+  .hero-subtitle {
+    margin: 0 0 12px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    margin: 0 0 16px;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1px;
+  }
+
+  .hero-description {
+    margin: 0 0 24px;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px 24px;
+  }
+
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .hero {
+    min-height: 480px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    max-width: 100%;
+  }
+
+}
+
 /* BEST SELLERS */
 
 .best-sellers {
@@ -292,6 +403,148 @@ width: 273px;
   margin-top: 40px;
   
 }
+/* ==========================================
+   BEST SELLERS RESPONSIVE
+========================================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+  .container {
+    width: 100%;
+    max-width: 95%;
+  }
+
+  .best-sellers h2 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 0;
+    justify-items: center;
+  }
+
+  .product-card {
+    width: 100%;
+    max-width: 320px;
+    margin-top: 0;
+  }
+
+  .line {
+    width: calc(100% - 40px);
+  }
+
+  .categories {
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+
+  .view-range {
+    margin-top: 30px;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .best-sellers {
+    padding: 40px 0;
+  }
+
+  .best-sellers h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .categories {
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .categories button {
+    font-size: 11px;
+    padding: 10px 18px;
+    margin-top: 10px;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 0;
+  }
+
+  .product-card {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .line {
+    width: calc(100% - 40px);
+  }
+
+  .product-bottom {
+    padding: 10px;
+  }
+
+  .view-range {
+    width: 100%;
+    max-width: 320px;
+    padding: 12px 24px;
+  }
+
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .best-sellers h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .badge {
+    font-size: 9px;
+    padding: 6px 14px;
+  }
+
+  .categories {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .categories button {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .product-card {
+    max-width: 100%;
+  }
+
+  .product-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .product-bottom button {
+    width: 100%;
+  }
+
+  .price-wrapper {
+    margin-left: 0;
+  }
+
+  .view-range {
+    max-width: 100%;
+  }
+
+}
 /* EXPLORE PLATFORM*/
 
 .explore-platform {
@@ -382,6 +635,112 @@ width: 273px;
   color: #B84A06;
   font-weight: 300;
 }
+/* ==========================================
+   EXPLORE PLATFORM RESPONSIVE
+========================================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+  .explore-platform {
+    padding: 40px 0;
+  }
+
+  .explore-platform h2 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .platform-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0;
+    justify-items: center;
+  }
+
+  .platform-card {
+    width: 100%;
+    max-width: 360px;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .explore-platform {
+    padding: 40px 0;
+  }
+
+  .explore-platform h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .platform-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .platform-card {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+
+  .platform-icon {
+    width: 46px;
+    height: 46px;
+  }
+
+  .platform-card h3 {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .platform-card p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .explore-platform h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .platform-card {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .platform-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .platform-card h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .platform-card p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .platform-card button {
+    font-size: 14px;
+  }
+
+}
+
 /* GINGER PROFILE */
 
 
@@ -564,6 +923,147 @@ width: 273px;
 
   background:#A04004;
 }
+
+/* ==========================================
+   GINGER PROFILE RESPONSIVE
+========================================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+  .ginger-profile {
+    padding: 40px 0;
+  }
+
+  .ginger-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .ginger-left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .profile-description {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .question-card {
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+  }
+
+  .progress-bar {
+    width: 100%;
+  }
+
+  .progress-fill {
+    width: 33%;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .ginger-profile {
+    padding: 40px 0;
+  }
+
+  .ginger-wrapper {
+    padding: 0 16px;
+    gap: 30px;
+  }
+
+  .ginger-left {
+    text-align: center;
+  }
+
+  .ginger-left h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .profile-description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .question-card {
+    width: 100%;
+    padding: 24px;
+  }
+
+  .question-card h3 {
+    font-size: 16px;
+  }
+
+  .progress-bar {
+    width: 100%;
+  }
+
+  .progress-fill {
+    width: 33%;
+  }
+
+  .options {
+    grid-template-columns: 1fr;
+  }
+
+  .options button {
+    width: 100%;
+    height: 44px;
+  }
+
+  .button-area {
+    justify-content: center;
+  }
+
+  .next-btn {
+    width: 100%;
+    max-width: 250px;
+  }
+
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .ginger-left h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .ginger-left .badge {
+    font-size: 9px;
+    padding: 6px 14px;
+  }
+
+  .question-card {
+    padding: 20px;
+  }
+
+  .question-card h3 {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .options button {
+    font-size: 13px;
+  }
+
+  .next-btn {
+    width: 100%;
+    max-width: 100%;
+  }
+
+}
+
 /* WHY GINGER */
 
 .why-ginger {
@@ -690,6 +1190,136 @@ letter-spacing: -2.56px;
 .science-btn:hover {
   background: #B84A06;
   color: #FFFFFF;
+}
+
+/* ==========================================
+   WHY GINGER RESPONSIVE
+========================================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+  .why-ginger {
+    padding: 40px 0;
+  }
+
+  .why-ginger h2 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .why-text {
+    max-width: 650px;
+    margin: 15px auto 35px;
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .why-card {
+    padding: 28px;
+  }
+
+  .number {
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .why-ginger {
+    padding: 40px 0;
+  }
+
+  .why-ginger h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .why-text {
+    max-width: 100%;
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 16px;
+  }
+
+  .why-card {
+    padding: 24px;
+  }
+
+  .number {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .why-card h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .why-card p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .science-btn {
+    width: 100%;
+    max-width: 280px;
+    height: 46px;
+    margin-top: 40px;
+  }
+
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .why-ginger h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .why-ginger .badge {
+    font-size: 9px;
+    padding: 6px 14px;
+  }
+
+  .why-card {
+    padding: 20px;
+  }
+
+  .number {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .why-card h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .why-card p {
+    font-size: 13px;
+    line-height: 21px;
+  }
+
+  .science-btn {
+    max-width: 100%;
+  }
+
 }
 /* INNOVATION PLATFORM */
 

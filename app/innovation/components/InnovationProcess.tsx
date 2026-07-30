@@ -61,7 +61,7 @@ export default function InnovationProcess() {
         </div>
 
         {/* Button */}
-        <div className="mt-10 flex justify-center w-full">
+        <div className="innov-process-btn-wrapper">
           <button className="innov-btn-primary">
             Learn Our Full Process →
           </button>

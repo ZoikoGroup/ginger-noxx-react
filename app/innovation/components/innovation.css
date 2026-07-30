@@ -347,6 +347,15 @@
   white-space: pre-line;
 }
 
+.innov-process-btn-wrapper {
+  margin-top: 52px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
 /* ===========================
    CASE STUDIES
 =========================== */

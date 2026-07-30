@@ -4,13 +4,19 @@
   position: relative;
   overflow: hidden;
   background: #421B07;
-  padding: 90px 40px;
+  padding: 80px 24px;
+  width: 100%;
 }
 
 /* Container */
-.why-hero .container {
+.why-hero .container,
+.why-hero-container {
   position: relative;
   z-index: 2;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 /* TEXT */
@@ -19,16 +25,17 @@
   font-family: "Poppins", sans-serif;
   font-size: 40px;
   font-weight: 600;
-  line-height:61.06px;
+  line-height: 1.25;
   color: #ffffff;
   margin: 0;
-  width: 662px;
+  max-width: 100%;
+  width: 100%;
 }
 
 .why-description {
   margin-top: 15px;
   margin-bottom: 20px;
-  max-width: 523px;
+  max-width: 100%;
   font-family: "Poppins", sans-serif;
   font-size: 16.8px;
   line-height: 29.4px;
@@ -260,7 +267,14 @@
 
 .why-benefits{
     background:#FFF3E8;
-    padding:40px 40px 60px 40px;
+    padding:60px 24px;
+    width:100%;
+}
+
+.why-benefits .container {
+    max-width:1240px;
+    margin:0 auto;
+    width:100%;
 }
 
 .benefits-heading{
@@ -280,6 +294,8 @@
     display:grid;
     grid-template-columns:repeat(2,1fr);
     gap:20px;
+    max-width:1240px;
+    margin:0 auto;
 }
 
 .benefit-card{
@@ -327,7 +343,7 @@
     color:#7A5040;
     font-size:14.1px;
     line-height:23.23px;
-    width: 383.17px;
+    width: 100%;
 }
 
 .benefit-note{
@@ -401,7 +417,14 @@
 
 .why-evidence{
     background:#fff;
-    padding:90px 40px 50px;
+    padding:80px 24px 50px;
+    width:100%;
+}
+
+.why-evidence .container {
+    max-width:1240px;
+    margin:0 auto;
+    width:100%;
 }
 
 .evidence-grid{
@@ -409,6 +432,9 @@
     grid-template-columns:1fr 1fr;
     gap:60px;
     align-items:start;
+    max-width:1240px;
+    margin:0 auto;
+    width:100%;
 }
 
 .evidence-title{
@@ -428,7 +454,8 @@
     font-size:15.5px;
     line-height:27.94px;
     margin-bottom:15px;
-    width: 527.39px;
+    width: 100%;
+    max-width: 100%;
 }
 
 .evidence-list{
@@ -528,7 +555,8 @@
     font-size:10px;
     line-height:16px;
     font-style: italic;
-    width: 440.72px;
+    width: 100%;
+    max-width: 100%;
 }
 
 /* Responsive */
@@ -560,7 +588,14 @@
 
 .why-comparison{
     background:#FFF3E8;
-    padding:60px 40px;
+    padding:60px 24px;
+    width:100%;
+}
+
+.why-comparison .container {
+    max-width:1240px;
+    margin:0 auto;
+    width:100%;
 }
 
 .comparison-title{
@@ -582,12 +617,14 @@
     border:1px solid #F5E9D9;
     background:#fff;
     box-shadow:0 2px 16px #2B120812;
+    max-width:1240px;
+    margin:0 auto;
 }
 
 .comparison-header,
 .comparison-row{
     display:grid;
-   grid-template-columns: repeat(3, minmax(299.33px, 1fr));
+   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .head{
@@ -635,7 +672,7 @@
     color:#7A5040;
     background:#fff;
     font-weight: 400;
-    width: 320px;
+    width: 100%;
 }
 
 .ginger-cell{
@@ -655,7 +692,7 @@
 
 .comparison-header,
 .comparison-row{
-    min-width:900px;
+    min-width:700px;
 }
 
 }
@@ -675,7 +712,14 @@
 
 .why-innovation{
     background:#FFFFFF;
-    padding:70px 40px;
+    padding:70px 24px;
+    width:100%;
+}
+
+.why-innovation .container {
+    max-width:1240px;
+    margin:0 auto;
+    width:100%;
 }
 
 .innovation-title{
@@ -704,6 +748,8 @@
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:18px;
+    max-width:1240px;
+    margin:0 auto;
 }
 
 .innovation-card{
@@ -749,14 +795,16 @@
     color:#7A5040;
     font-size:13.4px;
     line-height:22.18px;
-    width: 218.51px;
+    width: 100%;
 }
 
 .innovation-footer{
-    margin-top:30px;
-    width: 535.68px;
+    margin-top:36px;
+    width: 100%;
+    max-width: 600px;
     text-align:center;
-    margin-left: 300px;
+    margin-left: auto;
+    margin-right: auto;
     color:#7A5040;
     font-size:14.4px;
     line-height:23.04px;
@@ -799,8 +847,15 @@
 /* WHY MOMENTS */
 
 .why-moments{
-    padding:60px 40px;
+    padding:60px 24px;
     background:#FDF6EE;
+    width:100%;
+}
+
+.why-moments .container {
+    max-width:1240px;
+    margin:0 auto;
+    width:100%;
 }
 
 .moments-title{
@@ -822,6 +877,8 @@
     border:1px solid #F5E9D9;
     border-radius:24px;
     overflow:hidden;
+    max-width:1240px;
+    margin:0 auto;
 }
 
 .moment-card{
@@ -874,7 +931,7 @@
     font-size:14.1px;
     line-height:23.94px;
     flex:1;
-    width: 296.46px;
+    width: 100%;
 }
 
 .moment-card button{
@@ -938,7 +995,14 @@ WHY PRODUCTS
 
 .why-products{
     background:#FFFFFF;
-    padding:50px 40px;
+    padding:50px 24px;
+    width:100%;
+}
+
+.why-products .container {
+    max-width:1240px;
+    margin:0 auto;
+    width:100%;
 }
 
 .products-title{
@@ -967,6 +1031,8 @@ WHY PRODUCTS
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:20px;
+    max-width:1240px;
+    margin:0 auto;
 }
 
 .product-card{
@@ -1023,7 +1089,7 @@ WHY PRODUCTS
     font-style: italic;
     line-height:20.99px;
     min-height:44px;
-    width: 188.4px;
+    width: 100%;
 }
 
 .price{
@@ -1102,7 +1168,14 @@ WHY PRODUCTS
 
 .why-testimonials{
     background:#FDF6EE;
-    padding:60px 40px;
+    padding:60px 24px;
+    width:100%;
+}
+
+.why-testimonials .container {
+    max-width:1240px;
+    margin:0 auto;
+    width:100%;
 }
 
 .testimonial-top{
@@ -1174,6 +1247,8 @@ WHY PRODUCTS
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:20px;
+    max-width:1240px;
+    margin:30px auto 0;
 }
 
 .testimonial-card{

@@ -858,37 +858,71 @@ Responsive Design
 ================================ */
 
 @media(max-width:768px){
+  .find-profile-hero,
+  .find-profile-notify-section,
+  .find-profile-reviews-section {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+  .find-profile-hero {
+    height: auto;
+    min-height: 720px;
+    padding-bottom: 40px;
+  }
+  .find-profile-review {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
 
-.find-profile-reviews-section {
-  min-height:auto;
-  padding:45px 16px;
-}
-.find-profile-reviews-heading {
-  font-size:28px;
-  line-height:40px;
-}
-.find-profile-reviews-grid {
-  grid-template-columns:1fr;
-  gap:20px;
-}
-.find-profile-review-card {
-  height:310px;
-  padding:24px;
-}
-.find-profile-review-stars {
-  font-size:15px;
-}
-.find-profile-review-text {
-  font-size:13px;
-  line-height:22px;
-}
-.find-profile-review-user {
-  left:24px;
-  bottom:35px;
+  .find-profile-reviews-section {
+    min-height:auto;
+    padding:45px 16px;
+  }
+  .find-profile-reviews-heading {
+    font-size:28px;
+    line-height:40px;
+  }
+  .find-profile-reviews-grid {
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+  .find-profile-review-card {
+    height: auto;
+    min-height: 280px;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+  .find-profile-review-stars {
+    font-size:15px;
+  }
+  .find-profile-review-text {
+    font-size:13px;
+    line-height:22px;
+  }
+  .find-profile-review-user {
+    left:24px;
+    bottom:35px;
+  }
+
+  .find-profile-review-verified {
+    left:70px;
+    bottom:15px;
+  }
 }
 
-.find-profile-review-verified {
-  left:70px;
-  bottom:15px;
+@media (max-width: 480px) {
+  .find-profile-hero {
+    min-height: 680px;
+  }
+  .find-profile-review {
+    margin-top: 25px;
+  }
 }
-}
+

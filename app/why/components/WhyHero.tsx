@@ -4,9 +4,9 @@ import Link from "next/link";
 export default function WhyHero() {
   return (
     <section className="why-hero">
-      <div className="container mx-auto flex max-w-7xl flex-col items-center justify-between gap-16 px-6 py-20 lg:flex-row">
+      <div className="why-hero-container max-w-[1240px] mx-auto flex flex-col items-center justify-between gap-12 px-6 py-6 lg:flex-row">
         {/* Left Content */}
-        <div className="max-w-xl">
+        <div className="max-w-[620px] flex flex-col items-start text-left">
           <h1 className="why-title">
             Why Ginger Matters Backed by Tradition, Supported by Science
           </h1>
@@ -17,7 +17,7 @@ export default function WhyHero() {
             everyday wellness.
           </p>
 
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-8 flex flex-wrap gap-4">
             <Link href="#why-products" className="primary-btn">
               Explore Ginger Products →
             </Link>

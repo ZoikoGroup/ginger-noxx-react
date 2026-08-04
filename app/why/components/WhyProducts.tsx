@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const products = [
   {
@@ -32,6 +35,8 @@ const products = [
 ];
 
 export default function WhyProducts() {
+  const router = useRouter();
+
   return (
     <section className="why-products">
       <div className="container mx-auto max-w-7xl px-6">
@@ -85,7 +90,7 @@ export default function WhyProducts() {
         </div>
 
         <div className="products-btn">
-          <button>
+          <button onClick={() => router.push('/best-sellers')}>
             Shop the GingerNoxx Collection →
           </button>
         </div>

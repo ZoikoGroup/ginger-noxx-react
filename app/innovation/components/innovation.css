@@ -97,6 +97,10 @@
 }
 
 .innov-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   height: 48px;
   padding: 0 28px;
   background-color: #D4621A;
@@ -116,6 +120,10 @@
 }
 
 .innov-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   height: 48px;
   padding: 0 28px;
   border-radius: 9999px;
@@ -126,7 +134,6 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-top: 40px;
 }
 
 .innov-btn-outline:hover {
@@ -338,10 +345,6 @@
   font-weight: 400;
   line-height: 17.86px;
   white-space: pre-line;
-}
-
-.innov-btn-primary{
-  margin-top: 40px;
 }
 
 /* ===========================

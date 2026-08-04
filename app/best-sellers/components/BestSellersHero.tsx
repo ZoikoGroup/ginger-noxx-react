@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function BestSellersHero() {
   return (
     <section className="best-hero">
@@ -26,9 +28,9 @@ export default function BestSellersHero() {
             chosen for taste, repeatability, and everyday relevance.
           </p>
 
-          <a href="#" className="best-hero-btn">
+          <Link href="#best-sellers-list" className="best-hero-btn">
             Explore Best Sellers
-          </a>
+          </Link>
 
           <div className="best-hero-bottom">
 
@@ -36,9 +38,9 @@ export default function BestSellersHero() {
               Not sure where to start?
             </p>
 
-            <a href="#" className="best-hero-link">
+            <Link href="/find-profile" className="best-hero-link">
               Find Your Ginger Profile
-            </a>
+            </Link>
 
           </div>
 

@@ -13,9 +13,13 @@ export default function SustainabilityPage() {
     <main className="min-h-screen flex flex-col bg-[#FAF3EA] overflow-x-hidden font-['Poppins']">
       <Header />
       <SustainabilityHero />
-      <SustainabilityCommitments />
+      <div id="sustain-commitments">
+        <SustainabilityCommitments />
+      </div>
       <SustainabilityImpact />
-      <SustainabilityStages />
+      <div id="sustain-stages">
+        <SustainabilityStages />
+      </div>
       <SustainabilityCollaborations />
       <SustainabilityInsights />
       <SustainabilityCTA />

@@ -20,8 +20,12 @@ export default function BeveragesPage() {
       <main>
         <BeveragesHero />
         <BeveragesTrustBar />
-        <DecisionEngine />
-        <MostLovedProducts />
+        <div id="decision-engine">
+          <DecisionEngine />
+        </div>
+        <div id="most-loved-beverages">
+          <MostLovedProducts />
+        </div>
         <AllBeverages />
         <BeveragesWhy />
         <BeveragesReviews />

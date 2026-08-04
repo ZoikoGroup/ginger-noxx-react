@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 export default function TradeDistribution() {
@@ -31,11 +33,17 @@ export default function TradeDistribution() {
 
           <div className="trade-buttons">
 
-          <button className="trade-btn-primary">
+            <button
+              className="trade-btn-primary"
+              onClick={() => window.location.href = "/stockists"}
+            >
               Become a Stockist
             </button>
 
-            <button className="trade-btn-secondary">
+            <button
+              className="trade-btn-secondary"
+              onClick={() => window.location.href = "/wholesale"}
+            >
               Download Retail Deck
             </button>
 

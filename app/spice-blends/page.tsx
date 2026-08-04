@@ -15,21 +15,21 @@ import SpiceBlendsCTA from "@/app/spice-blends/components/SpiceBlendsCTA";
 export default function SpiceBlendsPage() {
   return (
     <>
-    <Header />
-    
-          <main>
-            <SpiceBlendsHero />
-            <SpiceBlendsProducts />
-            <SpiceBlendsFlavorSystem />
-            <SpiceBlendsRealCooking />
-            <SpiceBlendsKitchenUses />
-            <SpiceBlendsTestimonials />
-            <CleanStandard />
-            <SpiceBlendsCTA />
-          </main>
+      <Header />
 
-    <Footer />      
-      
+      <main>
+        <SpiceBlendsHero />
+        <SpiceBlendsProducts />
+        <SpiceBlendsFlavorSystem />
+        <SpiceBlendsRealCooking />
+        <SpiceBlendsKitchenUses />
+        <SpiceBlendsTestimonials />
+        <CleanStandard />
+        <SpiceBlendsCTA />
+      </main>
+
+      <Footer />
+
     </>
   );
 }

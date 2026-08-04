@@ -1,3 +1,5 @@
+"use client";
+
 const stats = [
   {
     value: "15%",
@@ -41,13 +43,19 @@ const SubscriptionHero = () => {
         </p>
 
         <div className="subscription-hero-buttons">
-          <a href="#" className="subscription-hero-btn subscription-hero-btn-primary">
+          <button
+            className="subscription-hero-btn subscription-hero-btn-primary"
+            onClick={() => document.getElementById('subscription-plans')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Subscribe Now
-          </a>
+          </button>
 
-          <a href="#" className="subscription-hero-btn subscription-hero-btn-outline">
+          <button
+            className="subscription-hero-btn subscription-hero-btn-outline"
+            onClick={() => document.getElementById('subscription-plans')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             View All Plans
-          </a>
+          </button>
         </div>
 
         <div className="subscription-hero-stats">

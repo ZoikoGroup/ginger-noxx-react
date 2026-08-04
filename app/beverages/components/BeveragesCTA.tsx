@@ -1,3 +1,5 @@
+"use client";
+
 export default function BeveragesCTA() {
   const tags = [
     "HALAL",
@@ -27,11 +29,17 @@ export default function BeveragesCTA() {
         </p>
 
         <div className="beverages-cta-buttons">
-          <button className="beverages-cta-primary">
+          <button
+            className="beverages-cta-primary"
+            onClick={() => document.getElementById('most-loved-beverages')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Shop Best Sellers
           </button>
 
-          <button className="beverages-cta-secondary">
+          <button
+            className="beverages-cta-secondary"
+            onClick={() => document.getElementById('decision-engine')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Find Your Drink
           </button>
         </div>

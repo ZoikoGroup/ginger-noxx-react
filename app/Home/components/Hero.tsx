@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 export default function Hero() {
@@ -24,17 +26,23 @@ export default function Hero() {
         <h1>Gingerly Made for You</h1>
 
         <p className="hero-description">
-          Defining a new global category in food, drink, and<br/> wellness —
+          Defining a new global category in food, drink, and<br /> wellness —
           AI-powered, IP-led, and crafted for people who take flavour
           seriously.
         </p>
 
         <div className="hero-buttons">
-          <button className="btn-primary">
+          <button
+            className="btn-primary"
+            onClick={() => window.location.href = "/best-sellers"}
+          >
             Shop Best Sellers
           </button>
 
-          <button className="btn-secondary">
+          <button
+            className="btn-secondary"
+            onClick={() => window.location.href = "/find-profile"}
+          >
             Find Your Ginger Profile
           </button>
         </div>

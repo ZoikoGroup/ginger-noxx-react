@@ -1,3 +1,5 @@
+"use client";
+
 import "./careers.css";
 
 export default function CareersHero() {

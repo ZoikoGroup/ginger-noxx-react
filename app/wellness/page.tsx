@@ -26,9 +26,13 @@ export default function WellnessPage() {
       <main>
         <WellnessHero />
         <WellnessTrustBar />
-       <EasiestWayToBegin />
-       <DailyRhythm />
-       <ExploreByFocus />
+        <div id="easiest-way-to-begin">
+          <EasiestWayToBegin />
+        </div>
+        <div id="daily-rhythm">
+          <DailyRhythm />
+        </div>
+        <ExploreByFocus />
        <MostTrustedChoices />
        <WellnessSets />
        <WellnessReviews />

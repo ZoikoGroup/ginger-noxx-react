@@ -18,11 +18,11 @@ export default function WhyHero() {
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
-            <Link href="/products" className="primary-btn">
+            <Link href="#why-products" className="primary-btn">
               Explore Ginger Products →
             </Link>
 
-            <Link href="/ginger-profile" className="secondary-btn">
+            <Link href="/find-profile" className="secondary-btn">
               Find Your Ginger Profile
             </Link>
           </div>

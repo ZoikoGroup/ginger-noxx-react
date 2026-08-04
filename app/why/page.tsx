@@ -25,7 +25,9 @@ export default function WhyPage() {
         <WhyComparison />
         <WhyInnovation />
         <WhyMoments />
-        <WhyProducts />
+        <div id="why-products">
+          <WhyProducts />
+        </div>
         <WhyTestimonials />
         <WhyCTA />
       </main>

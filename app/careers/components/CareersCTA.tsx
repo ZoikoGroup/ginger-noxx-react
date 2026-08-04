@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./careers.css";
 
 export default function CareersCTA() {
@@ -20,13 +21,13 @@ export default function CareersCTA() {
         </p>
 
         <div className="careers-cta-buttons">
-          <a href="#" className="careers-cta-primary">
+          <a href="#jobs" className="careers-cta-primary">
             Apply Now →
           </a>
 
-          <a href="#" className="careers-cta-secondary">
+          <Link href="/story" className="careers-cta-secondary">
             Learn More About Zoiko
-          </a>
+          </Link>
         </div>
       </div>
     </section>

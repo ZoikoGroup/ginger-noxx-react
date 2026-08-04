@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
 import "./sustainability.css";
 
 export default function SustainabilityHero() {
@@ -31,12 +34,12 @@ export default function SustainabilityHero() {
 
         {/* Buttons */}
         <div className="sustain-hero-buttons">
-          <button className="sustain-btn-primary">
+          <Link href="#sustain-commitments" className="sustain-btn-primary">
             Explore Our Commitment
-          </button>
-          <button className="sustain-btn-outline">
+          </Link>
+          <Link href="#sustain-stages" className="sustain-btn-outline">
             Our Practices
-          </button>
+          </Link>
         </div>
 
         {/* Stats Bar */}

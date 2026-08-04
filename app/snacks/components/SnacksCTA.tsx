@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import "./snacks.css";
 
@@ -23,11 +25,17 @@ const SnacksCTA = () => {
         </p>
 
         <div className="snacks-cta-buttons">
-          <button className="snacks-cta-primary">
+          <button
+            className="snacks-cta-primary"
+            onClick={() => document.getElementById('most-loved-snacks')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Build Your Box
           </button>
 
-          <button className="snacks-cta-secondary">
+          <button
+            className="snacks-cta-secondary"
+            onClick={() => document.getElementById('shop-by-craving')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Shop by Craving
           </button>
         </div>

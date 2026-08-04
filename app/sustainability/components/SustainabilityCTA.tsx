@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import "./sustainability.css";
 
 export default function SustainabilityCTA() {
@@ -17,13 +18,13 @@ export default function SustainabilityCTA() {
         </p>
 
         {/* Buttons */}
-        <div className="flex flex-wrap items-center justify-center gap-4">
-         <button className="inline-flex items-center justify-center h-[48px] px-[px] bg-white hover:bg-stone-100 text-[#D9531E] text-sm font-bold rounded-full shadow-md transition-all duration-300 cursor-pointer border-none whitespace-nowrap">
-  Shop GingerNoxx
-</button>
-          <button className="sustain-btn-outline">
+        <div className="flex flex-wrap items-center justify-center gap-4 mt-6">
+          <Link href="/best-sellers" className="inline-flex items-center justify-center h-[48px] px-7 bg-white hover:bg-stone-100 text-[#D9531E] text-[14px] font-[600] rounded-full shadow-md transition-all duration-300 cursor-pointer border-none whitespace-nowrap no-underline leading-none">
+            Shop GingerNoxx
+          </Link>
+          <Link href="#sustain-stages" className="sustain-btn-outline">
             Learn More About Our Practices
-          </button>
+          </Link>
         </div>
 
       </div>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./cookies.css";
 
 const CookieContent = () => {
@@ -232,7 +233,7 @@ const CookieContent = () => {
                   privacy@gingernoxx.com
                 </a>{" "}
                 or via our{" "}
-                <a href="/contact">Contact Us</a>{" "}
+                <Link href="/contact-us">Contact Us</Link>{" "}
                 page.
               </p>
             </div>

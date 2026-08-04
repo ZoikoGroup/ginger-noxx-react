@@ -15,7 +15,7 @@ import BestSellersFAQ from "@/app/best-sellers/components/BestSellersFAQ";
 export default function BestSellersPage() {
   return (
     <>
-    <Header />
+      <Header />
 
       <BestSellersHero />
       <BestSellersFeatures />
@@ -24,8 +24,8 @@ export default function BestSellersPage() {
       <BestSellersBundles />
       <BestSellersTestimonials />
       <BestSellersFAQ />
-      
-    <Footer />  
+
+      <Footer />
     </>
   );
 }

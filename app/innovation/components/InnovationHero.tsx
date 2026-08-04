@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import "./innovation.css";
 
 export default function InnovationHero() {
@@ -33,12 +34,12 @@ export default function InnovationHero() {
 
         {/* Buttons */}
         <div className="innov-hero-buttons">
-          <button className="innov-btn-primary">
+          <Link href="#innovation-features" className="innov-btn-primary">
             Explore the Platform
-          </button>
-          <button className="innov-btn-outline">
+          </Link>
+          <Link href="/wholesale" className="innov-btn-outline">
             Partner With Us
-          </button>
+          </Link>
         </div>
 
         {/* Stats Bar */}

@@ -6,12 +6,12 @@ export default function WhyGinger() {
         WHY GINGER
       </div>
 
-     <h2>
-  The Science & Soul of{" "}
-  <span className="ginger-highlight">
-    Ginger Fusion
-  </span>
-</h2>
+      <h2>
+        The Science & Soul of{" "}
+        <span className="ginger-highlight">
+          Ginger Fusion
+        </span>
+      </h2>
 
       <p className="why-text">
         Ginger isn't a trend. It's a 5,000-year-old functional ingredient —

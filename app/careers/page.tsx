@@ -18,8 +18,12 @@ export default function CareersPage() {
         <CareersHero />
         <CareersIntro />
         <CareersValues />
-        <CareersRoles />
-        <CareersJobs />
+        <div id="why-work">
+          <CareersRoles />
+        </div>
+        <div id="jobs">
+          <CareersJobs />
+        </div>
         <CareersCulture />
         <CareersTestimonial />
         <CareersCTA />

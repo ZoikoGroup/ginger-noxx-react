@@ -1,15 +1,19 @@
+"use client";
+
 import Image from "next/image";
 
 type PlatformCardProps = {
   image: string;
   title: string;
   products: string;
+  href?: string;
 };
 
 export default function PlatformCard({
   image,
   title,
   products,
+  href = "#",
 }: PlatformCardProps) {
   return (
     <div className="platform-card">
@@ -26,7 +30,7 @@ export default function PlatformCard({
 
       <p>{products}</p>
 
-      <button>Start here →</button>
+      <button onClick={() => window.location.href = href}>Start here →</button>
     </div>
   );
 }
